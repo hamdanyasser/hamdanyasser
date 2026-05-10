@@ -1,158 +1,391 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Featured projects showcase">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 920" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Featured projects showcase">
   <defs>
     <linearGradient id="bgShow" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0B1024"/>
+      <stop offset="50%" stop-color="#080C1F"/>
       <stop offset="100%" stop-color="#02030A"/>
     </linearGradient>
-    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="1" result="b"/>
+    <radialGradient id="bgGlow" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="cardFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0A1023"/>
+    </linearGradient>
+
+    <linearGradient id="strokePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="strokeCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="strokeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="strokeOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FB923C" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="strokePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="strokeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <linearGradient id="rail" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-  </defs>
-  <style>
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
-    @keyframes flow { 0% { stroke-dashoffset: 16; } 100% { stroke-dashoffset: 0; } }
-    .card { animation: fadeUp 0.8s ease-out forwards; opacity: 0; }
-    .c1 { animation-delay: 0.1s; } .c2 { animation-delay: 0.2s; }
-    .c3 { animation-delay: 0.3s; } .c4 { animation-delay: 0.4s; }
-    .c5 { animation-delay: 0.5s; } .c6 { animation-delay: 0.6s; }
-    .accent { animation: pulse 3s ease-in-out infinite; }
-    .flowline { stroke-dasharray: 4 4; animation: flow 1.8s linear infinite; }
-    .card rect.cardbg { transition: stroke-opacity 0.3s; }
-    .card:hover rect.cardbg { stroke-opacity: 1; }
-  </style>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
 
-  <rect width="1280" height="720" fill="url(#bgShow)"/>
-
-  <!-- Header -->
-  <text x="60" y="50" font-family="ui-monospace,monospace" font-size="10" fill="#475569" letter-spacing="6">FEATURED  /  6 PROJECTS</text>
-  <line x1="60" y1="68" x2="280" y2="68" stroke="#1E293B" stroke-width="0.7"/>
-
-  <!-- CARD 1: Odoo Auction (top-left) -->
-  <g class="card c1" transform="translate(60, 100)">
-    <rect class="cardbg" width="580" height="180" rx="12" fill="#0F172A" stroke="#A78BFA" stroke-opacity="0.4" stroke-width="1"/>
-    <!-- Micro-illustration: stacked auction blocks -->
-    <g transform="translate(30, 50)">
-      <rect x="0" y="60" width="20" height="20" rx="2" fill="#A78BFA" opacity="0.4"/>
-      <rect x="25" y="40" width="20" height="40" rx="2" fill="#A78BFA" opacity="0.6"/>
-      <rect x="50" y="20" width="20" height="60" rx="2" fill="#A78BFA" opacity="0.8"/>
-      <rect x="75" y="0" width="20" height="80" rx="2" fill="#A78BFA"/>
-      <text x="85" y="-8" font-family="ui-monospace,monospace" font-size="9" fill="#A78BFA" text-anchor="middle">▲</text>
-    </g>
-    <!-- Content -->
-    <text x="170" y="50" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="3">01  ·  ERP</text>
-    <text x="170" y="78" font-family="ui-monospace,monospace" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="1">ODOO AUCTION MODULE</text>
-    <text x="170" y="108" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">Bid validation, proxy bidding, anti-sniping, Buy Now,</text>
-    <text x="170" y="124" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">payment tracking, security rules, QWeb templates,</text>
-    <text x="170" y="140" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">analytics views. Sole developer at Mobile Arts.</text>
-    <text x="170" y="165" font-family="ui-monospace,monospace" font-size="9" fill="#A78BFA" letter-spacing="2">ODOO 18  ·  PYTHON  ·  POSTGRESQL  ·  QWEB</text>
-  </g>
-
-  <!-- CARD 2: AtlasBrief (top-right) -->
-  <g class="card c2" transform="translate(660, 100)">
-    <rect class="cardbg" width="560" height="180" rx="12" fill="#0F172A" stroke="#22D3EE" stroke-opacity="0.4" stroke-width="1"/>
-    <!-- Micro-illustration: route line with nodes -->
-    <g transform="translate(30, 70)">
-      <circle cx="10" cy="20" r="5" fill="#22D3EE"/>
-      <path d="M 15 20 Q 35 0 55 20 T 95 20" stroke="#22D3EE" stroke-width="1.5" fill="none" class="flowline"/>
-      <circle cx="55" cy="14" r="3" fill="#22D3EE" opacity="0.6"/>
-      <circle cx="95" cy="20" r="5" fill="#22D3EE"/>
-      <text x="55" y="50" font-family="ui-monospace,monospace" font-size="8" fill="#22D3EE" text-anchor="middle" letter-spacing="2">AGENT FLOW</text>
-    </g>
-    <!-- Content -->
-    <text x="170" y="50" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="3">02  ·  AGENTS</text>
-    <text x="170" y="78" font-family="ui-monospace,monospace" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="1">ATLASBRIEF</text>
-    <text x="170" y="108" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">LangGraph travel-planning agent. RAG over Postgres +</text>
-    <text x="170" y="124" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">pgvector, three Pydantic-validated tools, two-model</text>
-    <text x="170" y="140" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">LLM routing with per-request cost logging.</text>
-    <text x="170" y="165" font-family="ui-monospace,monospace" font-size="9" fill="#22D3EE" letter-spacing="2">PYTHON  ·  LANGGRAPH  ·  RAG  ·  FASTAPI  ·  REACT</text>
-  </g>
-
-  <!-- CARD 3: Atelier (mid-left) -->
-  <g class="card c3" transform="translate(60, 300)">
-    <rect class="cardbg" width="580" height="180" rx="12" fill="#0F172A" stroke="#10B981" stroke-opacity="0.4" stroke-width="1"/>
-    <!-- Micro-illustration: trending price chart -->
-    <g transform="translate(30, 60)">
-      <polyline points="0,70 20,50 40,55 60,30 80,40 100,15" stroke="#10B981" stroke-width="1.5" fill="none"/>
-      <circle cx="0" cy="70" r="2" fill="#10B981"/>
-      <circle cx="20" cy="50" r="2" fill="#10B981"/>
-      <circle cx="40" cy="55" r="2" fill="#10B981"/>
-      <circle cx="60" cy="30" r="2" fill="#10B981"/>
-      <circle cx="80" cy="40" r="2" fill="#10B981"/>
-      <circle cx="100" cy="15" r="3" fill="#10B981" class="accent"/>
-      <text x="50" y="95" font-family="ui-monospace,monospace" font-size="8" fill="#10B981" text-anchor="middle" letter-spacing="2">R² 0.90</text>
-    </g>
-    <!-- Content -->
-    <text x="170" y="50" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="3">03  ·  ML PIPELINE</text>
-    <text x="170" y="78" font-family="ui-monospace,monospace" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="1">ATELIER</text>
-    <text x="170" y="108" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">Plain-English property descriptions → grounded prices.</text>
-    <text x="170" y="124" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">LLM extracts features, Random Forest predicts (R² 0.90),</text>
-    <text x="170" y="140" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">second LLM grounds predictions vs training stats.</text>
-    <text x="170" y="165" font-family="ui-monospace,monospace" font-size="9" fill="#10B981" letter-spacing="2">PYTHON  ·  SCIKIT-LEARN  ·  OPENAI  ·  FASTAPI</text>
-  </g>
-
-  <!-- CARD 4: Support Triage (mid-right) -->
-  <g class="card c4" transform="translate(660, 300)">
-    <rect class="cardbg" width="560" height="180" rx="12" fill="#0F172A" stroke="#FB923C" stroke-opacity="0.4" stroke-width="1"/>
-    <!-- Micro-illustration: A/B comparison gauge -->
-    <g transform="translate(30, 70)">
-      <path d="M 10 40 A 35 35 0 0 1 80 40" stroke="#FB923C" stroke-width="2" fill="none"/>
-      <line x1="45" y1="40" x2="60" y2="15" stroke="#FB923C" stroke-width="2" class="accent"/>
-      <circle cx="45" cy="40" r="3" fill="#FB923C"/>
-      <text x="45" y="60" font-family="ui-monospace,monospace" font-size="8" fill="#FB923C" text-anchor="middle" letter-spacing="2">10K/HR</text>
-    </g>
-    <!-- Content -->
-    <text x="170" y="50" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="3">04  ·  RAG BENCHMARK</text>
-    <text x="170" y="78" font-family="ui-monospace,monospace" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="1">SUPPORT TRIAGE COCKPIT</text>
-    <text x="170" y="108" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">RAG-grounded vs plain LLM replies. Local LogReg vs</text>
-    <text x="170" y="124" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">zero-shot LLM. 20K tickets. Recommends what to ship</text>
-    <text x="170" y="140" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">at 10K/hour by accuracy, latency, and cost.</text>
-    <text x="170" y="165" font-family="ui-monospace,monospace" font-size="9" fill="#FB923C" letter-spacing="2">PYTHON  ·  CHROMA  ·  SCIKIT-LEARN  ·  FASTAPI</text>
-  </g>
-
-  <!-- CARD 5: DebugMaster (bottom-left) -->
-  <g class="card c5" transform="translate(60, 500)">
-    <rect class="cardbg" width="580" height="180" rx="12" fill="#0F172A" stroke="#F472B6" stroke-opacity="0.4" stroke-width="1"/>
-    <!-- Micro-illustration: bug + fix arrow -->
-    <g transform="translate(30, 60)">
-      <text x="20" y="35" font-size="32" fill="#F472B6">🐛</text>
-      <path d="M 55 30 L 85 30" stroke="#F472B6" stroke-width="1.5" marker-end="url(#arrowPink)" class="flowline"/>
-      <text x="80" y="35" font-size="22" fill="#F472B6">✓</text>
-      <text x="50" y="65" font-family="ui-monospace,monospace" font-size="8" fill="#F472B6" text-anchor="middle" letter-spacing="2">DEBUG · BATTLE</text>
-    </g>
-    <!-- Content -->
-    <text x="170" y="50" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="3">05  ·  MOBILE</text>
-    <text x="170" y="78" font-family="ui-monospace,monospace" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="1">DEBUGMASTER</text>
-    <text x="170" y="108" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">Java + Firebase Android app. Learning paths, AI mentor</text>
-    <text x="170" y="124" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">support, XP/streaks, leaderboards, live multiplayer</text>
-    <text x="170" y="140" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">debug battles. MVVM + Hilt + Room.</text>
-    <text x="170" y="165" font-family="ui-monospace,monospace" font-size="9" fill="#F472B6" letter-spacing="2">JAVA  ·  ANDROID  ·  FIREBASE  ·  ROOM</text>
-  </g>
-
-  <!-- CARD 6: NER (bottom-right) -->
-  <g class="card c6" transform="translate(660, 500)">
-    <rect class="cardbg" width="560" height="180" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="1"/>
-    <!-- Micro-illustration: highlighted text -->
-    <g transform="translate(30, 60)">
-      <rect x="0" y="20" width="100" height="14" rx="2" fill="#0F172A"/>
-      <rect x="5" y="22" width="20" height="10" rx="1" fill="#38BDF8" opacity="0.7"/>
-      <rect x="35" y="22" width="28" height="10" rx="1" fill="#38BDF8"/>
-      <rect x="70" y="22" width="22" height="10" rx="1" fill="#38BDF8" opacity="0.5"/>
-      <text x="50" y="55" font-family="ui-monospace,monospace" font-size="8" fill="#38BDF8" text-anchor="middle" letter-spacing="2">87% F1</text>
-    </g>
-    <!-- Content -->
-    <text x="170" y="50" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="3">06  ·  DEEP LEARNING</text>
-    <text x="170" y="78" font-family="ui-monospace,monospace" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="1">BIOMEDICAL NER</text>
-    <text x="170" y="108" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">From-scratch NER on BC5CDR. BiLSTM-CRF + Viterbi,</text>
-    <text x="170" y="124" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">char-CNN, attention, GloVe. Ablation studies isolating</text>
-    <text x="170" y="140" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8">each component. Live Gradio demo. 87% F1.</text>
-    <text x="170" y="165" font-family="ui-monospace,monospace" font-size="9" fill="#38BDF8" letter-spacing="2">PYTORCH  ·  NLP  ·  DEEP LEARNING  ·  GRADIO</text>
-  </g>
-
-  <defs>
     <marker id="arrowPink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#F472B6"/>
     </marker>
   </defs>
+
+  <style>
+    @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+    @keyframes flow { 0% { stroke-dashoffset: 16; } 100% { stroke-dashoffset: 0; } }
+    @keyframes drift { 0%,100% { opacity: 0.5; } 50% { opacity: 0.9; } }
+    .accent { animation: pulse 3s ease-in-out infinite; }
+    .accent-b { animation: pulse 4s ease-in-out infinite 1s; }
+    .flowline { stroke-dasharray: 4 4; animation: flow 2s linear infinite; }
+    .drift { animation: drift 5s ease-in-out infinite; }
+  </style>
+
+  <rect width="1280" height="920" fill="url(#bgShow)"/>
+  <rect width="1280" height="920" fill="url(#bgGlow)"/>
+
+  <g opacity="0.04" stroke="#A78BFA" stroke-width="0.5">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="380" x2="1280" y2="380"/>
+    <line x1="0" y1="650" x2="1280" y2="650"/>
+    <line x1="640" y1="0" x2="640" y2="920"/>
+  </g>
+
+  <!-- ============ HEADER ============ -->
+  <g transform="translate(60, 50)">
+    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="6">FEATURED  /  6 SHIPPED PROJECTS</text>
+    <line x1="0" y1="14" x2="320" y2="14" stroke="#1E293B" stroke-width="0.7"/>
+    <text x="0" y="48" font-family="ui-monospace,monospace" font-size="26" font-weight="800" fill="#F1F5F9" letter-spacing="2">Things I built</text>
+    <text x="0" y="72" font-family="ui-monospace,monospace" font-size="11" fill="#64748B" letter-spacing="3">— click any card to view repo —</text>
+  </g>
+  <g transform="translate(1220, 50)" text-anchor="end">
+    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="10" fill="#475569" letter-spacing="3">PRODUCTION  ·  PERSONAL  ·  ACADEMIC</text>
+    <line x1="-220" y1="14" x2="0" y2="14" stroke="#1E293B" stroke-width="0.7"/>
+    <text x="0" y="42" font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8" letter-spacing="2">06 / 06</text>
+    <text x="0" y="62" font-family="ui-monospace,monospace" font-size="9" fill="#475569" letter-spacing="3">↗ HAMDANYASSER</text>
+  </g>
+
+  <!-- ============ CARD 1: ODOO AUCTION ============ -->
+  <g transform="translate(60, 140)" color="#A78BFA">
+    <rect width="580" height="240" rx="14" fill="url(#cardFill)" stroke="url(#strokePurple)" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#rail)"/>
+    <text x="556" y="92" font-family="ui-monospace,monospace" font-size="100" font-weight="800" fill="#A78BFA" opacity="0.05" text-anchor="end" letter-spacing="-4">01</text>
+
+    <g transform="translate(24, 26)">
+      <rect width="44" height="24" rx="5" fill="#1E1B4B" stroke="#A78BFA" stroke-width="0.8"/>
+      <text x="22" y="17" font-family="ui-monospace,monospace" font-size="12" font-weight="700" fill="#C4B5FD" text-anchor="middle">01</text>
+      <circle cx="58" cy="12" r="2" fill="#A78BFA" class="accent"/>
+      <text x="68" y="17" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" letter-spacing="3">ERP  ·  PRODUCTION</text>
+    </g>
+
+    <text x="24" y="92" font-family="ui-monospace,monospace" font-size="22" font-weight="800" fill="#F1F5F9" letter-spacing="0.5">ODOO AUCTION MODULE</text>
+    <line x1="24" y1="104" x2="84" y2="104" stroke="#A78BFA" stroke-width="2.5"/>
+
+    <g font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8">
+      <text x="24" y="132">Sole developer. Bid validation, proxy bidding,</text>
+      <text x="24" y="150">anti-sniping, Buy Now, payment tracking,</text>
+      <text x="24" y="168">QWeb templates, security rules, analytics.</text>
+    </g>
+
+    <g transform="translate(24, 192)">
+      <rect width="68" height="22" rx="11" fill="#1E1B4B" stroke="#A78BFA" stroke-width="0.6"/>
+      <text x="34" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#C4B5FD" text-anchor="middle" letter-spacing="1">ODOO 18</text>
+      <rect x="76" width="62" height="22" rx="11" fill="#1E1B4B" stroke="#A78BFA" stroke-width="0.6"/>
+      <text x="107" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#C4B5FD" text-anchor="middle" letter-spacing="1">PYTHON</text>
+      <rect x="146" width="84" height="22" rx="11" fill="#1E1B4B" stroke="#A78BFA" stroke-width="0.6"/>
+      <text x="188" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#C4B5FD" text-anchor="middle" letter-spacing="1">POSTGRESQL</text>
+      <rect x="238" width="48" height="22" rx="11" fill="#1E1B4B" stroke="#A78BFA" stroke-width="0.6"/>
+      <text x="262" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#C4B5FD" text-anchor="middle" letter-spacing="1">QWEB</text>
+    </g>
+
+    <!-- Illustration: bid stacks rising -->
+    <g transform="translate(420, 78)" class="drift">
+      <text x="65" y="-6" font-family="ui-monospace,monospace" font-size="9" fill="#A78BFA" text-anchor="middle" letter-spacing="3" opacity="0.75">▲ HIGHEST BID</text>
+      <rect x="0"   y="60" width="22" height="20" rx="2" fill="#A78BFA" opacity="0.25"/>
+      <rect x="28"  y="40" width="22" height="40" rx="2" fill="#A78BFA" opacity="0.45"/>
+      <rect x="56"  y="20" width="22" height="60" rx="2" fill="#A78BFA" opacity="0.7"/>
+      <rect x="84"  y="0"  width="22" height="80" rx="2" fill="#A78BFA"/>
+      <line x1="-4" y1="84" x2="114" y2="84" stroke="#A78BFA" stroke-width="0.7" opacity="0.4"/>
+      <text x="0"   y="98" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">T1</text>
+      <text x="28"  y="98" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">T2</text>
+      <text x="56"  y="98" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">T3</text>
+      <text x="84"  y="98" font-family="ui-monospace,monospace" font-size="7" fill="#A78BFA" letter-spacing="1">T4</text>
+    </g>
+  </g>
+
+  <!-- ============ CARD 2: ATLASBRIEF ============ -->
+  <g transform="translate(660, 140)" color="#22D3EE">
+    <rect width="580" height="240" rx="14" fill="url(#cardFill)" stroke="url(#strokeCyan)" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#rail)"/>
+    <text x="556" y="92" font-family="ui-monospace,monospace" font-size="100" font-weight="800" fill="#22D3EE" opacity="0.05" text-anchor="end" letter-spacing="-4">02</text>
+
+    <g transform="translate(24, 26)">
+      <rect width="44" height="24" rx="5" fill="#0E2434" stroke="#22D3EE" stroke-width="0.8"/>
+      <text x="22" y="17" font-family="ui-monospace,monospace" font-size="12" font-weight="700" fill="#67E8F9" text-anchor="middle">02</text>
+      <circle cx="58" cy="12" r="2" fill="#22D3EE" class="accent"/>
+      <text x="68" y="17" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" letter-spacing="3">AGENTS  ·  RAG</text>
+    </g>
+
+    <text x="24" y="92" font-family="ui-monospace,monospace" font-size="22" font-weight="800" fill="#F1F5F9" letter-spacing="0.5">ATLASBRIEF</text>
+    <line x1="24" y1="104" x2="84" y2="104" stroke="#22D3EE" stroke-width="2.5"/>
+
+    <g font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8">
+      <text x="24" y="132">LangGraph travel planner. RAG over Postgres +</text>
+      <text x="24" y="150">pgvector, three Pydantic-validated tools, two-</text>
+      <text x="24" y="168">model routing with per-request cost logging.</text>
+    </g>
+
+    <g transform="translate(24, 192)">
+      <rect width="68" height="22" rx="11" fill="#0E2434" stroke="#22D3EE" stroke-width="0.6"/>
+      <text x="34" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#67E8F9" text-anchor="middle" letter-spacing="1">PYTHON</text>
+      <rect x="76" width="86" height="22" rx="11" fill="#0E2434" stroke="#22D3EE" stroke-width="0.6"/>
+      <text x="119" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#67E8F9" text-anchor="middle" letter-spacing="1">LANGGRAPH</text>
+      <rect x="170" width="48" height="22" rx="11" fill="#0E2434" stroke="#22D3EE" stroke-width="0.6"/>
+      <text x="194" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#67E8F9" text-anchor="middle" letter-spacing="1">RAG</text>
+      <rect x="226" width="68" height="22" rx="11" fill="#0E2434" stroke="#22D3EE" stroke-width="0.6"/>
+      <text x="260" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#67E8F9" text-anchor="middle" letter-spacing="1">FASTAPI</text>
+    </g>
+
+    <!-- Illustration: agent flow nodes -->
+    <g transform="translate(420, 100)">
+      <text x="60" y="-12" font-family="ui-monospace,monospace" font-size="9" fill="#22D3EE" text-anchor="middle" letter-spacing="3" opacity="0.75">→ AGENT FLOW</text>
+      <circle cx="10" cy="36" r="8" fill="#0F172A" stroke="#22D3EE" stroke-width="1.5"/>
+      <text x="10" y="40" font-family="ui-monospace,monospace" font-size="9" fill="#22D3EE" text-anchor="middle" font-weight="700">U</text>
+      <path d="M 20 36 Q 45 8 70 36 T 120 36" stroke="#22D3EE" stroke-width="1.5" fill="none" class="flowline" opacity="0.85"/>
+      <circle cx="70" cy="22" r="5" fill="#22D3EE" opacity="0.6" class="accent"/>
+      <circle cx="120" cy="36" r="8" fill="#0F172A" stroke="#22D3EE" stroke-width="1.5"/>
+      <text x="120" y="40" font-family="ui-monospace,monospace" font-size="9" fill="#22D3EE" text-anchor="middle" font-weight="700">A</text>
+      <text x="0"   y="62" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">USER</text>
+      <text x="120" y="62" font-family="ui-monospace,monospace" font-size="7" fill="#22D3EE" text-anchor="middle" letter-spacing="1">AGENT</text>
+    </g>
+  </g>
+
+  <!-- ============ CARD 3: ATELIER ============ -->
+  <g transform="translate(60, 410)" color="#10B981">
+    <rect width="580" height="240" rx="14" fill="url(#cardFill)" stroke="url(#strokeGreen)" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#rail)"/>
+    <text x="556" y="92" font-family="ui-monospace,monospace" font-size="100" font-weight="800" fill="#10B981" opacity="0.05" text-anchor="end" letter-spacing="-4">03</text>
+
+    <g transform="translate(24, 26)">
+      <rect width="44" height="24" rx="5" fill="#022C22" stroke="#10B981" stroke-width="0.8"/>
+      <text x="22" y="17" font-family="ui-monospace,monospace" font-size="12" font-weight="700" fill="#6EE7B7" text-anchor="middle">03</text>
+      <circle cx="58" cy="12" r="2" fill="#10B981" class="accent"/>
+      <text x="68" y="17" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" letter-spacing="3">ML  ·  PIPELINE</text>
+    </g>
+
+    <text x="24" y="92" font-family="ui-monospace,monospace" font-size="22" font-weight="800" fill="#F1F5F9" letter-spacing="0.5">ATELIER</text>
+    <line x1="24" y1="104" x2="84" y2="104" stroke="#10B981" stroke-width="2.5"/>
+
+    <g font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8">
+      <text x="24" y="132">Plain-English property → grounded prices.</text>
+      <text x="24" y="150">LLM extracts features, Random Forest predicts</text>
+      <text x="24" y="168">(R² 0.90), second LLM grounds the result.</text>
+    </g>
+
+    <g transform="translate(24, 192)">
+      <rect width="62" height="22" rx="11" fill="#022C22" stroke="#10B981" stroke-width="0.6"/>
+      <text x="31" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">PYTHON</text>
+      <rect x="70" width="92" height="22" rx="11" fill="#022C22" stroke="#10B981" stroke-width="0.6"/>
+      <text x="116" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">SCIKIT-LEARN</text>
+      <rect x="170" width="58" height="22" rx="11" fill="#022C22" stroke="#10B981" stroke-width="0.6"/>
+      <text x="199" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">OPENAI</text>
+      <rect x="236" width="68" height="22" rx="11" fill="#022C22" stroke="#10B981" stroke-width="0.6"/>
+      <text x="270" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">FASTAPI</text>
+    </g>
+
+    <!-- Illustration: regression curve with R² -->
+    <g transform="translate(420, 80)">
+      <text x="60" y="-2" font-family="ui-monospace,monospace" font-size="9" fill="#10B981" text-anchor="middle" letter-spacing="3" opacity="0.75">R² = 0.90</text>
+      <line x1="0" y1="80" x2="120" y2="80" stroke="#1E293B" stroke-width="0.7"/>
+      <line x1="0" y1="20" x2="0" y2="80" stroke="#1E293B" stroke-width="0.7"/>
+      <circle cx="10" cy="72" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="22" cy="64" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="34" cy="58" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="48" cy="50" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="60" cy="42" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="74" cy="36" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="88" cy="28" r="2" fill="#10B981" opacity="0.7"/>
+      <circle cx="102" cy="22" r="2" fill="#10B981" opacity="0.7"/>
+      <line x1="6" y1="76" x2="108" y2="18" stroke="#10B981" stroke-width="1.5" opacity="0.9"/>
+      <circle cx="108" cy="18" r="3.5" fill="#10B981" class="accent"/>
+      <text x="0"   y="94" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">FEATURES</text>
+      <text x="120" y="94" font-family="ui-monospace,monospace" font-size="7" fill="#475569" text-anchor="end" letter-spacing="1">PRICE</text>
+    </g>
+  </g>
+
+  <!-- ============ CARD 4: SUPPORT TRIAGE ============ -->
+  <g transform="translate(660, 410)" color="#FB923C">
+    <rect width="580" height="240" rx="14" fill="url(#cardFill)" stroke="url(#strokeOrange)" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#rail)"/>
+    <text x="556" y="92" font-family="ui-monospace,monospace" font-size="100" font-weight="800" fill="#FB923C" opacity="0.05" text-anchor="end" letter-spacing="-4">04</text>
+
+    <g transform="translate(24, 26)">
+      <rect width="44" height="24" rx="5" fill="#1A0F08" stroke="#FB923C" stroke-width="0.8"/>
+      <text x="22" y="17" font-family="ui-monospace,monospace" font-size="12" font-weight="700" fill="#FED7AA" text-anchor="middle">04</text>
+      <circle cx="58" cy="12" r="2" fill="#FB923C" class="accent"/>
+      <text x="68" y="17" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" letter-spacing="3">RAG  ·  BENCHMARK</text>
+    </g>
+
+    <text x="24" y="92" font-family="ui-monospace,monospace" font-size="22" font-weight="800" fill="#F1F5F9" letter-spacing="0.5">SUPPORT TRIAGE COCKPIT</text>
+    <line x1="24" y1="104" x2="84" y2="104" stroke="#FB923C" stroke-width="2.5"/>
+
+    <g font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8">
+      <text x="24" y="132">RAG vs plain LLM. Local LogReg vs zero-shot.</text>
+      <text x="24" y="150">20K tickets. Recommends what to ship at</text>
+      <text x="24" y="168">10K/hour by accuracy, latency, and cost.</text>
+    </g>
+
+    <g transform="translate(24, 192)">
+      <rect width="62" height="22" rx="11" fill="#1A0F08" stroke="#FB923C" stroke-width="0.6"/>
+      <text x="31" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#FED7AA" text-anchor="middle" letter-spacing="1">PYTHON</text>
+      <rect x="70" width="62" height="22" rx="11" fill="#1A0F08" stroke="#FB923C" stroke-width="0.6"/>
+      <text x="101" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#FED7AA" text-anchor="middle" letter-spacing="1">CHROMA</text>
+      <rect x="140" width="92" height="22" rx="11" fill="#1A0F08" stroke="#FB923C" stroke-width="0.6"/>
+      <text x="186" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#FED7AA" text-anchor="middle" letter-spacing="1">SCIKIT-LEARN</text>
+      <rect x="240" width="68" height="22" rx="11" fill="#1A0F08" stroke="#FB923C" stroke-width="0.6"/>
+      <text x="274" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#FED7AA" text-anchor="middle" letter-spacing="1">FASTAPI</text>
+    </g>
+
+    <!-- Illustration: A/B comparison gauge -->
+    <g transform="translate(420, 80)">
+      <text x="60" y="-2" font-family="ui-monospace,monospace" font-size="9" fill="#FB923C" text-anchor="middle" letter-spacing="3" opacity="0.75">A vs B  ·  10K/HR</text>
+      <path d="M 10 80 A 50 50 0 0 1 110 80" stroke="#1E293B" stroke-width="2" fill="none"/>
+      <path d="M 10 80 A 50 50 0 0 1 86 38" stroke="#FB923C" stroke-width="2.5" fill="none"/>
+      <line x1="60" y1="80" x2="86" y2="38" stroke="#FB923C" stroke-width="2" class="accent"/>
+      <circle cx="60" cy="80" r="3" fill="#FB923C"/>
+      <text x="14"  y="98" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">SLOW</text>
+      <text x="106" y="98" font-family="ui-monospace,monospace" font-size="7" fill="#FB923C" text-anchor="end" letter-spacing="1">FAST</text>
+    </g>
+  </g>
+
+  <!-- ============ CARD 5: DEBUGMASTER ============ -->
+  <g transform="translate(60, 680)" color="#F472B6">
+    <rect width="580" height="240" rx="14" fill="url(#cardFill)" stroke="url(#strokePink)" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#rail)"/>
+    <text x="556" y="92" font-family="ui-monospace,monospace" font-size="100" font-weight="800" fill="#F472B6" opacity="0.05" text-anchor="end" letter-spacing="-4">05</text>
+
+    <g transform="translate(24, 26)">
+      <rect width="44" height="24" rx="5" fill="#1A0510" stroke="#F472B6" stroke-width="0.8"/>
+      <text x="22" y="17" font-family="ui-monospace,monospace" font-size="12" font-weight="700" fill="#F9A8D4" text-anchor="middle">05</text>
+      <circle cx="58" cy="12" r="2" fill="#F472B6" class="accent"/>
+      <text x="68" y="17" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" letter-spacing="3">MOBILE  ·  ANDROID</text>
+    </g>
+
+    <text x="24" y="92" font-family="ui-monospace,monospace" font-size="22" font-weight="800" fill="#F1F5F9" letter-spacing="0.5">DEBUGMASTER</text>
+    <line x1="24" y1="104" x2="84" y2="104" stroke="#F472B6" stroke-width="2.5"/>
+
+    <g font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8">
+      <text x="24" y="132">Java + Firebase Android app. Learning paths,</text>
+      <text x="24" y="150">AI mentor, XP/streaks, leaderboards, multi-</text>
+      <text x="24" y="168">player debug battles. MVVM + Hilt + Room.</text>
+    </g>
+
+    <g transform="translate(24, 192)">
+      <rect width="48" height="22" rx="11" fill="#1A0510" stroke="#F472B6" stroke-width="0.6"/>
+      <text x="24" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">JAVA</text>
+      <rect x="56" width="68" height="22" rx="11" fill="#1A0510" stroke="#F472B6" stroke-width="0.6"/>
+      <text x="90" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">ANDROID</text>
+      <rect x="132" width="78" height="22" rx="11" fill="#1A0510" stroke="#F472B6" stroke-width="0.6"/>
+      <text x="171" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">FIREBASE</text>
+      <rect x="218" width="48" height="22" rx="11" fill="#1A0510" stroke="#F472B6" stroke-width="0.6"/>
+      <text x="242" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">ROOM</text>
+    </g>
+
+    <!-- Illustration: bug → fix arrow -->
+    <g transform="translate(420, 76)">
+      <text x="60" y="-2" font-family="ui-monospace,monospace" font-size="9" fill="#F472B6" text-anchor="middle" letter-spacing="3" opacity="0.75">DEBUG  ·  BATTLE</text>
+      <rect x="0" y="20" width="50" height="50" rx="8" fill="#1A0510" stroke="#F472B6" stroke-width="1"/>
+      <g transform="translate(12, 32)" stroke="#F472B6" stroke-width="1.4" fill="none">
+        <circle cx="12" cy="14" r="9"/>
+        <line x1="3" y1="6" x2="-2" y2="2"/>
+        <line x1="21" y1="6" x2="26" y2="2"/>
+        <line x1="3" y1="22" x2="-2" y2="26"/>
+        <line x1="21" y1="22" x2="26" y2="26"/>
+      </g>
+      <path d="M 56 45 L 76 45" stroke="#F472B6" stroke-width="1.5" fill="none" marker-end="url(#arrowPink)" class="flowline"/>
+      <rect x="80" y="20" width="50" height="50" rx="8" fill="#1A0510" stroke="#F472B6" stroke-width="1"/>
+      <path d="M 92 45 L 102 55 L 122 30" stroke="#F472B6" stroke-width="2.5" fill="none"/>
+      <text x="0"   y="86" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">FOUND</text>
+      <text x="130" y="86" font-family="ui-monospace,monospace" font-size="7" fill="#F472B6" text-anchor="end" letter-spacing="1">FIXED</text>
+    </g>
+  </g>
+
+  <!-- ============ CARD 6: BIOMEDICAL NER ============ -->
+  <g transform="translate(660, 680)" color="#38BDF8">
+    <rect width="580" height="240" rx="14" fill="url(#cardFill)" stroke="url(#strokeBlue)" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#rail)"/>
+    <text x="556" y="92" font-family="ui-monospace,monospace" font-size="100" font-weight="800" fill="#38BDF8" opacity="0.05" text-anchor="end" letter-spacing="-4">06</text>
+
+    <g transform="translate(24, 26)">
+      <rect width="44" height="24" rx="5" fill="#082F49" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="22" y="17" font-family="ui-monospace,monospace" font-size="12" font-weight="700" fill="#7DD3FC" text-anchor="middle">06</text>
+      <circle cx="58" cy="12" r="2" fill="#38BDF8" class="accent"/>
+      <text x="68" y="17" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" letter-spacing="3">DEEP LEARNING  ·  NLP</text>
+    </g>
+
+    <text x="24" y="92" font-family="ui-monospace,monospace" font-size="22" font-weight="800" fill="#F1F5F9" letter-spacing="0.5">BIOMEDICAL NER</text>
+    <line x1="24" y1="104" x2="84" y2="104" stroke="#38BDF8" stroke-width="2.5"/>
+
+    <g font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8">
+      <text x="24" y="132">From-scratch NER on BC5CDR. BiLSTM-CRF +</text>
+      <text x="24" y="150">Viterbi, char-CNN, attention, GloVe. Ablation</text>
+      <text x="24" y="168">studies. Live Gradio demo. 87% F1.</text>
+    </g>
+
+    <g transform="translate(24, 192)">
+      <rect width="68" height="22" rx="11" fill="#082F49" stroke="#38BDF8" stroke-width="0.6"/>
+      <text x="34" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#7DD3FC" text-anchor="middle" letter-spacing="1">PYTORCH</text>
+      <rect x="76" width="40" height="22" rx="11" fill="#082F49" stroke="#38BDF8" stroke-width="0.6"/>
+      <text x="96" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#7DD3FC" text-anchor="middle" letter-spacing="1">NLP</text>
+      <rect x="124" width="48" height="22" rx="11" fill="#082F49" stroke="#38BDF8" stroke-width="0.6"/>
+      <text x="148" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#7DD3FC" text-anchor="middle" letter-spacing="1">CRF</text>
+      <rect x="180" width="62" height="22" rx="11" fill="#082F49" stroke="#38BDF8" stroke-width="0.6"/>
+      <text x="211" y="15" font-family="ui-monospace,monospace" font-size="9" fill="#7DD3FC" text-anchor="middle" letter-spacing="1">GRADIO</text>
+    </g>
+
+    <!-- Illustration: tagged text spans -->
+    <g transform="translate(420, 80)">
+      <text x="60" y="-2" font-family="ui-monospace,monospace" font-size="9" fill="#38BDF8" text-anchor="middle" letter-spacing="3" opacity="0.75">87% F1  ·  TAGGED</text>
+      <g font-family="ui-monospace,monospace" font-size="10">
+        <text x="0" y="20" fill="#94A3B8">A patient with</text>
+        <rect x="0" y="28" width="64" height="20" rx="3" fill="#38BDF8" opacity="0.25"/>
+        <rect x="0" y="28" width="64" height="20" rx="3" fill="none" stroke="#38BDF8" stroke-width="1"/>
+        <text x="32" y="42" fill="#38BDF8" text-anchor="middle" font-weight="700">DIABETES</text>
+        <text x="68" y="42" fill="#94A3B8">on</text>
+        <rect x="0" y="54" width="78" height="20" rx="3" fill="#38BDF8" opacity="0.6"/>
+        <text x="39" y="68" fill="#082F49" text-anchor="middle" font-weight="700">METFORMIN</text>
+        <text x="82" y="68" fill="#94A3B8">— ✓</text>
+      </g>
+      <text x="0"   y="92" font-family="ui-monospace,monospace" font-size="7" fill="#475569" letter-spacing="1">DISEASE</text>
+      <text x="120" y="92" font-family="ui-monospace,monospace" font-size="7" fill="#38BDF8" text-anchor="end" letter-spacing="1">DRUG</text>
+    </g>
+  </g>
 </svg>
