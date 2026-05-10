@@ -1,128 +1,215 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="AtlasBrief — request flow architecture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 540" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="AtlasBrief — request flow architecture">
   <defs>
-    <linearGradient id="bgArch" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0B1024"/>
-      <stop offset="100%" stop-color="#02030A"/>
+    <linearGradient id="bgArch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1E1B4B"/>
+      <stop offset="50%"  stop-color="#0F1A3D"/>
+      <stop offset="100%" stop-color="#080A24"/>
     </linearGradient>
-    <linearGradient id="flow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.8"/>
+    <radialGradient id="archGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="archTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#67E8F9"/>
+      <stop offset="50%"  stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F472B6"/>
     </linearGradient>
-    <linearGradient id="flowBack" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#22C55E" stop-opacity="0.8"/>
+
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F1F4F"/>
     </linearGradient>
+    <linearGradient id="extGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D1B69"/>
+      <stop offset="100%" stop-color="#1A0F3D"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E4F5F"/>
+      <stop offset="100%" stop-color="#082F3A"/>
+    </linearGradient>
+    <linearGradient id="ragGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+    <linearGradient id="styleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D1F08"/>
+      <stop offset="100%" stop-color="#1A0F08"/>
+    </linearGradient>
+    <linearGradient id="liveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D0F2D"/>
+      <stop offset="100%" stop-color="#1A0510"/>
+    </linearGradient>
+    <linearGradient id="synGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D1B69"/>
+      <stop offset="100%" stop-color="#1A0F3D"/>
+    </linearGradient>
+    <linearGradient id="decGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
     <filter id="ng" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="titleGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748B"/>
+
+    <marker id="arrowU" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A78BFA"/>
     </marker>
     <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#22C55E"/>
+    </marker>
+    <marker id="arrowO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FB923C"/>
+    </marker>
+    <marker id="arrowP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F472B6"/>
+    </marker>
+    <marker id="arrowC" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22D3EE"/>
     </marker>
   </defs>
 
   <style>
     @keyframes flowPulse { 0% { stroke-dashoffset: 20; } 100% { stroke-dashoffset: 0; } }
-    @keyframes nodePulse { 0%,100% { opacity: 0.9; } 50% { opacity: 1; } }
+    @keyframes nodePulse { 0%,100% { opacity: 0.7; } 50% { opacity: 1; } }
     @keyframes labelFade { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes shimmer { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
     .flow-line { stroke-dasharray: 4 4; animation: flowPulse 1.5s linear infinite; }
     .node { animation: nodePulse 4s ease-in-out infinite; }
-    .label { animation: labelFade 1s ease-out forwards; opacity: 0; }
-    .l1 { animation-delay: 0.2s; }
-    .l2 { animation-delay: 0.4s; }
-    .l3 { animation-delay: 0.6s; }
-    .l4 { animation-delay: 0.8s; }
+    .label { animation: labelFade 0.8s ease-out forwards; opacity: 0; }
+    .shimmer { animation: shimmer 3s ease-in-out infinite; }
+    .l1 { animation-delay: 0.1s; }
+    .l2 { animation-delay: 0.25s; }
+    .l3 { animation-delay: 0.4s; }
+    .l4 { animation-delay: 0.55s; }
+    .l5 { animation-delay: 0.7s; }
+    .l6 { animation-delay: 0.85s; }
   </style>
 
-  <rect width="1280" height="480" fill="url(#bgArch)"/>
+  <rect width="1280" height="540" fill="url(#bgArch)"/>
+  <ellipse cx="640" cy="270" rx="700" ry="240" fill="url(#archGlow)"/>
 
-  <g opacity="0.06" stroke="#A78BFA" stroke-width="0.5">
-    <line x1="0" y1="120" x2="1280" y2="120"/>
-    <line x1="0" y1="240" x2="1280" y2="240"/>
-    <line x1="0" y1="360" x2="1280" y2="360"/>
+  <g opacity="0.05" stroke="#A78BFA" stroke-width="0.5">
+    <line x1="0" y1="135" x2="1280" y2="135"/>
+    <line x1="0" y1="270" x2="1280" y2="270"/>
+    <line x1="0" y1="405" x2="1280" y2="405"/>
   </g>
 
+  <!-- ============ HEADER ============ -->
   <text x="60" y="60" font-family="ui-monospace, monospace" font-size="11" fill="#475569" letter-spacing="6">ATLASBRIEF  /  REQUEST FLOW</text>
   <line x1="60" y1="78" x2="380" y2="78" stroke="#1E293B" stroke-width="0.7"/>
-  <text x="60" y="100" font-family="ui-monospace, monospace" font-size="22" font-weight="700" fill="#E2E8F0" letter-spacing="2">How a vague trip idea becomes a defended itinerary</text>
+  <text x="60" y="108" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="url(#archTitle)" letter-spacing="1.5" filter="url(#titleGlow)">How a vague trip idea becomes a defended itinerary</text>
+  <text x="60" y="132" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" letter-spacing="3">— two-model routing, three live tools, one traceable agent —</text>
 
-  <g class="node label l1">
-    <rect x="60" y="200" width="180" height="80" rx="10" fill="#0F172A" stroke="#3B82F6" stroke-width="1"/>
-    <text x="150" y="232" font-family="ui-monospace, monospace" font-size="11" fill="#7DD3FC" text-anchor="middle" letter-spacing="3">USER QUERY</text>
-    <text x="150" y="258" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle">"weekend in budget</text>
-    <text x="150" y="272" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle">paris, foodie"</text>
+  <text x="1220" y="60" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="end" letter-spacing="3">AGENT  ·  RAG  ·  TWO-MODEL ROUTING</text>
+  <line x1="1000" y1="78" x2="1220" y2="78" stroke="#1E293B" stroke-width="0.7"/>
+  <text x="1220" y="108" font-family="ui-monospace, monospace" font-size="11" fill="#67E8F9" text-anchor="end" letter-spacing="3" font-weight="700" class="shimmer">~60% TOKEN SAVINGS</text>
+
+  <!-- ============ NODES (re-tuned for 540 height) ============ -->
+
+  <!-- USER QUERY -->
+  <g class="label l1">
+    <rect x="60" y="240" width="180" height="84" rx="12" fill="url(#userGrad)" stroke="#60A5FA" stroke-width="1.2"/>
+    <rect x="60" y="240" width="180" height="3" rx="1.5" fill="#60A5FA"/>
+    <text x="150" y="270" font-family="ui-monospace, monospace" font-size="11" fill="#7DD3FC" text-anchor="middle" letter-spacing="3" font-weight="700">USER QUERY</text>
+    <text x="150" y="295" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle">"weekend in budget</text>
+    <text x="150" y="310" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle">paris, foodie"</text>
   </g>
 
-  <line x1="240" y1="240" x2="318" y2="240" stroke="#64748B" stroke-width="1" marker-end="url(#arrow)" class="flow-line"/>
+  <line x1="240" y1="282" x2="318" y2="282" stroke="#A78BFA" stroke-width="1.2" marker-end="url(#arrowU)" class="flow-line"/>
 
-  <g class="node label l2">
-    <rect x="320" y="190" width="180" height="100" rx="10" fill="#1E1B4B" stroke="#A78BFA" stroke-width="1"/>
-    <text x="410" y="218" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 1</text>
-    <text x="410" y="240" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">EXTRACTOR LLM</text>
-    <text x="410" y="262" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">cheap · fast · structured</text>
-    <text x="410" y="278" font-family="ui-monospace, monospace" font-size="9" fill="#A78BFA" text-anchor="middle">→ Pydantic JSON</text>
+  <!-- EXTRACTOR LLM -->
+  <g class="label l2">
+    <rect x="320" y="225" width="180" height="114" rx="12" fill="url(#extGrad)" stroke="#A78BFA" stroke-width="1.2"/>
+    <rect x="320" y="225" width="180" height="3" rx="1.5" fill="#A78BFA"/>
+    <text x="410" y="252" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 1</text>
+    <text x="410" y="276" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">EXTRACTOR LLM</text>
+    <line x1="370" y1="286" x2="450" y2="286" stroke="#A78BFA" stroke-width="0.6" opacity="0.5"/>
+    <text x="410" y="304" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">cheap · fast · structured</text>
+    <text x="410" y="322" font-family="ui-monospace, monospace" font-size="9" fill="#A78BFA" text-anchor="middle" letter-spacing="2">→ Pydantic JSON</text>
   </g>
 
-  <line x1="500" y1="240" x2="578" y2="240" stroke="#64748B" stroke-width="1" marker-end="url(#arrow)" class="flow-line"/>
+  <line x1="500" y1="282" x2="578" y2="282" stroke="#A78BFA" stroke-width="1.2" marker-end="url(#arrowU)" class="flow-line"/>
 
-  <g class="node label l3">
-    <rect x="580" y="170" width="200" height="140" rx="10" fill="#0F172A" stroke="#22D3EE" stroke-width="1.5"/>
-    <text x="680" y="198" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 2</text>
-    <text x="680" y="222" font-family="ui-monospace, monospace" font-size="12" font-weight="700" fill="#CFFAFE" text-anchor="middle" letter-spacing="2">LANGGRAPH AGENT</text>
-    <line x1="610" y1="232" x2="750" y2="232" stroke="#1E293B" stroke-width="0.7"/>
-    <text x="680" y="252" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">picks tools, drives state</text>
-    <text x="680" y="270" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">handles retries, logs cost</text>
-    <circle cx="610" cy="290" r="3" fill="#22D3EE" class="node"/>
-    <text x="680" y="294" font-family="ui-monospace, monospace" font-size="9" fill="#67E8F9" text-anchor="middle">orchestrator</text>
+  <!-- LANGGRAPH AGENT (centerpiece) -->
+  <g class="label l3">
+    <rect x="580" y="200" width="200" height="164" rx="12" fill="url(#agentGrad)" stroke="#22D3EE" stroke-width="1.6"/>
+    <rect x="580" y="200" width="200" height="4" rx="2" fill="#22D3EE"/>
+    <text x="680" y="232" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 2  ·  ORCHESTRATOR</text>
+    <text x="680" y="262" font-family="ui-monospace, monospace" font-size="13" font-weight="800" fill="#CFFAFE" text-anchor="middle" letter-spacing="2">LANGGRAPH AGENT</text>
+    <line x1="610" y1="276" x2="750" y2="276" stroke="#22D3EE" stroke-width="0.7" opacity="0.5"/>
+    <text x="680" y="298" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">picks tools, drives state</text>
+    <text x="680" y="316" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">handles retries, logs cost</text>
+    <circle cx="610" cy="338" r="3" fill="#22D3EE" class="node"/>
+    <text x="680" y="342" font-family="ui-monospace, monospace" font-size="9" fill="#67E8F9" text-anchor="middle" letter-spacing="2">⬤ stateful</text>
   </g>
 
-  <path d="M 780 220 Q 820 220 850 170" stroke="#10B981" stroke-width="1" fill="none" marker-end="url(#arrowG)" class="flow-line" opacity="0.7"/>
-  <line x1="780" y1="240" x2="850" y2="240" stroke="#FB923C" stroke-width="1" marker-end="url(#arrow)" class="flow-line" opacity="0.7"/>
-  <path d="M 780 260 Q 820 260 850 310" stroke="#F472B6" stroke-width="1" fill="none" marker-end="url(#arrow)" class="flow-line" opacity="0.7"/>
+  <!-- Connectors to tools (more colorful) -->
+  <path d="M 780 252 Q 820 252 850 200" stroke="#22C55E" stroke-width="1.2" fill="none" marker-end="url(#arrowG)" class="flow-line" opacity="0.85"/>
+  <line x1="780" y1="282" x2="850" y2="282" stroke="#FB923C" stroke-width="1.2" marker-end="url(#arrowO)" class="flow-line" opacity="0.85"/>
+  <path d="M 780 312 Q 820 312 850 364" stroke="#F472B6" stroke-width="1.2" fill="none" marker-end="url(#arrowP)" class="flow-line" opacity="0.85"/>
 
-  <g class="node label l4">
-    <rect x="850" y="130" width="160" height="68" rx="10" fill="#022C22" stroke="#10B981" stroke-width="1"/>
-    <text x="930" y="156" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#A7F3D0" text-anchor="middle" letter-spacing="2">RAG RETRIEVER</text>
-    <text x="930" y="174" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">Postgres + pgvector</text>
-    <text x="930" y="188" font-family="ui-monospace, monospace" font-size="9" fill="#6EE7B7" text-anchor="middle">city / area / venue docs</text>
-  </g>
-
-  <g class="node label l4">
-    <rect x="850" y="206" width="160" height="68" rx="10" fill="#1A0F08" stroke="#FB923C" stroke-width="1"/>
-    <text x="930" y="232" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#FED7AA" text-anchor="middle" letter-spacing="2">STYLE CLASSIFIER</text>
-    <text x="930" y="250" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">scikit-learn pipeline</text>
-    <text x="930" y="264" font-family="ui-monospace, monospace" font-size="9" fill="#FDBA74" text-anchor="middle">GridSearchCV-tuned</text>
-  </g>
-
-  <g class="node label l4">
-    <rect x="850" y="282" width="160" height="68" rx="10" fill="#1A0510" stroke="#F472B6" stroke-width="1"/>
-    <text x="930" y="308" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#FCE7F3" text-anchor="middle" letter-spacing="2">LIVE CONDITIONS</text>
-    <text x="930" y="326" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">weather · pricing · seats</text>
-    <text x="930" y="340" font-family="ui-monospace, monospace" font-size="9" fill="#F9A8D4" text-anchor="middle">async + retry/backoff</text>
-  </g>
-
-  <path d="M 1010 164 Q 1080 164 1100 230" stroke="#A78BFA" stroke-width="1" fill="none" marker-end="url(#arrow)" class="flow-line" opacity="0.6"/>
-  <line x1="1010" y1="240" x2="1100" y2="240" stroke="#A78BFA" stroke-width="1" marker-end="url(#arrow)" class="flow-line" opacity="0.6"/>
-  <path d="M 1010 316 Q 1080 316 1100 250" stroke="#A78BFA" stroke-width="1" fill="none" marker-end="url(#arrow)" class="flow-line" opacity="0.6"/>
-
-  <g class="node label l4">
-    <rect x="1100" y="190" width="160" height="100" rx="10" fill="#1E1B4B" stroke="#A78BFA" stroke-width="1.5"/>
-    <text x="1180" y="216" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 3</text>
-    <text x="1180" y="238" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">SYNTHESIZER</text>
-    <text x="1180" y="258" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">strong model · slow ok</text>
-    <text x="1180" y="276" font-family="ui-monospace, monospace" font-size="9" fill="#C4B5FD" text-anchor="middle">writes the brief</text>
-  </g>
-
+  <!-- TOOL 1: RAG RETRIEVER -->
   <g class="label l4">
-    <text x="1180" y="335" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="2">↓</text>
-    <rect x="1095" y="345" width="170" height="50" rx="10" fill="#022C22" stroke="#22C55E" stroke-width="1"/>
-    <text x="1180" y="368" font-family="ui-monospace, monospace" font-size="11" font-weight="700" fill="#BBF7D0" text-anchor="middle" letter-spacing="2">DECISION TENSION</text>
-    <text x="1180" y="382" font-family="ui-monospace, monospace" font-size="9" fill="#86EFAC" text-anchor="middle">→ rendered to React UI</text>
+    <rect x="850" y="160" width="160" height="76" rx="12" fill="url(#ragGrad)" stroke="#22C55E" stroke-width="1.2"/>
+    <rect x="850" y="160" width="160" height="3" rx="1.5" fill="#22C55E"/>
+    <text x="930" y="188" font-family="ui-monospace, monospace" font-size="10" font-weight="800" fill="#A7F3D0" text-anchor="middle" letter-spacing="2">RAG RETRIEVER</text>
+    <text x="930" y="207" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">Postgres + pgvector</text>
+    <text x="930" y="222" font-family="ui-monospace, monospace" font-size="9" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">city · area · venue</text>
   </g>
 
-  <text x="60" y="450" font-family="ui-monospace, monospace" font-size="10" fill="#475569" letter-spacing="3">→ TWO-MODEL ROUTING SAVES ~60% TOKENS PER REQUEST</text>
-  <text x="1220" y="450" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="end" letter-spacing="3">PER-REQUEST COST LOGGED</text>
+  <!-- TOOL 2: STYLE CLASSIFIER -->
+  <g class="label l5">
+    <rect x="850" y="244" width="160" height="76" rx="12" fill="url(#styleGrad)" stroke="#FB923C" stroke-width="1.2"/>
+    <rect x="850" y="244" width="160" height="3" rx="1.5" fill="#FB923C"/>
+    <text x="930" y="272" font-family="ui-monospace, monospace" font-size="10" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="2">STYLE CLASSIFIER</text>
+    <text x="930" y="291" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">scikit-learn pipeline</text>
+    <text x="930" y="306" font-family="ui-monospace, monospace" font-size="9" fill="#FDBA74" text-anchor="middle" letter-spacing="1">GridSearchCV-tuned</text>
+  </g>
+
+  <!-- TOOL 3: LIVE CONDITIONS -->
+  <g class="label l6">
+    <rect x="850" y="328" width="160" height="76" rx="12" fill="url(#liveGrad)" stroke="#F472B6" stroke-width="1.2"/>
+    <rect x="850" y="328" width="160" height="3" rx="1.5" fill="#F472B6"/>
+    <text x="930" y="356" font-family="ui-monospace, monospace" font-size="10" font-weight="800" fill="#FCE7F3" text-anchor="middle" letter-spacing="2">LIVE CONDITIONS</text>
+    <text x="930" y="375" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">weather · pricing · seats</text>
+    <text x="930" y="390" font-family="ui-monospace, monospace" font-size="9" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">async + retry/backoff</text>
+  </g>
+
+  <!-- Tools → Synthesizer (purple connectors) -->
+  <path d="M 1010 198 Q 1080 198 1100 252" stroke="#A78BFA" stroke-width="1.2" fill="none" marker-end="url(#arrowU)" class="flow-line" opacity="0.7"/>
+  <line x1="1010" y1="282" x2="1100" y2="282" stroke="#A78BFA" stroke-width="1.2" marker-end="url(#arrowU)" class="flow-line" opacity="0.7"/>
+  <path d="M 1010 366 Q 1080 366 1100 312" stroke="#A78BFA" stroke-width="1.2" fill="none" marker-end="url(#arrowU)" class="flow-line" opacity="0.7"/>
+
+  <!-- SYNTHESIZER -->
+  <g class="label l6">
+    <rect x="1100" y="225" width="160" height="114" rx="12" fill="url(#synGrad)" stroke="#A78BFA" stroke-width="1.4"/>
+    <rect x="1100" y="225" width="160" height="3" rx="1.5" fill="#A78BFA"/>
+    <text x="1180" y="252" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 3</text>
+    <text x="1180" y="276" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">SYNTHESIZER</text>
+    <line x1="1130" y1="286" x2="1230" y2="286" stroke="#A78BFA" stroke-width="0.6" opacity="0.5"/>
+    <text x="1180" y="304" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">strong model · slow ok</text>
+    <text x="1180" y="322" font-family="ui-monospace, monospace" font-size="9" fill="#C4B5FD" text-anchor="middle" letter-spacing="2">→ writes the brief</text>
+  </g>
+
+  <!-- DECISION TENSION (output) -->
+  <g class="label l6">
+    <line x1="1180" y1="350" x2="1180" y2="368" stroke="#22C55E" stroke-width="1.5" marker-end="url(#arrowG)" class="flow-line"/>
+    <rect x="1095" y="375" width="170" height="60" rx="12" fill="url(#decGrad)" stroke="#22C55E" stroke-width="1.4"/>
+    <rect x="1095" y="375" width="170" height="3" rx="1.5" fill="#22C55E"/>
+    <text x="1180" y="402" font-family="ui-monospace, monospace" font-size="11" font-weight="800" fill="#BBF7D0" text-anchor="middle" letter-spacing="2">DECISION TENSION</text>
+    <text x="1180" y="420" font-family="ui-monospace, monospace" font-size="9" fill="#86EFAC" text-anchor="middle" letter-spacing="2">→ rendered to React UI</text>
+  </g>
+
+  <!-- ============ FOOTNOTES ============ -->
+  <line x1="60" y1="475" x2="1220" y2="475" stroke="#1E293B" stroke-width="0.6"/>
+  <text x="60" y="495" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="3" font-weight="700">▸ TWO-MODEL ROUTING SAVES ~60% TOKENS PER REQUEST</text>
+  <text x="60" y="514" font-family="ui-monospace, monospace" font-size="9" fill="#475569" letter-spacing="2">Pydantic at every boundary · per-request token cost logged · agent decisions traceable</text>
+  <text x="1220" y="495" font-family="ui-monospace, monospace" font-size="10" fill="#86EFAC" text-anchor="end" letter-spacing="3" font-weight="700">▸ 100% TRACEABLE</text>
+  <text x="1220" y="514" font-family="ui-monospace, monospace" font-size="9" fill="#475569" text-anchor="end" letter-spacing="2">every tool call · every retry · every dollar</text>
 </svg>

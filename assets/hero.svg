@@ -1,31 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — cinematic profile hero">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 540" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — cinematic profile hero">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
-      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.4"/>
-      <stop offset="40%" stop-color="#0B1024"/>
-      <stop offset="100%" stop-color="#02030A"/>
+    <radialGradient id="bg" cx="50%" cy="40%" r="85%">
+      <stop offset="0%"   stop-color="#3B1E78"/>
+      <stop offset="35%"  stop-color="#1E1B4B"/>
+      <stop offset="70%"  stop-color="#0E1640"/>
+      <stop offset="100%" stop-color="#080A24"/>
     </radialGradient>
-    <linearGradient id="name" x1="0%" y1="0%" x2="100%" y2="50%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="35%" stop-color="#A78BFA"/>
-      <stop offset="70%" stop-color="#F472B6"/>
-      <stop offset="100%" stop-color="#FB923C"/>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FBBF24" stop-opacity="0.45"/>
+      <stop offset="40%"  stop-color="#F472B6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0%" y1="0%" x2="100%" y2="40%">
+      <stop offset="0%"   stop-color="#22D3EE"/>
+      <stop offset="22%"  stop-color="#60A5FA"/>
+      <stop offset="44%"  stop-color="#A78BFA"/>
+      <stop offset="66%"  stop-color="#F472B6"/>
+      <stop offset="85%"  stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="tag" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#67E8F9"/>
+      <stop offset="50%"  stop-color="#C4B5FD"/>
+      <stop offset="100%" stop-color="#F9A8D4"/>
     </linearGradient>
     <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#FBBF24" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="aura" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="0%"   stop-color="#F472B6" stop-opacity="0.28"/>
+      <stop offset="50%"  stop-color="#A78BFA" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
     </radialGradient>
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
@@ -35,143 +53,209 @@
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes pulse { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
     @keyframes pulseFast { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
-    @keyframes drift { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    @keyframes drift { 0%,100% { opacity: 0.85; } 50% { opacity: 1; } }
     @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     @keyframes spinReverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
-    @keyframes sweepX { 0% { transform: translateX(-1280px); } 100% { transform: translateX(1280px); } }
-    @keyframes auraExpand { 0%,100% { transform: scale(1); opacity: 0.4; } 50% { transform: scale(1.15); opacity: 0.7; } }
+    @keyframes auraExpand { 0%,100% { opacity: 0.5; } 50% { opacity: 0.9; } }
 
-    .name { animation: rise 1.6s cubic-bezier(.16,.84,.3,1) forwards; opacity: 0; }
-    .underline { animation: fadeIn 1.2s ease-out 0.6s forwards; opacity: 0; transform-origin: center; }
-    .tag { animation: rise 1.4s cubic-bezier(.16,.84,.3,1) 0.7s forwards; opacity: 0; }
+    .name { animation: fadeIn 1.6s ease-out forwards; }
+    .underline { animation: fadeIn 1.2s ease-out 0.4s forwards; opacity: 0; }
+    .tag { animation: fadeIn 1.4s ease-out 0.7s forwards; opacity: 0; }
     .meta { animation: fadeIn 1.6s ease-out 1.1s forwards; opacity: 0; }
-    .status { animation: rise 1.4s cubic-bezier(.16,.84,.3,1) 1.4s forwards; opacity: 0; }
+    .stats { animation: fadeIn 1.4s ease-out 1.4s forwards; opacity: 0; }
+    .status { animation: fadeIn 1.4s ease-out 1.7s forwards; opacity: 0; }
 
     .star-a { animation: pulse 4s ease-in-out infinite; }
     .star-b { animation: pulse 3s ease-in-out infinite 0.7s; }
     .star-c { animation: pulse 5s ease-in-out infinite 1.4s; }
     .star-d { animation: pulseFast 2.5s ease-in-out infinite 0.3s; }
+    .star-e { animation: pulse 6s ease-in-out infinite 2s; }
 
-    .orbit-1 { transform-origin: 640px 220px; animation: spin 80s linear infinite; }
-    .orbit-2 { transform-origin: 640px 220px; animation: spinReverse 110s linear infinite; }
-    .orbit-3 { transform-origin: 640px 220px; animation: spin 140s linear infinite; }
+    .orbit-1 { transform-origin: 640px 250px; animation: spin 90s linear infinite; }
+    .orbit-2 { transform-origin: 640px 250px; animation: spinReverse 130s linear infinite; }
+    .orbit-3 { transform-origin: 640px 250px; animation: spin 170s linear infinite; }
 
-    .chip { animation: drift 5s ease-in-out infinite; }
-    .chip-b { animation: drift 5.5s ease-in-out infinite 1.2s; }
-    .chip-c { animation: drift 4.8s ease-in-out infinite 2.4s; }
-    .chip-d { animation: drift 5.2s ease-in-out infinite 0.8s; }
-    .chip-e { animation: drift 5s ease-in-out infinite 3s; }
-    .chip-f { animation: drift 4.6s ease-in-out infinite 1.8s; }
+    .chip-1 { animation: drift 5s ease-in-out infinite; }
+    .chip-2 { animation: drift 5.5s ease-in-out infinite 0.6s; }
+    .chip-3 { animation: drift 4.8s ease-in-out infinite 1.2s; }
+    .chip-4 { animation: drift 5.2s ease-in-out infinite 1.8s; }
+    .chip-5 { animation: drift 5s ease-in-out infinite 2.4s; }
+    .chip-6 { animation: drift 4.6s ease-in-out infinite 3s; }
+    .chip-7 { animation: drift 5.3s ease-in-out infinite 0.3s; }
+    .chip-8 { animation: drift 4.9s ease-in-out infinite 2.1s; }
 
-    .sweep { animation: sweepX 7s ease-in-out infinite; }
-    .aura { transform-origin: 640px 220px; animation: auraExpand 4s ease-in-out infinite; }
+    .aura { transform-origin: 640px 260px; animation: auraExpand 4s ease-in-out infinite; }
     .live { animation: pulseFast 1.6s ease-in-out infinite; }
+    .sun-pulse { transform-origin: 640px 260px; animation: auraExpand 5s ease-in-out infinite; }
   </style>
 
-  <rect width="1280" height="440" fill="url(#bg)"/>
+  <!-- ============ BACKGROUND ============ -->
+  <rect width="1280" height="540" fill="url(#bg)"/>
 
+  <!-- Sun glow behind name -->
+  <circle class="sun-pulse" cx="640" cy="260" r="280" fill="url(#sun)"/>
+
+  <!-- Subtle grid -->
   <g opacity="0.05" stroke="#A78BFA" stroke-width="0.5">
-    <line x1="0" y1="110" x2="1280" y2="110"/>
-    <line x1="0" y1="220" x2="1280" y2="220"/>
-    <line x1="0" y1="330" x2="1280" y2="330"/>
-    <line x1="320" y1="0" x2="320" y2="440"/>
-    <line x1="640" y1="0" x2="640" y2="440"/>
-    <line x1="960" y1="0" x2="960" y2="440"/>
+    <line x1="0" y1="135" x2="1280" y2="135"/>
+    <line x1="0" y1="270" x2="1280" y2="270"/>
+    <line x1="0" y1="405" x2="1280" y2="405"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="960" y1="0" x2="960" y2="540"/>
   </g>
 
-  <ellipse class="aura" cx="640" cy="220" rx="400" ry="120" fill="url(#aura)"/>
+  <!-- Main aura -->
+  <ellipse class="aura" cx="640" cy="260" rx="450" ry="140" fill="url(#aura)"/>
 
-  <g class="sweep" opacity="0.12">
-    <rect x="0" y="0" width="220" height="440" fill="url(#sweep)"/>
+  <!-- Orbits (decorative) -->
+  <g class="orbit-1" opacity="0.22">
+    <ellipse cx="640" cy="260" rx="380" ry="130" fill="none" stroke="#22D3EE" stroke-width="0.7" stroke-dasharray="2 9"/>
+  </g>
+  <g class="orbit-2" opacity="0.18">
+    <ellipse cx="640" cy="260" rx="500" ry="180" fill="none" stroke="#A78BFA" stroke-width="0.7" stroke-dasharray="3 11"/>
+  </g>
+  <g class="orbit-3" opacity="0.14">
+    <ellipse cx="640" cy="260" rx="600" ry="220" fill="none" stroke="#F472B6" stroke-width="0.7" stroke-dasharray="4 13"/>
   </g>
 
-  <g class="orbit-1" opacity="0.18">
-    <ellipse cx="640" cy="220" rx="320" ry="115" fill="none" stroke="#38BDF8" stroke-width="0.7" stroke-dasharray="2 9"/>
-  </g>
-  <g class="orbit-2" opacity="0.14">
-    <ellipse cx="640" cy="220" rx="430" ry="160" fill="none" stroke="#A78BFA" stroke-width="0.7" stroke-dasharray="3 11"/>
-  </g>
-  <g class="orbit-3" opacity="0.10">
-    <ellipse cx="640" cy="220" rx="540" ry="200" fill="none" stroke="#F472B6" stroke-width="0.7" stroke-dasharray="4 13"/>
+  <!-- Stars / specks -->
+  <circle class="star-a" cx="180"  cy="80"  r="1.5" fill="#22D3EE"/>
+  <circle class="star-b" cx="1100" cy="60"  r="1.5" fill="#A78BFA"/>
+  <circle class="star-c" cx="100"  cy="460" r="1.5" fill="#F472B6"/>
+  <circle class="star-a" cx="1180" cy="450" r="1.5" fill="#FB923C"/>
+  <circle class="star-d" cx="220"  cy="220" r="1"   fill="#A78BFA"/>
+  <circle class="star-c" cx="1060" cy="220" r="1"   fill="#FBBF24"/>
+  <circle class="star-b" cx="380"  cy="100" r="1"   fill="#22D3EE"/>
+  <circle class="star-d" cx="900"  cy="450" r="1"   fill="#F472B6"/>
+  <circle class="star-a" cx="60"   cy="290" r="0.8" fill="#A78BFA"/>
+  <circle class="star-c" cx="1230" cy="290" r="0.8" fill="#FBBF24"/>
+  <circle class="star-e" cx="500"  cy="50"  r="0.8" fill="#A78BFA"/>
+  <circle class="star-e" cx="780"  cy="50"  r="0.8" fill="#22D3EE"/>
+  <circle class="star-d" cx="80"   cy="180" r="0.8" fill="#F472B6"/>
+  <circle class="star-b" cx="1200" cy="180" r="0.8" fill="#FBBF24"/>
+
+  <!-- Cinematic frame brackets -->
+  <g stroke="#475569" stroke-width="0.8" fill="none" opacity="0.7">
+    <path d="M 30 30 L 30 70 L 70 70"/>
+    <path d="M 1250 30 L 1250 70 L 1210 70"/>
+    <path d="M 30 510 L 30 470 L 70 470"/>
+    <path d="M 1250 510 L 1250 470 L 1210 470"/>
   </g>
 
-  <circle class="star-a" cx="180" cy="60" r="1.5" fill="#38BDF8"/>
-  <circle class="star-b" cx="1120" cy="50" r="1.5" fill="#A78BFA"/>
-  <circle class="star-c" cx="100" cy="380" r="1.5" fill="#F472B6"/>
-  <circle class="star-a" cx="1180" cy="370" r="1.5" fill="#38BDF8"/>
-  <circle class="star-d" cx="220" cy="180" r="1" fill="#A78BFA"/>
-  <circle class="star-c" cx="1060" cy="200" r="1" fill="#F472B6"/>
-  <circle class="star-b" cx="380" cy="80" r="1" fill="#A78BFA"/>
-  <circle class="star-d" cx="900" cy="370" r="1" fill="#38BDF8"/>
-  <circle class="star-a" cx="60" cy="240" r="0.8" fill="#A78BFA"/>
-  <circle class="star-c" cx="1230" cy="250" r="0.8" fill="#F472B6"/>
-
+  <!-- ============ HEADER STRIP ============ -->
   <g class="meta">
-    <text x="640" y="55" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="14">P R O F I L E   ·   2 0 2 6</text>
-    <line x1="430" y1="80" x2="555" y2="80" stroke="#334155" stroke-width="0.5"/>
-    <line x1="725" y1="80" x2="850" y2="80" stroke="#334155" stroke-width="0.5"/>
+    <text x="640" y="60" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle" letter-spacing="14">N O W   S H O W I N G   ·   2 0 2 6</text>
+    <line x1="380" y1="80" x2="540" y2="80" stroke="#475569" stroke-width="0.6"/>
+    <line x1="740" y1="80" x2="900" y2="80" stroke="#475569" stroke-width="0.6"/>
+    <circle cx="540" cy="80" r="2" fill="#FBBF24" class="live"/>
+    <circle cx="740" cy="80" r="2" fill="#22D3EE" class="live"/>
   </g>
 
+  <!-- ============ NAME (big cinematic) ============ -->
   <g class="name">
-    <text x="640" y="215" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="78" font-weight="800" fill="url(#name)" text-anchor="middle" letter-spacing="3" filter="url(#glow)">YASSER HAMDAN</text>
+    <text x="640" y="240" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="86" font-weight="800" fill="url(#name)" text-anchor="middle" letter-spacing="4" filter="url(#glow)">YASSER HAMDAN</text>
   </g>
 
+  <!-- Underline -->
   <g class="underline">
-    <line x1="500" y1="240" x2="780" y2="240" stroke="url(#name)" stroke-width="1.5" opacity="0.6"/>
-    <circle cx="640" cy="240" r="3" fill="#A78BFA" filter="url(#softGlow)"/>
+    <line x1="430" y1="265" x2="850" y2="265" stroke="url(#name)" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="640" cy="265" r="3.5" fill="#F472B6" filter="url(#softGlow)"/>
   </g>
 
+  <!-- ============ TAGLINE (the new hook) ============ -->
   <g class="tag">
-    <text x="640" y="278" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="14" fill="#CBD5E1" text-anchor="middle" letter-spacing="7">PYTHON  ·  ODOO ERP  ·  FASTAPI  ·  AI AUTOMATION</text>
+    <text x="640" y="305" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="16" fill="url(#tag)" text-anchor="middle" letter-spacing="3" font-weight="600">Engineering practical AI  ·  for businesses that ship</text>
   </g>
 
+  <!-- Tech subtitle -->
   <g class="meta">
-    <text x="640" y="306" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#64748B" text-anchor="middle" letter-spacing="4">DATA SCIENCE  @  USAL   —   GRADUATING JUNE 2026</text>
+    <text x="640" y="332" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" fill="#94A3B8" text-anchor="middle" letter-spacing="6">PYTHON  ·  ODOO ERP  ·  FASTAPI  ·  LANGGRAPH  ·  PYTORCH</text>
   </g>
 
-  <g class="chip" filter="url(#softGlow)">
-    <rect x="80" y="170" width="92" height="28" rx="14" fill="#0B1024" stroke="#38BDF8" stroke-width="0.7"/>
-    <circle cx="98" cy="184" r="2" fill="#38BDF8"/>
-    <text x="124" y="188" font-family="ui-monospace, monospace" font-size="10" fill="#7DD3FC" letter-spacing="2">PYTHON</text>
+  <!-- ============ STATS STRIP ============ -->
+  <g class="stats" transform="translate(640, 380)">
+    <line x1="-340" y1="0" x2="-260" y2="0" stroke="#334155" stroke-width="0.6"/>
+    <line x1="260" y1="0" x2="340" y2="0" stroke="#334155" stroke-width="0.6"/>
+
+    <g transform="translate(-220, 0)" text-anchor="middle">
+      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#FBBF24" letter-spacing="1">3</text>
+      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#FBBF24" letter-spacing="3">YEARS</text>
+    </g>
+    <line x1="-160" y1="-12" x2="-160" y2="14" stroke="#334155" stroke-width="0.5"/>
+
+    <g transform="translate(-100, 0)" text-anchor="middle">
+      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#22D3EE" letter-spacing="1">6</text>
+      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#22D3EE" letter-spacing="3">PROJECTS</text>
+    </g>
+    <line x1="-40" y1="-12" x2="-40" y2="14" stroke="#334155" stroke-width="0.5"/>
+
+    <g transform="translate(20, 0)" text-anchor="middle">
+      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#A78BFA" letter-spacing="1">2</text>
+      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#A78BFA" letter-spacing="3">INTERNSHIPS</text>
+    </g>
+    <line x1="80" y1="-12" x2="80" y2="14" stroke="#334155" stroke-width="0.5"/>
+
+    <g transform="translate(170, 0)" text-anchor="middle">
+      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#F472B6" letter-spacing="1">1</text>
+      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#F472B6" letter-spacing="3">ODOO IN PROD</text>
+    </g>
   </g>
-  <g class="chip-c" filter="url(#softGlow)">
-    <rect x="40" y="220" width="110" height="28" rx="14" fill="#0B1024" stroke="#10B981" stroke-width="0.7"/>
-    <circle cx="58" cy="234" r="2" fill="#10B981"/>
+
+  <!-- Education line -->
+  <g class="meta">
+    <text x="640" y="430" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#64748B" text-anchor="middle" letter-spacing="4">DATA SCIENCE  @  USAL   ·   BEIRUT, LEBANON   ·   GRADUATING JUNE 2026</text>
+  </g>
+
+  <!-- ============ TECH CHIPS — LEFT SIDE ============ -->
+  <g class="chip-1" filter="url(#softGlow)">
+    <rect x="60" y="170" width="92" height="28" rx="14" fill="#0B1024" stroke="#22D3EE" stroke-width="1"/>
+    <circle cx="78" cy="184" r="2.5" fill="#22D3EE" class="live"/>
+    <text x="105" y="188" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="2">PYTHON</text>
+  </g>
+  <g class="chip-2" filter="url(#softGlow)">
+    <rect x="40" y="220" width="106" height="28" rx="14" fill="#0B1024" stroke="#10B981" stroke-width="1"/>
+    <circle cx="58" cy="234" r="2.5" fill="#10B981" class="live"/>
     <text x="84" y="238" font-family="ui-monospace, monospace" font-size="10" fill="#6EE7B7" letter-spacing="2">LANGGRAPH</text>
   </g>
-  <g class="chip-e" filter="url(#softGlow)">
-    <rect x="110" y="270" width="92" height="28" rx="14" fill="#0B1024" stroke="#FB923C" stroke-width="0.7"/>
-    <circle cx="128" cy="284" r="2" fill="#FB923C"/>
-    <text x="154" y="288" font-family="ui-monospace, monospace" font-size="10" fill="#FDBA74" letter-spacing="2">PYTORCH</text>
+  <g class="chip-3" filter="url(#softGlow)">
+    <rect x="80" y="270" width="92" height="28" rx="14" fill="#0B1024" stroke="#FB923C" stroke-width="1"/>
+    <circle cx="98" cy="284" r="2.5" fill="#FB923C" class="live"/>
+    <text x="124" y="288" font-family="ui-monospace, monospace" font-size="10" fill="#FDBA74" letter-spacing="2">PYTORCH</text>
+  </g>
+  <g class="chip-4" filter="url(#softGlow)">
+    <rect x="40" y="320" width="92" height="28" rx="14" fill="#0B1024" stroke="#FBBF24" stroke-width="1"/>
+    <circle cx="58" cy="334" r="2.5" fill="#FBBF24" class="live"/>
+    <text x="84" y="338" font-family="ui-monospace, monospace" font-size="10" fill="#FDE68A" letter-spacing="2">PLOTLY</text>
   </g>
 
-  <g class="chip-b" filter="url(#softGlow)">
-    <rect x="1108" y="170" width="92" height="28" rx="14" fill="#0B1024" stroke="#A78BFA" stroke-width="0.7"/>
-    <circle cx="1126" cy="184" r="2" fill="#A78BFA"/>
-    <text x="1152" y="188" font-family="ui-monospace, monospace" font-size="10" fill="#C4B5FD" letter-spacing="2">ODOO</text>
+  <!-- ============ TECH CHIPS — RIGHT SIDE ============ -->
+  <g class="chip-5" filter="url(#softGlow)">
+    <rect x="1128" y="170" width="92" height="28" rx="14" fill="#0B1024" stroke="#A78BFA" stroke-width="1"/>
+    <circle cx="1146" cy="184" r="2.5" fill="#A78BFA" class="live"/>
+    <text x="1172" y="188" font-family="ui-monospace, monospace" font-size="10" fill="#C4B5FD" letter-spacing="2">ODOO</text>
   </g>
-  <g class="chip-d" filter="url(#softGlow)">
-    <rect x="1098" y="220" width="102" height="28" rx="14" fill="#0B1024" stroke="#F472B6" stroke-width="0.7"/>
-    <circle cx="1116" cy="234" r="2" fill="#F472B6"/>
-    <text x="1144" y="238" font-family="ui-monospace, monospace" font-size="10" fill="#F9A8D4" letter-spacing="2">FASTAPI</text>
+  <g class="chip-6" filter="url(#softGlow)">
+    <rect x="1108" y="220" width="112" height="28" rx="14" fill="#0B1024" stroke="#F472B6" stroke-width="1"/>
+    <circle cx="1126" cy="234" r="2.5" fill="#F472B6" class="live"/>
+    <text x="1156" y="238" font-family="ui-monospace, monospace" font-size="10" fill="#F9A8D4" letter-spacing="2">FASTAPI</text>
   </g>
-  <g class="chip-f" filter="url(#softGlow)">
-    <rect x="1130" y="270" width="80" height="28" rx="14" fill="#0B1024" stroke="#22D3EE" stroke-width="0.7"/>
-    <circle cx="1148" cy="284" r="2" fill="#22D3EE"/>
-    <text x="1170" y="288" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="2">REACT</text>
+  <g class="chip-7" filter="url(#softGlow)">
+    <rect x="1140" y="270" width="80" height="28" rx="14" fill="#0B1024" stroke="#38BDF8" stroke-width="1"/>
+    <circle cx="1158" cy="284" r="2.5" fill="#38BDF8" class="live"/>
+    <text x="1182" y="288" font-family="ui-monospace, monospace" font-size="10" fill="#7DD3FC" letter-spacing="2">REACT</text>
+  </g>
+  <g class="chip-8" filter="url(#softGlow)">
+    <rect x="1116" y="320" width="104" height="28" rx="14" fill="#0B1024" stroke="#22D3EE" stroke-width="1"/>
+    <circle cx="1134" cy="334" r="2.5" fill="#22D3EE" class="live"/>
+    <text x="1166" y="338" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="2">POSTGRES</text>
   </g>
 
-  <g class="status" transform="translate(640, 360)">
-    <rect x="-130" y="-15" width="260" height="30" rx="15" fill="#022C22" stroke="#10B981" stroke-width="0.7" opacity="0.6"/>
-    <circle cx="-105" cy="0" r="4" fill="#22C55E" class="live"/>
-    <circle cx="-105" cy="0" r="9" fill="none" stroke="#22C55E" stroke-width="0.5" opacity="0.4" class="live"/>
-    <text x="10" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#86EFAC" text-anchor="middle" letter-spacing="3">OPEN TO WORK  ·  JUNE 2026</text>
-  </g>
-
-  <g class="meta" stroke="#334155" stroke-width="0.6" fill="none">
-    <path d="M 24 24 L 24 50 L 50 50"/>
-    <path d="M 1256 24 L 1256 50 L 1230 50"/>
-    <path d="M 24 416 L 24 390 L 50 390"/>
-    <path d="M 1256 416 L 1256 390 L 1230 390"/>
+  <!-- ============ STATUS PILL ============ -->
+  <g class="status" transform="translate(640, 480)">
+    <rect x="-160" y="-18" width="320" height="36" rx="18" fill="#022C22" stroke="#10B981" stroke-width="1" opacity="0.85"/>
+    <circle cx="-130" cy="0" r="5" fill="#22C55E" class="live"/>
+    <circle cx="-130" cy="0" r="11" fill="none" stroke="#22C55E" stroke-width="0.6" opacity="0.5" class="live"/>
+    <text x="20" y="4" font-family="ui-monospace, monospace" font-size="11" fill="#86EFAC" text-anchor="middle" font-weight="700" letter-spacing="3">OPEN TO WORK  ·  STARTING JUNE 2026</text>
   </g>
 </svg>

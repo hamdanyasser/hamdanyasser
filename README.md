@@ -22,17 +22,27 @@
 
 ![](./assets/divider-01-who.svg)
 
-I work where most people see three separate things — **ERP / business systems**, **software engineering**, and **AI automation**. Currently a third-year Data Science student at the University of Sciences and Arts in Lebanon, graduating **June 2026**.
+<div align="center">
 
-```yaml
-identity:    Python & Odoo ERP Developer
-focus:       Practical AI automation, ERP systems, full-stack delivery
-shipped:     • Odoo 18 auction module (Mobile Arts internship)
-             • 10+ Plotly dashboards on renewable energy (XpertBot)
-             • 6 personal projects across agents, NLP, computer vision
-languages:   Arabic (native) · English (professional) · French (intermediate)
-seeking:     ERP/Odoo · Python · AI/ML — internship or new grad
-```
+> *I work where most people see three separate things —* <br/>
+> **ERP business systems**  ·  **software engineering**  ·  **AI automation.**
+
+</div>
+
+<br/>
+
+I'm a third-year Data Science student at the University of Sciences and Arts in Lebanon, graduating **June 2026**. The story of how I got here is short — four acts, one throughline: *build things that actually ship*.
+
+![Journey](./assets/journey.svg)
+
+<br/>
+
+<div align="center">
+
+| 🇱🇧 &nbsp; Beirut | 🎓 &nbsp; Data Science · USAL | 📅 &nbsp; June 2026 | 🌍 &nbsp; AR · EN · FR |
+|:---:|:---:|:---:|:---:|
+
+</div>
 
 <br/>
 
@@ -44,7 +54,7 @@ seeking:     ERP/Odoo · Python · AI/ML — internship or new grad
 
 🟢 &nbsp; **Currently Building**
 
-<sub>Polishing AtlasBrief for a public demo. Refactoring the LangGraph state machine so agent decisions are observable from the UI.</sub>
+<sub>Polishing **AtlasBrief** for a public demo. Refactoring the LangGraph state machine so every agent decision is observable from the UI.</sub>
 
 </td>
 <td valign="top" width="33%" align="center">
@@ -72,7 +82,7 @@ seeking:     ERP/Odoo · Python · AI/ML — internship or new grad
 
 <div align="center">
 
-<sub>↑ &nbsp; click any project to view its repository  ·  full list at <a href="https://github.com/hamdanyasser?tab=repositories">@hamdanyasser/repos</a></sub>
+<sub>↑ &nbsp; click any card to view the repo  ·  full list at <a href="https://github.com/hamdanyasser?tab=repositories">@hamdanyasser/repos</a></sub>
 
 </div>
 
@@ -80,14 +90,20 @@ seeking:     ERP/Odoo · Python · AI/ML — internship or new grad
 
 ![](./assets/divider-04-system.svg)
 
+<div align="center">
+
+> *Code shows what — architecture shows how I think.*
+
+</div>
+
 ![Architecture](./assets/architecture.svg)
 
 <details>
-<summary><sub>↳ &nbsp; <b>why two-model routing</b></sub></summary>
+<summary><sub>↳ &nbsp; <b>why two-model routing</b> &nbsp; — &nbsp; <i>the design decision behind the ~60% token savings</i></sub></summary>
 
 <br/>
 
-A lightweight model handles structured extraction from the user query — cheap, fast, deterministic. A stronger model handles synthesis, where reasoning quality matters. Per-request token logging shows the routing genuinely saves cost without measurable quality loss on extraction.
+A lightweight model handles structured extraction from the user query — cheap, fast, deterministic, Pydantic-validated. A stronger model handles synthesis, where reasoning quality matters. Per-request token logging shows the routing genuinely saves cost without measurable quality loss on extraction. The agent's tool decisions are stateful and traceable end-to-end.
 
 </details>
 
@@ -111,7 +127,7 @@ A lightweight model handles structured extraction from the user query — cheap,
 <tr>
 <td valign="top" width="50%">
 
-🎓 &nbsp; **IBM RAG and Agentic AI**
+🎓 &nbsp; **IBM — RAG and Agentic AI**
 *<sub>Professional Certificate · 9 courses</sub>*
 
 > RAG pipelines, vector databases, LangChain, LangGraph, CrewAI, AutoGen, BeeAI, MCP, multi-agent systems.
@@ -140,14 +156,21 @@ A lightweight model handles structured extraction from the user query — cheap,
 
 <br/>
 
-**Open to ERP/Odoo, Python, and AI/ML engineer roles** <br/>
-*Internship or new grad — starting June 2026*
+> *If you're hiring for ERP/Odoo, Python, or AI/ML —* <br/>
+> *and you want someone who actually ships — let's talk.*
+
+<br/>
+
+**Internship or new grad role · starting June 2026** <br/>
+*Available remotely or in Beirut · open to relocate for the right team*
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-6366F1?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasser-hamdan063/)
 &nbsp;
 [![Email](https://img.shields.io/badge/Send_an_Email-A78BFA?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:hamdanyasser2005@gmail.com)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/Browse_Repos-F472B6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hamdanyasser?tab=repositories)
 
 </div>
 
