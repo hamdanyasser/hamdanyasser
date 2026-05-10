@@ -30,36 +30,36 @@
 <tr>
 <td width="50%">
 <a href="https://github.com/hamdanyasser/atlasbrief-travel-agent">
-<img src="./assets/module-01-atlasbrief.svg" alt="MOD.01 — AtlasBrief"/>
+<img src="./assets/module-01-atlasbrief.svg" alt="MOD.01 — AtlasBrief" width="100%"/>
 </a>
 </td>
 <td width="50%">
 <a href="https://github.com/hamdanyasser/atelier-real-estate-estimator">
-<img src="./assets/module-02-atelier.svg" alt="MOD.02 — Atelier"/>
+<img src="./assets/module-02-atelier.svg" alt="MOD.02 — Atelier" width="100%"/>
 </a>
 </td>
 </tr>
 <tr>
 <td width="50%">
 <a href="https://github.com/hamdanyasser/support-triage-cockpit">
-<img src="./assets/module-03-triage.svg" alt="MOD.03 — Triage Cockpit"/>
+<img src="./assets/module-03-triage.svg" alt="MOD.03 — Triage Cockpit" width="100%"/>
 </a>
 </td>
 <td width="50%">
 <a href="https://github.com/hamdanyasser/NLP-NER-Project">
-<img src="./assets/module-04-ner.svg" alt="MOD.04 — Biomedical NER"/>
+<img src="./assets/module-04-ner.svg" alt="MOD.04 — Biomedical NER" width="100%"/>
 </a>
 </td>
 </tr>
 <tr>
 <td width="50%">
 <a href="https://github.com/hamdanyasser/auction-system-odoo">
-<img src="./assets/module-05-odoo.svg" alt="MOD.05 — Odoo Auction"/>
+<img src="./assets/module-05-odoo.svg" alt="MOD.05 — Odoo Auction" width="100%"/>
 </a>
 </td>
 <td width="50%">
 <a href="https://github.com/hamdanyasser/debugmaster-android">
-<img src="./assets/module-06-debugmaster.svg" alt="MOD.06 — DebugMaster"/>
+<img src="./assets/module-06-debugmaster.svg" alt="MOD.06 — DebugMaster" width="100%"/>
 </a>
 </td>
 </tr>
