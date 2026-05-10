@@ -1,352 +1,280 @@
-<!-- ============================================================ -->
-<!--                          HEADER                              -->
-<!-- ============================================================ -->
-
 <div align="center">
 
-<a href="https://github.com/hamdanyasser">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,50:6366F1,100:8B5CF6&height=220&section=header&text=Yasser%20Hamdan&fontSize=68&fontColor=ffffff&fontAlignY=38&desc=Python%20%C2%B7%20Odoo%20ERP%20%C2%B7%20FastAPI%20%C2%B7%20AI%20Automation&descSize=18&descAlignY=60&animation=fadeIn" alt="banner" />
-</a>
-
-<br />
-
-<a href="https://www.linkedin.com/in/yasser-hamdan063/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:hamdanyasser2005@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<img src="https://img.shields.io/badge/Beirut%2C_Lebanon-0F172A?style=for-the-badge&logo=googlemaps&logoColor=white" />
-<a href="https://github.com/hamdanyasser"><img src="https://img.shields.io/badge/Open_to_Work-22C55E?style=for-the-badge&logo=briefcase&logoColor=white" /></a>
-
-<br /><br />
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3500&pause=900&color=6366F1&center=true&vCenter=true&width=720&lines=Building+practical+software+across+ERP%2C+automation+%26+AI.;Python+%26+Odoo+ERP+Developer.;Data+Science+%40+USAL+%E2%80%99+26.;Currently+shipping+LLM+agents+with+LangGraph+%26+RAG." alt="rotating tagline" />
-
-<br /><br />
-
-<a href="https://github.com/hamdanyasser?tab=repositories"><img src="https://img.shields.io/github/followers/hamdanyasser?label=Follow&style=social" /></a>
-<img src="https://komarev.com/ghpvc/?username=hamdanyasser&label=Profile+views&color=6366F1&style=flat" />
+![Yasser Hamdan](./assets/hero.svg)
 
 </div>
 
-<br />
+<br/>
 
-<!-- ============================================================ -->
-<!--                          ABOUT                               -->
-<!-- ============================================================ -->
+<div align="center">
 
-## ` 01 ` &nbsp; About
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasser-hamdan063/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:hamdanyasser2005@gmail.com)
+![Beirut](https://img.shields.io/badge/Beirut%2C_Lebanon-0F172A?style=flat-square&logo=googlemaps&logoColor=white)
+![Open to Work](https://img.shields.io/badge/Open_to_Work-22C55E?style=flat-square&logo=briefcase&logoColor=white)
 
-```yaml
-who:        Third-year Data Science student at USAL, graduating June 2026.
-work:       Python & Odoo ERP development, with a strong AI/ML side.
-shipped:    Auction module in Odoo 18 (Mobile Arts internship).
-            10+ Plotly dashboards on renewable energy (XpertBot).
-            6 personal AI/ML projects — agents, NLP, computer vision.
-stack:      Python · FastAPI · Odoo 18 · scikit-learn · PyTorch · LangGraph.
-looking:    ERP/Odoo, Python, or AI/ML engineer roles — internship or new grad.
+</div>
+
+<br/>
+
+```
+─────────────────────────────────────────────────────────────────────
+  01 / WHO
+─────────────────────────────────────────────────────────────────────
 ```
 
-I work at the intersection of three things most people treat as separate:
-**ERP / business systems**, **software engineering**, and **AI automation**.
+I work where most people see three separate things — **ERP / business systems**, **software engineering**, and **AI automation**. Currently a third-year Data Science student at the University of Sciences and Arts in Lebanon, graduating **June 2026**.
 
-<br />
+```yaml
+identity:    Python & Odoo ERP Developer
+focus:       Practical AI automation, ERP systems, full-stack delivery
+shipped:     Auction module in Odoo 18 (Mobile Arts internship)
+             10+ Plotly dashboards for renewable energy (XpertBot)
+             6 personal projects across agents, NLP, and computer vision
+languages:   Arabic (native) · English (professional) · French (intermediate)
+seeking:     ERP/Odoo · Python · AI/ML — internship or new grad
+```
 
-<!-- ============================================================ -->
-<!--                       FEATURED WORK                          -->
-<!-- ============================================================ -->
+<br/>
 
-## ` 02 ` &nbsp; Featured Work
-
-<table border="0">
-<tr>
-<td width="50%" valign="top">
-
-<h3 align="center">🛒 &nbsp; Odoo Auction Module</h3>
-<p align="center"><sub><i>ERP · Mobile Arts internship</i></sub></p>
-
-> Custom Odoo 18 module with bid validation, proxy bidding,
-> anti-sniping, Buy Now logic, security rules, QWeb templates,
-> and analytics views.
-
-<p align="center">
-<img src="https://img.shields.io/badge/Odoo_18-714B67?style=flat-square&logo=odoo&logoColor=white" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/QWeb-714B67?style=flat-square" />
-<br />
-<a href="https://github.com/hamdanyasser/auction-system-odoo">→ &nbsp; Source</a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3 align="center">🧠 &nbsp; AtlasBrief</h3>
-<p align="center"><sub><i>LangGraph · RAG · FastAPI · React</i></sub></p>
-
-> Travel-planning agent that turns vague trip ideas into a defended
-> itinerary. Three Pydantic-validated tools, RAG over Postgres +
-> pgvector, two-model LLM routing.
-
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white" />
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-<img src="https://img.shields.io/badge/pgvector-0064A5?style=flat-square&logo=postgresql&logoColor=white" />
-<br />
-<a href="https://github.com/hamdanyasser/atlasbrief-travel-agent">→ &nbsp; Source</a>
-</p>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3 align="center">🏠 &nbsp; Atelier — Real Estate Estimator</h3>
-<p align="center"><sub><i>LLM + Random Forest pipeline</i></sub></p>
-
-> LLM extracts features from plain English; scikit-learn Random
-> Forest predicts price (R² 0.90 on Ames Housing); a second LLM
-> grounds the prediction against training-set statistics.
-
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-<img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" />
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-<br />
-<a href="https://github.com/hamdanyasser/atelier-real-estate-estimator">→ &nbsp; Source</a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3 align="center">🎯 &nbsp; Support Triage Cockpit</h3>
-<p align="center"><sub><i>RAG vs. plain LLM benchmark</i></sub></p>
-
-> Compares RAG-grounded vs plain LLM replies and a local
-> logistic-regression classifier vs zero-shot LLM on 20K tickets.
-> Recommends what to ship at 10K tickets/hour.
-
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Chroma-7C3AED?style=flat-square" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-<br />
-<a href="https://github.com/hamdanyasser/support-triage-cockpit">→ &nbsp; Source</a>
-</p>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3 align="center">🐛 &nbsp; DebugMaster</h3>
-<p align="center"><sub><i>Gamified Android debugging tutor</i></sub></p>
-
-> Java + Firebase Android app with learning paths, AI mentor
-> support, XP/streaks, leaderboards, and live multiplayer
-> debug battles. MVVM + Hilt + Room.
-
-<p align="center">
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-<img src="https://img.shields.io/badge/Room-4285F4?style=flat-square" />
-<br />
-<a href="https://github.com/hamdanyasser/debugmaster-android">→ &nbsp; Source</a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<h3 align="center">🧬 &nbsp; Biomedical NER</h3>
-<p align="center"><sub><i>BiLSTM-CRF · 87% F1 on BC5CDR</i></sub></p>
-
-> From-scratch named-entity recognition. BiLSTM-CRF with Viterbi
-> decoding, character-level CNN embeddings, attention, and
-> GloVe vectors. Live Gradio demo.
-
-<p align="center">
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-<img src="https://img.shields.io/badge/NLP-7C3AED?style=flat-square" />
-<img src="https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white" />
-<img src="https://img.shields.io/badge/Deep_Learning-EF4444?style=flat-square" />
-<br />
-<a href="https://github.com/hamdanyasser/NLP-NER-Project">→ &nbsp; Source</a>
-</p>
-
-</td>
-</tr>
-</table>
-
-<br />
-
-<!-- ============================================================ -->
-<!--                           STACK                              -->
-<!-- ============================================================ -->
-
-## ` 03 ` &nbsp; Stack
+```
+─────────────────────────────────────────────────────────────────────
+  02 / NOW
+─────────────────────────────────────────────────────────────────────
+```
 
 <table>
 <tr>
 <td valign="top" width="33%">
 
-<h4 align="center">⚙️ &nbsp; Core</h4>
+**🟢 &nbsp; Currently Building**
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=python,java,js,ts,sql&perline=5" />
-</p>
-
-<p align="center">
-<sub>Python · Java · TypeScript · SQL · XML</sub>
-</p>
+Polishing AtlasBrief for a public demo. Refactoring the LangGraph state machine so the agent's decision flow is observable from the UI.
 
 </td>
 <td valign="top" width="33%">
 
-<h4 align="center">🚀 &nbsp; Backend & ERP</h4>
+**🔵 &nbsp; Currently Reading**
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=fastapi,flask,postgres,docker,git&perline=5" />
-</p>
-
-<p align="center">
-<sub>FastAPI · Flask · Odoo 18 · Postgres · Docker</sub>
-</p>
+*Designing Data-Intensive Applications* (Kleppmann). Plus the LangGraph release notes — they ship fast.
 
 </td>
 <td valign="top" width="33%">
 
-<h4 align="center">🤖 &nbsp; ML & AI</h4>
+**🟣 &nbsp; Currently Learning**
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=pytorch,sklearn,tensorflow,opencv&perline=4" />
-</p>
-
-<p align="center">
-<sub>PyTorch · scikit-learn · LangGraph · RAG · OpenAI · Hugging Face</sub>
-</p>
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="33%">
-
-<h4 align="center">🎨 &nbsp; Frontend</h4>
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=react,vite,tailwind,html,css&perline=5" />
-</p>
-
-<p align="center">
-<sub>React · Vite · Tailwind · TypeScript</sub>
-</p>
-
-</td>
-<td valign="top" width="33%">
-
-<h4 align="center">📦 &nbsp; Tools</h4>
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=git,github,vscode,linux,firebase&perline=5" />
-</p>
-
-<p align="center">
-<sub>Git · GitHub · VS Code · Linux · Firebase · Gradio</sub>
-</p>
-
-</td>
-<td valign="top" width="33%">
-
-<h4 align="center">🧠 &nbsp; AI Frameworks</h4>
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=openai,&perline=4" />
-</p>
-
-<p align="center">
-<sub>LangGraph · LangChain · CrewAI · AutoGen · MCP · Pydantic</sub>
-</p>
+Production patterns for multi-agent systems. Cost optimization for two-model LLM routing at scale.
 
 </td>
 </tr>
 </table>
 
-<br />
+<br/>
 
-<!-- ============================================================ -->
-<!--                       GITHUB STATS                           -->
-<!-- ============================================================ -->
+```
+─────────────────────────────────────────────────────────────────────
+  03 / WORK
+─────────────────────────────────────────────────────────────────────
+```
 
-## ` 04 ` &nbsp; By the Numbers
+<table border="0">
+
+<tr>
+<td valign="top" width="50%">
+
+### 🛒 &nbsp; Odoo Auction Module
+*<sub>ERP · built at Mobile Arts internship</sub>*
+
+> Custom Odoo 18 module: bid validation, proxy bidding, anti-sniping logic, Buy Now flow, payment tracking, security rules across three roles, QWeb templates, and analytics views. Sole developer, three-month build.
+
+`Odoo 18` &nbsp; `Python` &nbsp; `PostgreSQL` &nbsp; `QWeb`
+
+[**→ &nbsp; Source**](https://github.com/hamdanyasser/auction-system-odoo)
+
+</td>
+<td valign="top" width="50%">
+
+### 🧠 &nbsp; AtlasBrief
+*<sub>LangGraph travel-planning agent</sub>*
+
+> Turns vague trip ideas into a defended itinerary. LangGraph orchestrating three Pydantic-validated tools, RAG over Postgres + pgvector, two-model LLM routing with per-request cost logging.
+
+`Python` &nbsp; `LangGraph` &nbsp; `RAG` &nbsp; `FastAPI` &nbsp; `React`
+
+[**→ &nbsp; Source**](https://github.com/hamdanyasser/atlasbrief-travel-agent)
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="50%">
+
+### 🏠 &nbsp; Atelier
+*<sub>LLM + ML real-estate price estimator</sub>*
+
+> Plain-English property descriptions become grounded price estimates. LLM extracts features into Pydantic-validated JSON, scikit-learn Random Forest predicts (**R² 0.90**), second LLM grounds the prediction against training-set statistics.
+
+`Python` &nbsp; `scikit-learn` &nbsp; `OpenAI` &nbsp; `FastAPI` &nbsp; `React`
+
+[**→ &nbsp; Source**](https://github.com/hamdanyasser/atelier-real-estate-estimator)
+
+</td>
+<td valign="top" width="50%">
+
+### 🎯 &nbsp; Support Triage Cockpit
+*<sub>RAG vs LLM benchmark · 10K tickets/hour</sub>*
+
+> Compares RAG-grounded vs plain LLM replies, and a local LogReg classifier vs zero-shot LLM, on **20K support tickets**. Recommends what to ship based on accuracy, latency, and cost.
+
+`Python` &nbsp; `Chroma` &nbsp; `scikit-learn` &nbsp; `FastAPI`
+
+[**→ &nbsp; Source**](https://github.com/hamdanyasser/support-triage-cockpit)
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="50%">
+
+### 🐛 &nbsp; DebugMaster
+*<sub>Gamified Android debugging tutor</sub>*
+
+> Java + Firebase Android app. Learning paths, AI mentor support, XP and streaks, leaderboards, and live multiplayer debug battles with Firebase Realtime DB sync. MVVM + Hilt + Room.
+
+`Java` &nbsp; `Android` &nbsp; `Firebase` &nbsp; `Room`
+
+[**→ &nbsp; Source**](https://github.com/hamdanyasser/debugmaster-android)
+
+</td>
+<td valign="top" width="50%">
+
+### 🧬 &nbsp; Biomedical NER
+*<sub>BiLSTM-CRF · 87% F1 on BC5CDR</sub>*
+
+> From-scratch named-entity recognition: BiLSTM-CRF with Viterbi decoding, character-level CNN, attention, and GloVe vectors. Ablation studies isolating contribution of each component. Live Gradio demo.
+
+`PyTorch` &nbsp; `NLP` &nbsp; `Deep Learning` &nbsp; `Gradio`
+
+[**→ &nbsp; Source**](https://github.com/hamdanyasser/NLP-NER-Project)
+
+</td>
+</tr>
+
+</table>
+
+<br/>
+
+```
+─────────────────────────────────────────────────────────────────────
+  04 / SYSTEM
+─────────────────────────────────────────────────────────────────────
+```
+
+<sup>How a request flows through AtlasBrief — my reference architecture for AI agent systems:</sup>
+
+```mermaid
+%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor': '#1e293b', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#6366f1', 'lineColor': '#64748b', 'secondaryColor': '#0f172a', 'tertiaryColor': '#1e1b4b', 'fontFamily': 'ui-monospace, monospace'}}}%%
+flowchart LR
+    U[User Query]:::user --> EX[Extractor LLM<br/><sub>cheap · fast</sub>]:::llm
+    EX --> SC{LangGraph<br/>Agent}:::agent
+    SC -->|tool 1| RAG[(Postgres +<br/>pgvector)]:::store
+    SC -->|tool 2| CLS[Travel-Style<br/>Classifier]:::ml
+    SC -->|tool 3| LIVE[Live Conditions<br/>Fetcher]:::api
+    RAG --> SY[Synthesizer LLM<br/><sub>strong · slow</sub>]:::llm
+    CLS --> SY
+    LIVE --> SY
+    SY --> OUT[Decision Tension Board]:::out
+
+    classDef user fill:#0f172a,stroke:#3b82f6,color:#dbeafe
+    classDef llm fill:#1e1b4b,stroke:#a78bfa,color:#ddd6fe
+    classDef agent fill:#1e293b,stroke:#22d3ee,color:#cffafe,stroke-width:2px
+    classDef store fill:#0f172a,stroke:#10b981,color:#a7f3d0
+    classDef ml fill:#0f172a,stroke:#fb923c,color:#fed7aa
+    classDef api fill:#0f172a,stroke:#f472b6,color:#fce7f3
+    classDef out fill:#1e293b,stroke:#22c55e,color:#bbf7d0,stroke-width:2px
+```
+
+<details>
+<summary><sub><b>↳ &nbsp;why two-model routing</b></sub></summary>
+
+<br/>
+
+A lightweight model handles structured extraction from the user query — cheap, fast, deterministic. A stronger model handles synthesis of the final defended itinerary, where reasoning quality matters. Per-request token logging shows the routing genuinely saves cost without measurable quality loss on extraction tasks.
+
+</details>
+
+<br/>
+
+```
+─────────────────────────────────────────────────────────────────────
+  05 / STATS
+─────────────────────────────────────────────────────────────────────
+```
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=hamdanyasser&show_icons=true&hide_border=true&title_color=6366F1&icon_color=8B5CF6&text_color=C9D1D9&bg_color=0D1117&include_all_commits=true&count_private=true&rank_icon=github" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=hamdanyasser&show_icons=true&hide_border=true&title_color=A78BFA&icon_color=60A5FA&text_color=94A3B8&bg_color=00000000&include_all_commits=true&count_private=false&rank_icon=github" alt="GitHub stats"/>
 &nbsp;
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=hamdanyasser&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=8B5CF6&currStreakLabel=6366F1&sideLabels=C9D1D9&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9" />
-
-<br /><br />
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamdanyasser&layout=compact&hide_border=true&title_color=6366F1&text_color=C9D1D9&bg_color=0D1117&langs_count=8" />
-
-<br /><br />
-
-<img src="https://github-profile-trophy.vercel.app/?username=hamdanyasser&theme=algolia&no-frame=true&no-bg=true&row=1&column=7&margin-w=8" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamdanyasser&layout=compact&hide_border=true&title_color=A78BFA&text_color=94A3B8&bg_color=00000000&langs_count=6&hide=html,css,jupyter%20notebook" alt="Top languages"/>
 
 </div>
 
-<br />
+<br/>
 
-<!-- ============================================================ -->
-<!--                       CERTIFICATIONS                         -->
-<!-- ============================================================ -->
-
-## ` 05 ` &nbsp; Certifications
+```
+─────────────────────────────────────────────────────────────────────
+  06 / CERTIFICATIONS
+─────────────────────────────────────────────────────────────────────
+```
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-<h4>🎓 &nbsp; IBM RAG and Agentic AI</h4>
+**🎓 &nbsp; IBM RAG and Agentic AI**
+*<sub>Professional Certificate · 9 courses</sub>*
 
-<sub>9-course professional certificate covering RAG pipelines, vector
-databases, LangChain, LangGraph, CrewAI, AutoGen, BeeAI, MCP, and
-multi-agent systems.</sub>
+> RAG pipelines, vector databases, LangChain, LangGraph, CrewAI, AutoGen, BeeAI, MCP, multi-agent systems.
 
-<sub><i>Issued Mar 2026</i></sub>
+<sub>Issued Mar 2026</sub>
 
 </td>
 <td valign="top" width="50%">
 
-<h4>🤖 &nbsp; Anthropic — Claude Code in Action</h4>
+**🤖 &nbsp; Anthropic — Claude Code in Action**
+*<sub>Official Anthropic certification</sub>*
 
-<sub>Official Anthropic certification covering AI-assisted development,
-tool chaining, context management, and MCP integration.</sub>
+> AI-assisted development, tool chaining, context management, MCP integration.
 
-<sub><i>Issued Nov 2025</i></sub>
+<sub>Issued Nov 2025</sub>
 
 </td>
 </tr>
 </table>
 
-<br />
+<br/>
 
-<!-- ============================================================ -->
-<!--                          FOOTER                              -->
-<!-- ============================================================ -->
+```
+─────────────────────────────────────────────────────────────────────
+  07 / REACH ME
+─────────────────────────────────────────────────────────────────────
+```
 
 <div align="center">
 
-<br />
+<br/>
 
-### Currently looking for full-time roles starting July 2026.
+**Open to ERP/Odoo, Python, and AI/ML engineer roles** <br/>
+*Internship or new grad — starting June 2026*
 
-<br />
+<br/>
 
-<a href="https://www.linkedin.com/in/yasser-hamdan063/"><img src="https://img.shields.io/badge/Get_in_touch-6366F1?style=for-the-badge&logo=maildotru&logoColor=white" /></a>
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-6366F1?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasser-hamdan063/)
+&nbsp;
+[![Email](https://img.shields.io/badge/Send_an_Email-A78BFA?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:hamdanyasser2005@gmail.com)
 
-<br /><br />
+<br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,50:6366F1,100:0EA5E9&height=120&section=footer&animation=fadeIn" />
+<sub>*— Yasser*</sub>
 
 </div>
