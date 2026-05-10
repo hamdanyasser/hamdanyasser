@@ -1,51 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 90" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Chapter 01 — WHO">
-  <defs>
-    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="num" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#A78BFA"/>
-    </linearGradient>
-    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="1.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 120" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Plate 01 — Subject">
   <style>
-    @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
-    .dot { animation: pulse 3s ease-in-out infinite; }
-    .dot-b { animation: pulse 3s ease-in-out infinite 1.5s; }
+    .mono { font-family: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
   </style>
-  <ellipse cx="640" cy="45" rx="220" ry="24" fill="url(#halo)"/>
-  <line x1="0" y1="45" x2="1280" y2="45" stroke="url(#line)" stroke-width="1"/>
-  <g stroke="#334155" stroke-width="0.6" opacity="0.7">
-    <line x1="100" y1="42" x2="100" y2="48"/>
-    <line x1="200" y1="43" x2="200" y2="47"/>
-    <line x1="300" y1="42" x2="300" y2="48"/>
-    <line x1="400" y1="43" x2="400" y2="47"/>
-    <line x1="880" y1="43" x2="880" y2="47"/>
-    <line x1="980" y1="42" x2="980" y2="48"/>
-    <line x1="1080" y1="43" x2="1080" y2="47"/>
-    <line x1="1180" y1="42" x2="1180" y2="48"/>
+  <rect width="1280" height="120" fill="#EDE6D6"/>
+  <line x1="48" y1="32" x2="1232" y2="32" stroke="#5C6A78" stroke-width="0.4"/>
+  <g transform="translate(48, 70)">
+    <text class="mono" font-size="22" font-weight="700" letter-spacing="3.6" fill="#0B1F33">PLATE  01  /  SUBJECT</text>
+    <text class="mono" y="24" font-size="12" font-weight="500" letter-spacing="2" fill="#5C6A78">subject as labelled component</text>
   </g>
-  <rect x="540" y="26" width="200" height="38" rx="19" fill="#02030A" stroke="#1E293B" stroke-width="0.7"/>
-  <g stroke="#A78BFA" stroke-width="0.9" fill="none" opacity="0.6">
-    <path d="M 548 32 L 544 32 L 544 36"/>
-    <path d="M 736 32 L 740 32 L 740 36"/>
-    <path d="M 544 54 L 544 58 L 548 58"/>
-    <path d="M 736 58 L 740 58 L 740 54"/>
+  <g transform="translate(1232, 70)" text-anchor="end">
+    <text class="mono" font-size="13" font-weight="600" letter-spacing="2.4" fill="#0B1F33">SHEET  ⋅  1  /  7</text>
+    <text class="mono" y="24" font-size="11" font-weight="500" letter-spacing="2" fill="#5C6A78">2026-06</text>
   </g>
-  <text x="580" y="52" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="16" font-weight="800" fill="url(#num)" letter-spacing="2" filter="url(#g)">01</text>
-  <line x1="612" y1="32" x2="612" y2="58" stroke="#334155" stroke-width="0.7"/>
-  <text x="690" y="51" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#E2E8F0" text-anchor="middle" letter-spacing="6" font-weight="600">WHO</text>
-  <circle cx="540" cy="45" r="2.4" fill="#A78BFA" class="dot"/>
-  <circle cx="740" cy="45" r="2.4" fill="#A78BFA" class="dot-b"/>
-  <text x="640" y="82" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" fill="#94A3B8" text-anchor="middle" letter-spacing="5" font-weight="600">CHAPTER  ONE  ·  IDENTITY</text>
+  <line x1="48" y1="100" x2="1232" y2="100" stroke="#0B1F33" stroke-width="1"/>
 </svg>

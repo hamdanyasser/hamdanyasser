@@ -1,258 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 540" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — cinematic profile hero">
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="85%">
-      <stop offset="0%"   stop-color="#1F1810"/>
-      <stop offset="40%"  stop-color="#13110D"/>
-      <stop offset="80%"  stop-color="#0A0907"/>
-      <stop offset="100%" stop-color="#050403"/>
-    </radialGradient>
-    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#E8B547" stop-opacity="0.32"/>
-      <stop offset="40%"  stop-color="#B8860B" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#E8B547" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="name" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#FBE9C5"/>
-      <stop offset="35%"  stop-color="#E8B547"/>
-      <stop offset="55%"  stop-color="#FFD580"/>
-      <stop offset="100%" stop-color="#9C6E1B"/>
-    </linearGradient>
-    <linearGradient id="tag" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#F0E6D2"/>
-      <stop offset="100%" stop-color="#DCC9A6"/>
-    </linearGradient>
-    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#A78BFA" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#FBBF24" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#E8B547" stop-opacity="0.20"/>
-      <stop offset="50%"  stop-color="#A0522D" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#9C6E1B" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="1.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="14" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Plate 01 — Subject: Yasser Hamdan">
+  <!--
+    PLATE 01 / SUBJECT
+    The subject rendered as a labelled component on a drafting plate.
+    Single typeface (IBM Plex Mono with system mono fallbacks).
+    Two devices break the cleanliness deliberately:
+    1. one rotated marginal note in the lower-left
+    2. the orange "operating" dot has a 2.4s breathing animation —
+       the only motion on the page.
+  -->
   <style>
-    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes pulse { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
-    @keyframes pulseFast { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
-    @keyframes drift { 0%,100% { opacity: 0.85; } 50% { opacity: 1; } }
-    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    @keyframes spinReverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
-    @keyframes auraExpand { 0%,100% { opacity: 0.5; } 50% { opacity: 0.9; } }
-
-    .name { animation: fadeIn 1.6s ease-out forwards; }
-    .underline { animation: fadeIn 1.2s ease-out 0.4s forwards; opacity: 0; }
-    .tag { animation: fadeIn 1.4s ease-out 0.7s forwards; opacity: 0; }
-    .meta { animation: fadeIn 1.6s ease-out 1.1s forwards; opacity: 0; }
-    .stats { animation: fadeIn 1.4s ease-out 1.4s forwards; opacity: 0; }
-    .status { animation: fadeIn 1.4s ease-out 1.7s forwards; opacity: 0; }
-
-    .star-a { animation: pulse 4s ease-in-out infinite; }
-    .star-b { animation: pulse 3s ease-in-out infinite 0.7s; }
-    .star-c { animation: pulse 5s ease-in-out infinite 1.4s; }
-    .star-d { animation: pulseFast 2.5s ease-in-out infinite 0.3s; }
-    .star-e { animation: pulse 6s ease-in-out infinite 2s; }
-
-    .orbit-1 { transform-origin: 640px 250px; animation: spin 90s linear infinite; }
-    .orbit-2 { transform-origin: 640px 250px; animation: spinReverse 130s linear infinite; }
-    .orbit-3 { transform-origin: 640px 250px; animation: spin 170s linear infinite; }
-
-    .chip-1 { animation: drift 5s ease-in-out infinite; }
-    .chip-2 { animation: drift 5.5s ease-in-out infinite 0.6s; }
-    .chip-3 { animation: drift 4.8s ease-in-out infinite 1.2s; }
-    .chip-4 { animation: drift 5.2s ease-in-out infinite 1.8s; }
-    .chip-5 { animation: drift 5s ease-in-out infinite 2.4s; }
-    .chip-6 { animation: drift 4.6s ease-in-out infinite 3s; }
-    .chip-7 { animation: drift 5.3s ease-in-out infinite 0.3s; }
-    .chip-8 { animation: drift 4.9s ease-in-out infinite 2.1s; }
-
-    .aura { transform-origin: 640px 260px; animation: auraExpand 4s ease-in-out infinite; }
-    .live { animation: pulseFast 1.6s ease-in-out infinite; }
-    .sun-pulse { transform-origin: 640px 260px; animation: auraExpand 5s ease-in-out infinite; }
+    .mono { font-family: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @keyframes breathe { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .live { animation: breathe 2.4s ease-in-out infinite; }
   </style>
 
-  <!-- ============ BACKGROUND ============ -->
-  <rect width="1280" height="540" fill="url(#bg)"/>
+  <!-- vellum (drafting paper) -->
+  <rect width="1280" height="560" fill="#EDE6D6"/>
 
-  <!-- Sun glow behind name -->
-  <circle class="sun-pulse" cx="640" cy="260" r="280" fill="url(#sun)"/>
+  <!-- outer plate border (ink hairline) -->
+  <rect x="20" y="20" width="1240" height="520" fill="none" stroke="#0B1F33" stroke-width="0.8"/>
+  <!-- inner working frame (graphite, dashed — drafting convention) -->
+  <rect x="34" y="34" width="1212" height="492" fill="none" stroke="#5C6A78" stroke-width="0.4" stroke-dasharray="2 4" opacity="0.55"/>
 
-  <!-- Subtle grid -->
-  <g opacity="0.05" stroke="#A78BFA" stroke-width="0.5">
-    <line x1="0" y1="135" x2="1280" y2="135"/>
-    <line x1="0" y1="270" x2="1280" y2="270"/>
-    <line x1="0" y1="405" x2="1280" y2="405"/>
-    <line x1="320" y1="0" x2="320" y2="540"/>
-    <line x1="640" y1="0" x2="640" y2="540"/>
-    <line x1="960" y1="0" x2="960" y2="540"/>
+  <!-- corner registration / crop marks (drafting convention) -->
+  <g stroke="#0B1F33" stroke-width="0.7" fill="none">
+    <path d="M 12 20 L 28 20 M 20 12 L 20 28"/>
+    <path d="M 1252 20 L 1268 20 M 1260 12 L 1260 28"/>
+    <path d="M 12 540 L 28 540 M 20 532 L 20 548"/>
+    <path d="M 1252 540 L 1268 540 M 1260 532 L 1260 548"/>
   </g>
 
-  <!-- Main aura -->
-  <ellipse class="aura" cx="640" cy="260" rx="450" ry="140" fill="url(#aura)"/>
-
-  <!-- Orbits (decorative) — single gold identity -->
-  <g class="orbit-1" opacity="0.20">
-    <ellipse cx="640" cy="260" rx="380" ry="130" fill="none" stroke="#E8B547" stroke-width="0.7" stroke-dasharray="2 9"/>
-  </g>
-  <g class="orbit-2" opacity="0.14">
-    <ellipse cx="640" cy="260" rx="500" ry="180" fill="none" stroke="#DCC9A6" stroke-width="0.7" stroke-dasharray="3 11"/>
-  </g>
-  <g class="orbit-3" opacity="0.10">
-    <ellipse cx="640" cy="260" rx="600" ry="220" fill="none" stroke="#9C6E1B" stroke-width="0.7" stroke-dasharray="4 13"/>
+  <!-- ============ TOP LEFT: plate header ============ -->
+  <g transform="translate(56, 70)">
+    <text class="mono" font-size="18" font-weight="700" letter-spacing="3.6" fill="#0B1F33">PLATE  01  /  SUBJECT</text>
+    <line x1="0" y1="14" x2="280" y2="14" stroke="#0B1F33" stroke-width="0.8"/>
+    <text class="mono" y="36" font-size="12" font-weight="500" letter-spacing="1.5" fill="#5C6A78">subject as labelled component</text>
   </g>
 
-  <!-- Stars / specks -->
-  <circle class="star-a" cx="180"  cy="80"  r="1.5" fill="#FFD580"/>
-  <circle class="star-b" cx="1100" cy="60"  r="1.5" fill="#E8B547"/>
-  <circle class="star-c" cx="100"  cy="460" r="1.5" fill="#FBE9C5"/>
-  <circle class="star-a" cx="1180" cy="450" r="1.5" fill="#FFD580"/>
-  <circle class="star-d" cx="220"  cy="220" r="1"   fill="#DCC9A6"/>
-  <circle class="star-c" cx="1060" cy="220" r="1"   fill="#E8B547"/>
-  <circle class="star-b" cx="380"  cy="100" r="1"   fill="#FFD580"/>
-  <circle class="star-d" cx="900"  cy="450" r="1"   fill="#DCC9A6"/>
-  <circle class="star-a" cx="60"   cy="290" r="0.8" fill="#E8B547"/>
-  <circle class="star-c" cx="1230" cy="290" r="0.8" fill="#FBE9C5"/>
-  <circle class="star-e" cx="500"  cy="50"  r="0.8" fill="#DCC9A6"/>
-  <circle class="star-e" cx="780"  cy="50"  r="0.8" fill="#FFD580"/>
-  <circle class="star-d" cx="80"   cy="180" r="0.8" fill="#FBE9C5"/>
-  <circle class="star-b" cx="1200" cy="180" r="0.8" fill="#E8B547"/>
-
-  <!-- Cinematic frame brackets -->
-  <g stroke="#475569" stroke-width="0.8" fill="none" opacity="0.7">
-    <path d="M 30 30 L 30 70 L 70 70"/>
-    <path d="M 1250 30 L 1250 70 L 1210 70"/>
-    <path d="M 30 510 L 30 470 L 70 470"/>
-    <path d="M 1250 510 L 1250 470 L 1210 470"/>
+  <!-- ============ TOP RIGHT: drawn / scale / sheet stamp ============ -->
+  <g transform="translate(1224, 70)" text-anchor="end">
+    <text class="mono" font-size="12" font-weight="600" letter-spacing="2.4" fill="#0B1F33">DRAWN  ⋅  2026-06</text>
+    <text class="mono" y="18" font-size="12" font-weight="600" letter-spacing="2.4" fill="#0B1F33">SCALE  ⋅  1:1</text>
+    <text class="mono" y="36" font-size="12" font-weight="600" letter-spacing="2.4" fill="#0B1F33">SHEET  ⋅  1  /  7</text>
   </g>
 
-  <!-- ============ HEADER STRIP ============ -->
-  <g class="meta">
-    <text x="640" y="62" font-family="ui-monospace, monospace" font-size="14" fill="#CBD5E1" text-anchor="middle" letter-spacing="10" font-weight="600">NOW  SHOWING   ·   2026</text>
-    <line x1="370" y1="82" x2="510" y2="82" stroke="#475569" stroke-width="0.6"/>
-    <line x1="770" y1="82" x2="910" y2="82" stroke="#475569" stroke-width="0.6"/>
-    <circle cx="510" cy="82" r="2.5" fill="#E8B547" class="live"/>
-    <circle cx="770" cy="82" r="2.5" fill="#E8B547" class="live"/>
-  </g>
+  <!-- thin separator under top strip -->
+  <line x1="48" y1="138" x2="1232" y2="138" stroke="#0B1F33" stroke-width="0.5"/>
 
-  <!-- ============ NAME (big cinematic) ============ -->
-  <g class="name">
-    <text x="640" y="240" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="86" font-weight="800" fill="url(#name)" text-anchor="middle" letter-spacing="4" filter="url(#glow)">YASSER HAMDAN</text>
-  </g>
-
-  <!-- Underline -->
-  <g class="underline">
-    <line x1="430" y1="265" x2="850" y2="265" stroke="url(#name)" stroke-width="1.5" opacity="0.7"/>
-    <circle cx="640" cy="265" r="3.5" fill="#E8B547" filter="url(#softGlow)"/>
-  </g>
-
-  <!-- ============ TAGLINE (the new hook) ============ -->
-  <g class="tag">
-    <text x="640" y="307" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" fill="url(#tag)" text-anchor="middle" letter-spacing="3" font-weight="700">Engineering practical AI  ·  for businesses that ship</text>
-  </g>
-
-  <!-- Tech subtitle -->
-  <g class="meta">
-    <text x="640" y="338" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#CBD5E1" text-anchor="middle" letter-spacing="5" font-weight="600">PYTHON  ·  ODOO ERP  ·  FASTAPI  ·  LANGGRAPH  ·  PYTORCH</text>
-  </g>
-
-  <!-- ============ STATS STRIP ============ -->
-  <g class="stats" transform="translate(640, 388)">
-    <line x1="-360" y1="0" x2="-270" y2="0" stroke="#334155" stroke-width="0.6"/>
-    <line x1="270" y1="0" x2="360" y2="0" stroke="#334155" stroke-width="0.6"/>
-
-    <g transform="translate(-225, 0)" text-anchor="middle">
-      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#FFD580" letter-spacing="1">3</text>
-      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#DCC9A6" letter-spacing="3" font-weight="700">YEARS</text>
+  <!-- ============ CENTER: subject component ============ -->
+  <!-- Component frame (the name as a labelled drawing element) -->
+  <g transform="translate(76, 230)">
+    <!-- thin hairline frame -->
+    <rect x="0" y="0" width="700" height="120" fill="none" stroke="#0B1F33" stroke-width="0.7"/>
+    <!-- corner ticks (extension lines, drafting convention) -->
+    <g stroke="#0B1F33" stroke-width="0.7">
+      <line x1="0"   y1="-8"  x2="0"   y2="8"/>
+      <line x1="700" y1="-8"  x2="700" y2="8"/>
+      <line x1="0"   y1="112" x2="0"   y2="128"/>
+      <line x1="700" y1="112" x2="700" y2="128"/>
     </g>
-    <line x1="-160" y1="-16" x2="-160" y2="22" stroke="#3B2E1F" stroke-width="0.5"/>
+    <!-- the name -->
+    <text class="mono" x="350" y="80" font-size="64" font-weight="700" letter-spacing="-1" fill="#0B1F33" text-anchor="middle">YASSER  HAMDAN</text>
+    <!-- size dimension below (drafting convention) -->
+    <text class="mono" x="350" y="148" font-size="11" font-weight="600" letter-spacing="3" fill="#5C6A78" text-anchor="middle">SUBJECT.001  /  COMPONENT</text>
+  </g>
 
-    <g transform="translate(-95, 0)" text-anchor="middle">
-      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#E8B547" letter-spacing="1">6</text>
-      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#DCC9A6" letter-spacing="3" font-weight="700">PROJECTS</text>
-    </g>
-    <line x1="-30" y1="-16" x2="-30" y2="22" stroke="#3B2E1F" stroke-width="0.5"/>
+  <!-- ============ LEADER LINE → annotation block ============ -->
+  <g stroke="#0B1F33" stroke-width="0.7" fill="none">
+    <!-- terminator dot anchored to component right edge -->
+    <circle cx="776" cy="290" r="2.4" fill="#0B1F33"/>
+    <!-- right-then-up elbow -->
+    <line x1="776" y1="290" x2="836" y2="290"/>
+    <line x1="836" y1="290" x2="836" y2="232"/>
+    <line x1="836" y1="232" x2="892" y2="232"/>
+  </g>
 
-    <g transform="translate(35, 0)" text-anchor="middle">
-      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#FBE9C5" letter-spacing="1">2</text>
-      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#DCC9A6" letter-spacing="3" font-weight="700">INTERNSHIPS</text>
-    </g>
-    <line x1="100" y1="-16" x2="100" y2="22" stroke="#3B2E1F" stroke-width="0.5"/>
+  <!-- ============ ANNOTATION BLOCK A1 ============ -->
+  <g transform="translate(892, 196)">
+    <!-- annotation card (light box) -->
+    <rect x="-12" y="-22" width="320" height="186" fill="#EDE6D6" stroke="#0B1F33" stroke-width="0.7"/>
+    <!-- header -->
+    <text class="mono" font-size="11" font-weight="700" letter-spacing="2.5" fill="#5C6A78">ANNOT.A1  /  SUBJECT</text>
+    <line x1="0" y1="8" x2="240" y2="8" stroke="#5C6A78" stroke-width="0.4"/>
 
-    <g transform="translate(190, 0)" text-anchor="middle">
-      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#C84B31" letter-spacing="1">1</text>
-      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#DCC9A6" letter-spacing="3" font-weight="700">ODOO IN PROD</text>
+    <!-- field rows -->
+    <g class="mono" font-size="13" fill="#0B1F33">
+      <!-- TYPE -->
+      <text y="36"  font-weight="700" letter-spacing="2.5">TYPE</text>
+      <text y="36"  x="92" font-weight="500">developer  /  data sci.  /  ERP</text>
+
+      <!-- STATE -->
+      <text y="60"  font-weight="700" letter-spacing="2.5">STATE</text>
+      <text y="60"  x="92" font-weight="500">operating</text>
+      <circle cx="184" cy="56" r="4.2" fill="#E25E1E" class="live"/>
+
+      <!-- AVAIL -->
+      <text y="84"  font-weight="700" letter-spacing="2.5">AVAIL</text>
+      <text y="84"  x="92" font-weight="500">2026-06  (June)</text>
+
+      <!-- LOC -->
+      <text y="108" font-weight="700" letter-spacing="2.5">LOC</text>
+      <text y="108" x="92" font-weight="500">Beirut,  LB</text>
+
+      <!-- LANG -->
+      <text y="132" font-weight="700" letter-spacing="2.5">LANG</text>
+      <text y="132" x="92" font-weight="500">AR  ·  EN  ·  FR</text>
     </g>
   </g>
 
-  <!-- Education line -->
-  <g class="meta">
-    <text x="640" y="438" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#94A3B8" text-anchor="middle" letter-spacing="4" font-weight="600">DATA SCIENCE  @  USAL   ·   BEIRUT, LEBANON   ·   GRADUATING JUNE 2026</text>
+  <!-- ============ MARGINAL NOTE (rotated, hand-set voice) ============ -->
+  <g transform="translate(70, 432) rotate(-1.6)">
+    <text class="mono" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">— subject available from June 2026.  open to ERP / Python / AI</text>
+    <text class="mono" y="17" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">  engagements.  graduating BSc Data Science (USAL) the same month.</text>
   </g>
 
-  <!-- ============ TECH CHIPS — LEFT SIDE ============ -->
-  <g class="chip-1" filter="url(#softGlow)">
-    <rect x="50" y="168" width="106" height="32" rx="16" fill="#0B1024" stroke="#22D3EE" stroke-width="1.2"/>
-    <circle cx="70" cy="184" r="3" fill="#22D3EE" class="live"/>
-    <text x="103" y="189" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#67E8F9" letter-spacing="1.5">PYTHON</text>
-  </g>
-  <g class="chip-2" filter="url(#softGlow)">
-    <rect x="34" y="218" width="138" height="32" rx="16" fill="#0B1024" stroke="#10B981" stroke-width="1.2"/>
-    <circle cx="54" cy="234" r="3" fill="#10B981" class="live"/>
-    <text x="87" y="239" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#6EE7B7" letter-spacing="1.5">LANGGRAPH</text>
-  </g>
-  <g class="chip-3" filter="url(#softGlow)">
-    <rect x="60" y="268" width="118" height="32" rx="16" fill="#0B1024" stroke="#FB923C" stroke-width="1.2"/>
-    <circle cx="80" cy="284" r="3" fill="#FB923C" class="live"/>
-    <text x="113" y="289" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#FDBA74" letter-spacing="1.5">PYTORCH</text>
-  </g>
-  <g class="chip-4" filter="url(#softGlow)">
-    <rect x="34" y="318" width="106" height="32" rx="16" fill="#0B1024" stroke="#FBBF24" stroke-width="1.2"/>
-    <circle cx="54" cy="334" r="3" fill="#FBBF24" class="live"/>
-    <text x="87" y="339" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#FDE68A" letter-spacing="1.5">PLOTLY</text>
-  </g>
+  <!-- ============ BOTTOM STRIP: index + title block ============ -->
+  <line x1="48" y1="488" x2="1232" y2="488" stroke="#0B1F33" stroke-width="0.5"/>
 
-  <!-- ============ TECH CHIPS — RIGHT SIDE ============ -->
-  <g class="chip-5" filter="url(#softGlow)">
-    <rect x="1140" y="168" width="90" height="32" rx="16" fill="#0B1024" stroke="#A78BFA" stroke-width="1.2"/>
-    <circle cx="1160" cy="184" r="3" fill="#A78BFA" class="live"/>
-    <text x="1192" y="189" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#C4B5FD" letter-spacing="1.5">ODOO</text>
+  <!-- bottom-left: file index -->
+  <g transform="translate(56, 510)">
+    <text class="mono" font-size="11" font-weight="700" letter-spacing="2.8" fill="#0B1F33">Y-H  ⋅  BRT  ⋅  2026</text>
   </g>
-  <g class="chip-6" filter="url(#softGlow)">
-    <rect x="1112" y="218" width="118" height="32" rx="16" fill="#0B1024" stroke="#F472B6" stroke-width="1.2"/>
-    <circle cx="1132" cy="234" r="3" fill="#F472B6" class="live"/>
-    <text x="1165" y="239" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#F9A8D4" letter-spacing="1.5">FASTAPI</text>
-  </g>
-  <g class="chip-7" filter="url(#softGlow)">
-    <rect x="1132" y="268" width="98" height="32" rx="16" fill="#0B1024" stroke="#38BDF8" stroke-width="1.2"/>
-    <circle cx="1152" cy="284" r="3" fill="#38BDF8" class="live"/>
-    <text x="1185" y="289" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#7DD3FC" letter-spacing="1.5">REACT</text>
-  </g>
-  <g class="chip-8" filter="url(#softGlow)">
-    <rect x="1102" y="318" width="128" height="32" rx="16" fill="#0B1024" stroke="#22D3EE" stroke-width="1.2"/>
-    <circle cx="1122" cy="334" r="3" fill="#22D3EE" class="live"/>
-    <text x="1155" y="339" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#67E8F9" letter-spacing="1.5">POSTGRES</text>
-  </g>
-
-  <!-- ============ STATUS PILL ============ -->
-  <g class="status" transform="translate(640, 480)">
-    <rect x="-160" y="-18" width="320" height="36" rx="18" fill="#022C22" stroke="#10B981" stroke-width="1" opacity="0.85"/>
-    <circle cx="-130" cy="0" r="5" fill="#22C55E" class="live"/>
-    <circle cx="-130" cy="0" r="11" fill="none" stroke="#22C55E" stroke-width="0.6" opacity="0.5" class="live"/>
-    <text x="20" y="5" font-family="ui-monospace, monospace" font-size="14" fill="#86EFAC" text-anchor="middle" font-weight="700" letter-spacing="3">OPEN TO WORK  ·  STARTING JUNE 2026</text>
+  <!-- bottom-center: file path -->
+  <text class="mono" x="640" y="510" font-size="11" font-weight="500" letter-spacing="2" fill="#5C6A78" text-anchor="middle">FILE  /  github.com  /  hamdanyasser  /  README.md</text>
+  <!-- bottom-right: title block -->
+  <g transform="translate(1224, 510)" text-anchor="end">
+    <text class="mono" font-size="11" font-weight="700" letter-spacing="2.8" fill="#0B1F33">SUBJECT.001  /  1:1  /  SHEET 1</text>
   </g>
 </svg>

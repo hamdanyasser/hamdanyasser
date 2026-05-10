@@ -1,257 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 580" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The journey — 2023 to 2026">
-  <defs>
-    <linearGradient id="bgJ" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#1F1810"/>
-      <stop offset="40%"  stop-color="#130E08"/>
-      <stop offset="100%" stop-color="#050403"/>
-    </linearGradient>
-    <linearGradient id="timeline" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.9"/>
-      <stop offset="33%"  stop-color="#A78BFA" stop-opacity="0.9"/>
-      <stop offset="66%"  stop-color="#FB923C" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#22C55E" stop-opacity="0.9"/>
-    </linearGradient>
-    <linearGradient id="title" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#FBE9C5"/>
-      <stop offset="35%"  stop-color="#E8B547"/>
-      <stop offset="55%"  stop-color="#FFD580"/>
-      <stop offset="100%" stop-color="#9C6E1B"/>
-    </linearGradient>
-
-    <radialGradient id="g1bg" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g2bg" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g3bg" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#FB923C" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g4bg" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 600" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Bill of Materials — career arc">
+  <!--
+    PLATE 1.A / BILL OF MATERIALS
+    Career arc rendered as a parts list, the way a real technical
+    drawing lists components at the bottom of the sheet.
+    Hairline rules between rows; thicker rule above and below the body.
+    Item 07 (open / available) carries the orange "operating" dot —
+    the only animated element on the plate.
+  -->
   <style>
-    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
-    @keyframes pulseFast { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
-    @keyframes flow { 0% { stroke-dashoffset: 24; } 100% { stroke-dashoffset: 0; } }
-    @keyframes ping { 0% { r: 20; opacity: 0.8; } 100% { r: 50; opacity: 0; } }
-    .accent { animation: pulse 3s ease-in-out infinite; }
-    .live { animation: pulseFast 1.6s ease-in-out infinite; }
-    .flowline { stroke-dasharray: 6 6; animation: flow 2.4s linear infinite; }
-    .ping { animation: ping 2s ease-out infinite; transform-origin: center; }
+    .mono { font-family: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @keyframes breathe { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .live { animation: breathe 2.4s ease-in-out infinite; }
   </style>
 
-  <rect width="1280" height="580" fill="url(#bgJ)"/>
+  <rect width="1280" height="600" fill="#EDE6D6"/>
 
-  <!-- subtle grid -->
-  <g opacity="0.04" stroke="#A78BFA" stroke-width="0.5">
-    <line x1="0" y1="280" x2="1280" y2="280"/>
-    <line x1="320" y1="0" x2="320" y2="580"/>
-    <line x1="640" y1="0" x2="640" y2="580"/>
-    <line x1="960" y1="0" x2="960" y2="580"/>
+  <!-- plate borders -->
+  <rect x="20" y="20" width="1240" height="560" fill="none" stroke="#0B1F33" stroke-width="0.8"/>
+  <rect x="34" y="34" width="1212" height="532" fill="none" stroke="#5C6A78" stroke-width="0.4" stroke-dasharray="2 4" opacity="0.55"/>
+
+  <!-- corner crop marks -->
+  <g stroke="#0B1F33" stroke-width="0.7" fill="none">
+    <path d="M 12 20 L 28 20 M 20 12 L 20 28"/>
+    <path d="M 1252 20 L 1268 20 M 1260 12 L 1260 28"/>
+    <path d="M 12 580 L 28 580 M 20 572 L 20 588"/>
+    <path d="M 1252 580 L 1268 580 M 1260 572 L 1260 588"/>
   </g>
 
-  <!-- Phase glow backgrounds -->
-  <ellipse cx="200"  cy="380" rx="160" ry="160" fill="url(#g1bg)"/>
-  <ellipse cx="490"  cy="380" rx="160" ry="160" fill="url(#g2bg)"/>
-  <ellipse cx="790"  cy="380" rx="160" ry="160" fill="url(#g3bg)"/>
-  <ellipse cx="1080" cy="380" rx="160" ry="160" fill="url(#g4bg)"/>
-
-  <!-- ============ HEADER ============ -->
-  <g transform="translate(60, 50)">
-    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="14" fill="#475569" letter-spacing="6">JOURNEY  /  2023 — 2026</text>
-    <line x1="0" y1="14" x2="280" y2="14" stroke="#1E293B" stroke-width="0.7"/>
-    <text x="0" y="48" font-family="ui-monospace,monospace" font-size="28" font-weight="800" fill="url(#title)" letter-spacing="2" filter="url(#bigGlow)">How I got here</text>
-    <text x="0" y="72" font-family="ui-monospace,monospace" font-size="14" fill="#94A3B8" letter-spacing="3">— from data science fundamentals to shipping production AI —</text>
+  <!-- ============ TOP STRIP ============ -->
+  <g transform="translate(56, 70)">
+    <text class="mono" font-size="18" font-weight="700" letter-spacing="3.6" fill="#0B1F33">BILL OF MATERIALS</text>
+    <line x1="0" y1="14" x2="280" y2="14" stroke="#0B1F33" stroke-width="0.7"/>
+    <text class="mono" y="36" font-size="12" font-weight="500" letter-spacing="1.5" fill="#5C6A78">career arc as parts list  ⋅  in chronological order</text>
+  </g>
+  <g transform="translate(1224, 70)" text-anchor="end">
+    <text class="mono" font-size="12" font-weight="600" letter-spacing="2.4" fill="#0B1F33">REVISED  ⋅  2026-06</text>
+    <text class="mono" y="18" font-size="12" font-weight="600" letter-spacing="2.4" fill="#0B1F33">SCALE  ⋅  1:1</text>
+    <text class="mono" y="36" font-size="12" font-weight="600" letter-spacing="2.4" fill="#0B1F33">SHEET  ⋅  1.A  /  7</text>
   </g>
 
-  <g transform="translate(1220, 60)" text-anchor="end">
-    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="13" fill="#475569" letter-spacing="3">FOUR ACTS  ·  ONE THROUGHLINE</text>
-    <line x1="-200" y1="14" x2="0" y2="14" stroke="#1E293B" stroke-width="0.7"/>
-    <text x="0" y="48" font-family="ui-monospace,monospace" font-size="14" fill="#22C55E" letter-spacing="3" font-weight="700">⬤ ACT IV  ·  IN PROGRESS</text>
+  <line x1="48" y1="138" x2="1232" y2="138" stroke="#0B1F33" stroke-width="0.5"/>
+
+  <!-- ============ COLUMN HEADERS ============ -->
+  <g class="mono" font-size="11" font-weight="700" letter-spacing="2.5" fill="#5C6A78">
+    <text x="56" y="174">ITEM</text>
+    <text x="156" y="174">DATE</text>
+    <text x="400" y="174">LOCATION</text>
+    <text x="720" y="174">ROLE</text>
+    <text x="950" y="174">DELIVERABLE</text>
   </g>
+  <line x1="48" y1="186" x2="1232" y2="186" stroke="#0B1F33" stroke-width="0.7"/>
 
-  <!-- ============ TIMELINE LINE ============ -->
-  <line x1="200" y1="220" x2="1080" y2="220" stroke="url(#timeline)" stroke-width="2.5"/>
-  <line x1="200" y1="220" x2="1080" y2="220" stroke="url(#timeline)" stroke-width="6" opacity="0.25" filter="url(#bigGlow)"/>
-
-  <!-- Tick marks under timeline -->
-  <g stroke="#475569" stroke-width="0.6" opacity="0.5">
-    <line x1="320" y1="218" x2="320" y2="226"/>
-    <line x1="420" y1="218" x2="420" y2="226"/>
-    <line x1="520" y1="218" x2="520" y2="226"/>
-    <line x1="620" y1="218" x2="620" y2="226"/>
-    <line x1="720" y1="218" x2="720" y2="226"/>
-    <line x1="820" y1="218" x2="820" y2="226"/>
-    <line x1="920" y1="218" x2="920" y2="226"/>
-    <line x1="1020" y1="218" x2="1020" y2="226"/>
+  <!-- ============ ROWS ============ -->
+  <!-- 01 -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="220" font-weight="700" letter-spacing="2">01</text>
+    <text x="156" y="220" font-weight="500">2023.09 — pres.</text>
+    <text x="400" y="220" font-weight="500">USAL  ⋅  Beirut, LB</text>
+    <text x="720" y="220" font-weight="500">undergraduate</text>
+    <text x="950" y="220" font-weight="500">BSc Data Science  (in progress)</text>
   </g>
+  <line x1="48" y1="234" x2="1232" y2="234" stroke="#5C6A78" stroke-width="0.3" opacity="0.6"/>
 
-  <!-- ============ MILESTONE NODES ============ -->
-  <!-- M1: 2023 Foundation -->
-  <g transform="translate(200, 220)">
-    <circle r="18" fill="#0B1024" stroke="#22D3EE" stroke-width="2"/>
-    <circle r="6" fill="#22D3EE" class="accent"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#22D3EE" text-anchor="middle" font-weight="700" letter-spacing="3">2023</text>
+  <!-- 02 -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="266" font-weight="700" letter-spacing="2">02</text>
+    <text x="156" y="266" font-weight="500">2024</text>
+    <text x="400" y="266" font-weight="500">self-directed</text>
+    <text x="720" y="266" font-weight="500">builder</text>
+    <text x="950" y="266" font-weight="500">DebugMaster  ⋅  Android / Firebase</text>
   </g>
-  <!-- M2: 2024 Building -->
-  <g transform="translate(490, 220)">
-    <circle r="18" fill="#0B1024" stroke="#A78BFA" stroke-width="2"/>
-    <circle r="6" fill="#A78BFA" class="accent"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#A78BFA" text-anchor="middle" font-weight="700" letter-spacing="3">2024</text>
+  <line x1="48" y1="280" x2="1232" y2="280" stroke="#5C6A78" stroke-width="0.3" opacity="0.6"/>
+
+  <!-- 03 -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="312" font-weight="700" letter-spacing="2">03</text>
+    <text x="156" y="312" font-weight="500">2024</text>
+    <text x="400" y="312" font-weight="500">self-directed  ⋅  research</text>
+    <text x="720" y="312" font-weight="500">builder</text>
+    <text x="950" y="312" font-weight="500">Biomedical NER  ⋅  BiLSTM-CRF  (87% F1)</text>
   </g>
-  <!-- M3: 2025 Production -->
-  <g transform="translate(790, 220)">
-    <circle r="18" fill="#0B1024" stroke="#FB923C" stroke-width="2"/>
-    <circle r="6" fill="#FB923C" class="accent"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#FB923C" text-anchor="middle" font-weight="700" letter-spacing="3">2025</text>
+  <line x1="48" y1="326" x2="1232" y2="326" stroke="#5C6A78" stroke-width="0.3" opacity="0.6"/>
+
+  <!-- 04 -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="358" font-weight="700" letter-spacing="2">04</text>
+    <text x="156" y="358" font-weight="500">2025</text>
+    <text x="400" y="358" font-weight="500">XpertBot Academy  ⋅  Beirut</text>
+    <text x="720" y="358" font-weight="500">ML intern</text>
+    <text x="950" y="358" font-weight="500">10+ Plotly dashboards  ⋅  renewable energy</text>
   </g>
-  <!-- M4: 2026 Synthesis (current) -->
-  <g transform="translate(1080, 220)">
-    <circle r="50" fill="#22C55E" opacity="0.0" class="ping"/>
-    <circle r="22" fill="#0B1024" stroke="#22C55E" stroke-width="2.5"/>
-    <circle r="9" fill="#22C55E" class="live"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#22C55E" text-anchor="middle" font-weight="700" letter-spacing="3">2026</text>
-    <text y="-50" font-family="ui-monospace,monospace" font-size="12" fill="#22C55E" text-anchor="middle" letter-spacing="3" opacity="0.85">▼ YOU ARE HERE</text>
+  <line x1="48" y1="372" x2="1232" y2="372" stroke="#5C6A78" stroke-width="0.3" opacity="0.6"/>
+
+  <!-- 05 -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="404" font-weight="700" letter-spacing="2">05</text>
+    <text x="156" y="404" font-weight="500">2025</text>
+    <text x="400" y="404" font-weight="500">Mobile Arts  ⋅  Beirut</text>
+    <text x="720" y="404" font-weight="500">Odoo dev  (sole)</text>
+    <text x="950" y="404" font-weight="500">Odoo 18 Auction Module  ⋅  production</text>
   </g>
+  <line x1="48" y1="418" x2="1232" y2="418" stroke="#5C6A78" stroke-width="0.3" opacity="0.6"/>
 
-  <!-- ============ PHASE CARDS ============ -->
-  <!-- ACT 1: FOUNDATION -->
-  <g transform="translate(80, 260)">
-    <rect width="240" height="270" rx="12" fill="#0B1933" stroke="#22D3EE" stroke-opacity="0.45" stroke-width="1.2"/>
-    <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#22D3EE"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  ONE</text>
-
-    <!-- Icon: spark/star -->
-    <g transform="translate(120, 60)" stroke="#22D3EE" stroke-width="1.8" fill="none">
-      <circle r="14"/>
-      <line x1="0" y1="-22" x2="0" y2="-18"/>
-      <line x1="0" y1="22" x2="0" y2="18"/>
-      <line x1="-22" y1="0" x2="-18" y2="0"/>
-      <line x1="22" y1="0" x2="18" y2="0"/>
-      <circle r="5" fill="#22D3EE" stroke="none" class="accent"/>
-    </g>
-
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#67E8F9" text-anchor="middle" letter-spacing="3">FOUNDATION</text>
-    <line x1="100" y1="130" x2="140" y2="130" stroke="#22D3EE" stroke-width="2"/>
-
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">Started Data Science</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">Year 1 at USAL</text>
-
-    <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
-
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#22D3EE" text-anchor="middle" letter-spacing="2" opacity="0.85">FUNDAMENTALS</text>
-    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
-      <text x="120" y="240">math · stats · python</text>
-      <text x="120" y="254">first taste of ML</text>
-    </g>
+  <!-- 06 -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="450" font-weight="700" letter-spacing="2">06</text>
+    <text x="156" y="450" font-weight="500">2025 — pres.</text>
+    <text x="400" y="450" font-weight="500">self-directed</text>
+    <text x="720" y="450" font-weight="500">builder</text>
+    <text x="950" y="450" font-weight="500">AtlasBrief  ⋅  Atelier  ⋅  Triage Cockpit</text>
   </g>
+  <line x1="48" y1="464" x2="1232" y2="464" stroke="#5C6A78" stroke-width="0.3" opacity="0.6"/>
 
-  <!-- ACT 2: BUILDING -->
-  <g transform="translate(370, 260)">
-    <rect width="240" height="270" rx="12" fill="#1E1B4B" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1.2"/>
-    <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#A78BFA"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  TWO</text>
-
-    <!-- Icon: hammer/build -->
-    <g transform="translate(120, 60)" stroke="#A78BFA" stroke-width="1.8" fill="none">
-      <rect x="-14" y="-14" width="28" height="28" rx="3"/>
-      <line x1="-14" y1="-4" x2="14" y2="-4"/>
-      <line x1="-4" y1="-14" x2="-4" y2="14"/>
-      <circle cx="6" cy="6" r="3" fill="#A78BFA" stroke="none" class="accent"/>
-    </g>
-
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#C4B5FD" text-anchor="middle" letter-spacing="3">BUILDING</text>
-    <line x1="100" y1="130" x2="140" y2="130" stroke="#A78BFA" stroke-width="2"/>
-
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">First serious projects</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">finding what excites me</text>
-
-    <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
-
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#A78BFA" text-anchor="middle" letter-spacing="2" opacity="0.85">SHIPPED</text>
-    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
-      <text x="120" y="240">DebugMaster Android · Atelier</text>
-      <text x="120" y="254">Biomedical NER (87% F1)</text>
-    </g>
+  <!-- 07 (open / current) — orange dot -->
+  <g class="mono" font-size="13" fill="#0B1F33">
+    <text x="56"  y="496" font-weight="700" letter-spacing="2">07</text>
+    <text x="156" y="496" font-weight="700">2026.06  →</text>
+    <text x="400" y="496" font-weight="700">—</text>
+    <text x="720" y="496" font-weight="700">open  /  available</text>
+    <text x="950" y="496" font-weight="700">next assignment</text>
+    <circle cx="1180" cy="492" r="5" fill="#E25E1E" class="live"/>
   </g>
+  <line x1="48" y1="510" x2="1232" y2="510" stroke="#0B1F33" stroke-width="0.7"/>
 
-  <!-- ACT 3: PRODUCTION -->
-  <g transform="translate(670, 260)">
-    <rect width="240" height="270" rx="12" fill="#1A0F08" stroke="#FB923C" stroke-opacity="0.5" stroke-width="1.2"/>
-    <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#FB923C"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  THREE</text>
-
-    <!-- Icon: rocket -->
-    <g transform="translate(120, 60)" stroke="#FB923C" stroke-width="1.8" fill="none">
-      <path d="M 0 -22 L 8 -8 L 8 12 L -8 12 L -8 -8 Z"/>
-      <line x1="0" y1="-12" x2="0" y2="-2"/>
-      <path d="M -8 6 L -16 16 L -10 16 Z" fill="#FB923C" stroke="none" opacity="0.7"/>
-      <path d="M 8 6 L 16 16 L 10 16 Z" fill="#FB923C" stroke="none" opacity="0.7"/>
-      <path d="M -3 14 L 0 22 L 3 14" fill="#FB923C" stroke="none" class="accent"/>
-    </g>
-
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="3">PRODUCTION</text>
-    <line x1="100" y1="130" x2="140" y2="130" stroke="#FB923C" stroke-width="2"/>
-
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">Two internships</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">real shipped work</text>
-
-    <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
-
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#FB923C" text-anchor="middle" letter-spacing="2" opacity="0.85">DEPLOYED</text>
-    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
-      <text x="120" y="240">XpertBot — 10+ Plotly dashboards</text>
-      <text x="120" y="254">Mobile Arts — Odoo 18 module</text>
-    </g>
-  </g>
-
-  <!-- ACT 4: SYNTHESIS (current) -->
-  <g transform="translate(960, 260)">
-    <rect width="240" height="270" rx="12" fill="#022C22" stroke="#22C55E" stroke-opacity="0.7" stroke-width="1.5"/>
-    <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#22C55E"/>
-    <rect x="0" y="0" width="240" height="270" rx="12" fill="#22C55E" opacity="0.04"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#22C55E" text-anchor="middle" letter-spacing="4" font-weight="700">▶ ACT  ·  FOUR</text>
-
-    <!-- Icon: target/pin -->
-    <g transform="translate(120, 60)" stroke="#22C55E" stroke-width="1.8" fill="none">
-      <circle r="18"/>
-      <circle r="11"/>
-      <circle r="4" fill="#22C55E" stroke="none" class="live"/>
-      <line x1="0" y1="-22" x2="0" y2="-18"/>
-      <line x1="0" y1="22" x2="0" y2="18"/>
-      <line x1="-22" y1="0" x2="-18" y2="0"/>
-      <line x1="22" y1="0" x2="18" y2="0"/>
-    </g>
-
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#86EFAC" text-anchor="middle" letter-spacing="3">SYNTHESIS</text>
-    <line x1="100" y1="130" x2="140" y2="130" stroke="#22C55E" stroke-width="2"/>
-
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">Graduating · open to work</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">production AI · agents · RAG</text>
-
-    <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
-
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#22C55E" text-anchor="middle" letter-spacing="2" font-weight="700">JUNE 2026</text>
-    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
-      <text x="120" y="240">AtlasBrief · Triage Cockpit</text>
-      <text x="120" y="254">looking for the right team</text>
-    </g>
-  </g>
-
-  <!-- ============ FOOTER STRIP ============ -->
-  <line x1="60" y1="555" x2="1220" y2="555" stroke="#1E293B" stroke-width="0.6"/>
-  <text x="60"   y="570" font-family="ui-monospace,monospace" font-size="12" fill="#475569" letter-spacing="3">→ THE NEXT CHAPTER WRITES ITSELF WITH THE TEAM I JOIN</text>
-  <text x="1220" y="570" font-family="ui-monospace,monospace" font-size="12" fill="#22C55E" text-anchor="end" letter-spacing="3" opacity="0.85">⬤  AVAILABLE  ·  JUNE 2026</text>
+  <!-- ============ BOTTOM STRIP ============ -->
+  <line x1="48" y1="538" x2="1232" y2="538" stroke="#0B1F33" stroke-width="0.5"/>
+  <text class="mono" x="56"  y="562" font-size="11" font-weight="700" letter-spacing="2.8" fill="#0B1F33">Y-H  ⋅  BRT  ⋅  2026</text>
+  <text class="mono" x="640" y="562" font-size="11" font-weight="500" letter-spacing="2" fill="#5C6A78" text-anchor="middle">7  ITEMS  ⋅  CHRONOLOGICAL  ⋅  CONFIDENCE: HIGH</text>
+  <text class="mono" x="1224" y="562" font-size="11" font-weight="700" letter-spacing="2.8" fill="#0B1F33" text-anchor="end">BOM.001  /  PLATE 1.A</text>
 </svg>
