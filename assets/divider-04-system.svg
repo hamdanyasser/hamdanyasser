@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 70" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Chapter 04 — SYSTEM">
+  <defs>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="num" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+    .dot { animation: pulse 3s ease-in-out infinite; }
+  </style>
+  <line x1="0" y1="35" x2="1280" y2="35" stroke="url(#line)" stroke-width="1"/>
+  <rect x="540" y="18" width="200" height="34" rx="17" fill="#02030A" stroke="#1E293B" stroke-width="0.7"/>
+  <text x="580" y="40" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" font-weight="700" fill="url(#num)" letter-spacing="2" filter="url(#g)">04</text>
+  <line x1="610" y1="22" x2="610" y2="48" stroke="#334155" stroke-width="0.7"/>
+  <text x="690" y="40" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#CBD5E1" text-anchor="middle" letter-spacing="6">SYSTEM</text>
+  <circle cx="540" cy="35" r="2" fill="#A78BFA" class="dot"/>
+  <circle cx="740" cy="35" r="2" fill="#A78BFA" class="dot"/>
+</svg>

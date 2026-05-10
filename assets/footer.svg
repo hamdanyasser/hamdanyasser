@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 200" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Sign-off">
+  <defs>
+    <radialGradient id="bgFoot" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#0B1024"/>
+      <stop offset="100%" stop-color="#02030A"/>
+    </radialGradient>
+    <linearGradient id="footName" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+    <filter id="fg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+    .star { animation: pulse 4s ease-in-out infinite; }
+    .star-b { animation: pulse 3s ease-in-out infinite 0.7s; }
+  </style>
+  <rect width="1280" height="200" fill="url(#bgFoot)"/>
+  <g opacity="0.05" stroke="#A78BFA" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1280" y2="100"/>
+  </g>
+  <circle class="star" cx="200" cy="40" r="1" fill="#38BDF8"/>
+  <circle class="star-b" cx="1080" cy="60" r="1" fill="#A78BFA"/>
+  <circle class="star" cx="180" cy="160" r="1" fill="#F472B6"/>
+  <circle class="star-b" cx="1100" cy="150" r="1" fill="#38BDF8"/>
+  <text x="640" y="60" font-family="ui-monospace,monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="8">BUILT WITH CARE  ·  YASSER HAMDAN  ·  2026</text>
+  <line x1="500" y1="78" x2="780" y2="78" stroke="url(#footName)" stroke-width="0.5" opacity="0.4"/>
+  <text x="640" y="120" font-family="ui-monospace,monospace" font-size="22" font-weight="700" fill="url(#footName)" text-anchor="middle" letter-spacing="3" filter="url(#fg)">END  /  TRANSMISSION</text>
+  <text x="640" y="148" font-family="ui-monospace,monospace" font-size="10" fill="#64748B" text-anchor="middle" letter-spacing="4">github.com/hamdanyasser  ·  linkedin.com/in/yasser-hamdan063</text>
+  <g stroke="#334155" stroke-width="0.6" fill="none">
+    <path d="M 24 24 L 24 50 L 50 50"/>
+    <path d="M 1256 24 L 1256 50 L 1230 50"/>
+    <path d="M 24 176 L 24 150 L 50 150"/>
+    <path d="M 1256 176 L 1256 150 L 1230 150"/>
+  </g>
+</svg>
