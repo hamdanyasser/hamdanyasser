@@ -113,9 +113,41 @@ A lightweight model handles structured extraction from the user query — cheap,
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=hamdanyasser&show_icons=true&hide_border=true&title_color=A78BFA&icon_color=38BDF8&text_color=94A3B8&bg_color=00000000&include_all_commits=true&count_private=false&rank_icon=github" alt="GitHub stats"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=hamdanyasser&show_icons=true&hide_border=true&title_color=E8B547&icon_color=E8B547&text_color=DCC9A6&bg_color=00000000&include_all_commits=true&count_private=false&rank_icon=github" alt="GitHub stats"/>
 &nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamdanyasser&layout=compact&hide_border=true&title_color=A78BFA&text_color=94A3B8&bg_color=00000000&langs_count=6&hide=html,css,jupyter%20notebook" alt="Top languages"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamdanyasser&layout=compact&hide_border=true&title_color=E8B547&text_color=DCC9A6&bg_color=00000000&langs_count=6&hide=html,css,jupyter%20notebook" alt="Top languages"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img height="195" src="https://streak-stats.demolab.com/?user=hamdanyasser&theme=transparent&hide_border=true&background=00000000&stroke=3B2E1F&ring=E8B547&fire=FFD580&currStreakLabel=E8B547&sideLabels=DCC9A6&dates=8C8470&currStreakNum=FBE9C5&sideNums=FBE9C5&excludeDaysLabel=8C8470" alt="Current streak"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+> *— DAILY RUSHES · 12 months of frames —*
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hamdanyasser&theme=github-compact&hide_border=true&bg_color=00000000&color=E8B547&line=E8B547&point=FFD580&area=true&area_color=E8B547" alt="Activity graph" width="100%"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<sub>↓ &nbsp; <i>watch the year of contributions get devoured frame-by-frame</i> &nbsp; ↓</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamdanyasser/hamdanyasser/output/snake-gold.gif"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamdanyasser/hamdanyasser/output/snake.svg"/>
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/hamdanyasser/hamdanyasser/output/snake-gold.gif"/>
+</picture>
 
 </div>
 

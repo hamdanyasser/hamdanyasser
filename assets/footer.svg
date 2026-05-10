@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Sign-off">
   <defs>
     <radialGradient id="bgFoot" cx="50%" cy="40%" r="85%">
-      <stop offset="0%"   stop-color="#3B1E78" stop-opacity="0.55"/>
-      <stop offset="40%"  stop-color="#1E1B4B"/>
-      <stop offset="80%"  stop-color="#0E1640"/>
-      <stop offset="100%" stop-color="#080A24"/>
+      <stop offset="0%"   stop-color="#1F1810" stop-opacity="0.7"/>
+      <stop offset="40%"  stop-color="#13110D"/>
+      <stop offset="80%"  stop-color="#0A0907"/>
+      <stop offset="100%" stop-color="#050403"/>
     </radialGradient>
     <radialGradient id="footSun" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#FBBF24" stop-opacity="0.18"/>
-      <stop offset="50%"  stop-color="#F472B6" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#E8B547" stop-opacity="0.18"/>
+      <stop offset="50%"  stop-color="#A0522D" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#9C6E1B" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="footName" x1="0%" y1="0%" x2="100%" y2="50%">
-      <stop offset="0%"   stop-color="#22D3EE"/>
-      <stop offset="33%"  stop-color="#A78BFA"/>
-      <stop offset="66%"  stop-color="#F472B6"/>
-      <stop offset="100%" stop-color="#FBBF24"/>
+    <linearGradient id="footName" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FBE9C5"/>
+      <stop offset="35%"  stop-color="#E8B547"/>
+      <stop offset="55%"  stop-color="#FFD580"/>
+      <stop offset="100%" stop-color="#9C6E1B"/>
     </linearGradient>
     <linearGradient id="footLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#A78BFA" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#F472B6" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#E8B547" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#E8B547" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E8B547" stop-opacity="0"/>
     </linearGradient>
     <filter id="fg" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
@@ -49,14 +49,14 @@
   </g>
 
   <!-- Stars -->
-  <circle class="star"   cx="180"  cy="50"  r="1.2" fill="#22D3EE"/>
-  <circle class="star-b" cx="1100" cy="60"  r="1.2" fill="#A78BFA"/>
-  <circle class="star-c" cx="220"  cy="270" r="1.2" fill="#F472B6"/>
-  <circle class="star"   cx="1080" cy="260" r="1.2" fill="#FBBF24"/>
-  <circle class="star-b" cx="80"   cy="180" r="1"   fill="#A78BFA"/>
-  <circle class="star-c" cx="1200" cy="180" r="1"   fill="#22D3EE"/>
-  <circle class="star"   cx="400"  cy="40"  r="0.8" fill="#F472B6"/>
-  <circle class="star-b" cx="880"  cy="40"  r="0.8" fill="#22D3EE"/>
+  <circle class="star"   cx="180"  cy="50"  r="1.2" fill="#E8B547"/>
+  <circle class="star-b" cx="1100" cy="60"  r="1.2" fill="#FFD580"/>
+  <circle class="star-c" cx="220"  cy="270" r="1.2" fill="#FBE9C5"/>
+  <circle class="star"   cx="1080" cy="260" r="1.2" fill="#E8B547"/>
+  <circle class="star-b" cx="80"   cy="180" r="1"   fill="#DCC9A6"/>
+  <circle class="star-c" cx="1200" cy="180" r="1"   fill="#FFD580"/>
+  <circle class="star"   cx="400"  cy="40"  r="0.8" fill="#FBE9C5"/>
+  <circle class="star-b" cx="880"  cy="40"  r="0.8" fill="#E8B547"/>
 
   <!-- Top label -->
   <text x="640" y="54" font-family="ui-monospace,monospace" font-size="14" fill="#CBD5E1" text-anchor="middle" letter-spacing="8" font-weight="600">FINAL  FRAME   ·   2026</text>

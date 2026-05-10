@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 580" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The journey — 2023 to 2026">
   <defs>
     <linearGradient id="bgJ" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#1E1B4B"/>
-      <stop offset="40%"  stop-color="#0F1A3D"/>
-      <stop offset="100%" stop-color="#080A24"/>
+      <stop offset="0%"   stop-color="#1F1810"/>
+      <stop offset="40%"  stop-color="#130E08"/>
+      <stop offset="100%" stop-color="#050403"/>
     </linearGradient>
     <linearGradient id="timeline" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0.9"/>
@@ -11,10 +11,11 @@
       <stop offset="66%"  stop-color="#FB923C" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#22C55E" stop-opacity="0.9"/>
     </linearGradient>
-    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#22D3EE"/>
-      <stop offset="50%"  stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#F472B6"/>
+    <linearGradient id="title" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FBE9C5"/>
+      <stop offset="35%"  stop-color="#E8B547"/>
+      <stop offset="55%"  stop-color="#FFD580"/>
+      <stop offset="100%" stop-color="#9C6E1B"/>
     </linearGradient>
 
     <radialGradient id="g1bg" cx="50%" cy="50%" r="60%">
