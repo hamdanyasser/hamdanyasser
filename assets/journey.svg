@@ -69,16 +69,16 @@
 
   <!-- ============ HEADER ============ -->
   <g transform="translate(60, 50)">
-    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="11" fill="#475569" letter-spacing="6">JOURNEY  /  2023 — 2026</text>
+    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="14" fill="#475569" letter-spacing="6">JOURNEY  /  2023 — 2026</text>
     <line x1="0" y1="14" x2="280" y2="14" stroke="#1E293B" stroke-width="0.7"/>
     <text x="0" y="48" font-family="ui-monospace,monospace" font-size="28" font-weight="800" fill="url(#title)" letter-spacing="2" filter="url(#bigGlow)">How I got here</text>
-    <text x="0" y="72" font-family="ui-monospace,monospace" font-size="11" fill="#94A3B8" letter-spacing="3">— from data science fundamentals to shipping production AI —</text>
+    <text x="0" y="72" font-family="ui-monospace,monospace" font-size="14" fill="#94A3B8" letter-spacing="3">— from data science fundamentals to shipping production AI —</text>
   </g>
 
   <g transform="translate(1220, 60)" text-anchor="end">
-    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="10" fill="#475569" letter-spacing="3">FOUR ACTS  ·  ONE THROUGHLINE</text>
+    <text x="0" y="0" font-family="ui-monospace,monospace" font-size="13" fill="#475569" letter-spacing="3">FOUR ACTS  ·  ONE THROUGHLINE</text>
     <line x1="-200" y1="14" x2="0" y2="14" stroke="#1E293B" stroke-width="0.7"/>
-    <text x="0" y="48" font-family="ui-monospace,monospace" font-size="11" fill="#22C55E" letter-spacing="3" font-weight="700">⬤ ACT IV  ·  IN PROGRESS</text>
+    <text x="0" y="48" font-family="ui-monospace,monospace" font-size="14" fill="#22C55E" letter-spacing="3" font-weight="700">⬤ ACT IV  ·  IN PROGRESS</text>
   </g>
 
   <!-- ============ TIMELINE LINE ============ -->
@@ -102,27 +102,27 @@
   <g transform="translate(200, 220)">
     <circle r="18" fill="#0B1024" stroke="#22D3EE" stroke-width="2"/>
     <circle r="6" fill="#22D3EE" class="accent"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="11" fill="#22D3EE" text-anchor="middle" font-weight="700" letter-spacing="3">2023</text>
+    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#22D3EE" text-anchor="middle" font-weight="700" letter-spacing="3">2023</text>
   </g>
   <!-- M2: 2024 Building -->
   <g transform="translate(490, 220)">
     <circle r="18" fill="#0B1024" stroke="#A78BFA" stroke-width="2"/>
     <circle r="6" fill="#A78BFA" class="accent"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="11" fill="#A78BFA" text-anchor="middle" font-weight="700" letter-spacing="3">2024</text>
+    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#A78BFA" text-anchor="middle" font-weight="700" letter-spacing="3">2024</text>
   </g>
   <!-- M3: 2025 Production -->
   <g transform="translate(790, 220)">
     <circle r="18" fill="#0B1024" stroke="#FB923C" stroke-width="2"/>
     <circle r="6" fill="#FB923C" class="accent"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="11" fill="#FB923C" text-anchor="middle" font-weight="700" letter-spacing="3">2025</text>
+    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#FB923C" text-anchor="middle" font-weight="700" letter-spacing="3">2025</text>
   </g>
   <!-- M4: 2026 Synthesis (current) -->
   <g transform="translate(1080, 220)">
     <circle r="50" fill="#22C55E" opacity="0.0" class="ping"/>
     <circle r="22" fill="#0B1024" stroke="#22C55E" stroke-width="2.5"/>
     <circle r="9" fill="#22C55E" class="live"/>
-    <text y="-30" font-family="ui-monospace,monospace" font-size="11" fill="#22C55E" text-anchor="middle" font-weight="700" letter-spacing="3">2026</text>
-    <text y="-50" font-family="ui-monospace,monospace" font-size="9" fill="#22C55E" text-anchor="middle" letter-spacing="3" opacity="0.85">▼ YOU ARE HERE</text>
+    <text y="-30" font-family="ui-monospace,monospace" font-size="14" fill="#22C55E" text-anchor="middle" font-weight="700" letter-spacing="3">2026</text>
+    <text y="-50" font-family="ui-monospace,monospace" font-size="12" fill="#22C55E" text-anchor="middle" letter-spacing="3" opacity="0.85">▼ YOU ARE HERE</text>
   </g>
 
   <!-- ============ PHASE CARDS ============ -->
@@ -130,7 +130,7 @@
   <g transform="translate(80, 260)">
     <rect width="240" height="270" rx="12" fill="#0B1933" stroke="#22D3EE" stroke-opacity="0.45" stroke-width="1.2"/>
     <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#22D3EE"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  ONE</text>
+    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  ONE</text>
 
     <!-- Icon: spark/star -->
     <g transform="translate(120, 60)" stroke="#22D3EE" stroke-width="1.8" fill="none">
@@ -142,16 +142,16 @@
       <circle r="5" fill="#22D3EE" stroke="none" class="accent"/>
     </g>
 
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="14" font-weight="800" fill="#67E8F9" text-anchor="middle" letter-spacing="3">FOUNDATION</text>
+    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#67E8F9" text-anchor="middle" letter-spacing="3">FOUNDATION</text>
     <line x1="100" y1="130" x2="140" y2="130" stroke="#22D3EE" stroke-width="2"/>
 
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">Started Data Science</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8" text-anchor="middle">Year 1 at USAL</text>
+    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">Started Data Science</text>
+    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">Year 1 at USAL</text>
 
     <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
 
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="9" fill="#22D3EE" text-anchor="middle" letter-spacing="2" opacity="0.85">FUNDAMENTALS</text>
-    <g font-family="ui-monospace,monospace" font-size="9" fill="#94A3B8" text-anchor="middle">
+    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#22D3EE" text-anchor="middle" letter-spacing="2" opacity="0.85">FUNDAMENTALS</text>
+    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
       <text x="120" y="240">math · stats · python</text>
       <text x="120" y="254">first taste of ML</text>
     </g>
@@ -161,7 +161,7 @@
   <g transform="translate(370, 260)">
     <rect width="240" height="270" rx="12" fill="#1E1B4B" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1.2"/>
     <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#A78BFA"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  TWO</text>
+    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  TWO</text>
 
     <!-- Icon: hammer/build -->
     <g transform="translate(120, 60)" stroke="#A78BFA" stroke-width="1.8" fill="none">
@@ -171,16 +171,16 @@
       <circle cx="6" cy="6" r="3" fill="#A78BFA" stroke="none" class="accent"/>
     </g>
 
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="14" font-weight="800" fill="#C4B5FD" text-anchor="middle" letter-spacing="3">BUILDING</text>
+    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#C4B5FD" text-anchor="middle" letter-spacing="3">BUILDING</text>
     <line x1="100" y1="130" x2="140" y2="130" stroke="#A78BFA" stroke-width="2"/>
 
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">First serious projects</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8" text-anchor="middle">finding what excites me</text>
+    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">First serious projects</text>
+    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">finding what excites me</text>
 
     <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
 
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="9" fill="#A78BFA" text-anchor="middle" letter-spacing="2" opacity="0.85">SHIPPED</text>
-    <g font-family="ui-monospace,monospace" font-size="9" fill="#94A3B8" text-anchor="middle">
+    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#A78BFA" text-anchor="middle" letter-spacing="2" opacity="0.85">SHIPPED</text>
+    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
       <text x="120" y="240">DebugMaster Android · Atelier</text>
       <text x="120" y="254">Biomedical NER (87% F1)</text>
     </g>
@@ -190,7 +190,7 @@
   <g transform="translate(670, 260)">
     <rect width="240" height="270" rx="12" fill="#1A0F08" stroke="#FB923C" stroke-opacity="0.5" stroke-width="1.2"/>
     <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#FB923C"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  THREE</text>
+    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#475569" text-anchor="middle" letter-spacing="4">ACT  ·  THREE</text>
 
     <!-- Icon: rocket -->
     <g transform="translate(120, 60)" stroke="#FB923C" stroke-width="1.8" fill="none">
@@ -201,16 +201,16 @@
       <path d="M -3 14 L 0 22 L 3 14" fill="#FB923C" stroke="none" class="accent"/>
     </g>
 
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="14" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="3">PRODUCTION</text>
+    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="3">PRODUCTION</text>
     <line x1="100" y1="130" x2="140" y2="130" stroke="#FB923C" stroke-width="2"/>
 
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">Two internships</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8" text-anchor="middle">real shipped work</text>
+    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">Two internships</text>
+    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">real shipped work</text>
 
     <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
 
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="9" fill="#FB923C" text-anchor="middle" letter-spacing="2" opacity="0.85">DEPLOYED</text>
-    <g font-family="ui-monospace,monospace" font-size="9" fill="#94A3B8" text-anchor="middle">
+    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#FB923C" text-anchor="middle" letter-spacing="2" opacity="0.85">DEPLOYED</text>
+    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
       <text x="120" y="240">XpertBot — 10+ Plotly dashboards</text>
       <text x="120" y="254">Mobile Arts — Odoo 18 module</text>
     </g>
@@ -221,7 +221,7 @@
     <rect width="240" height="270" rx="12" fill="#022C22" stroke="#22C55E" stroke-opacity="0.7" stroke-width="1.5"/>
     <rect x="0" y="0" width="240" height="3" rx="1.5" fill="#22C55E"/>
     <rect x="0" y="0" width="240" height="270" rx="12" fill="#22C55E" opacity="0.04"/>
-    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="10" fill="#22C55E" text-anchor="middle" letter-spacing="4" font-weight="700">▶ ACT  ·  FOUR</text>
+    <text x="120" y="32" font-family="ui-monospace,monospace" font-size="13" fill="#22C55E" text-anchor="middle" letter-spacing="4" font-weight="700">▶ ACT  ·  FOUR</text>
 
     <!-- Icon: target/pin -->
     <g transform="translate(120, 60)" stroke="#22C55E" stroke-width="1.8" fill="none">
@@ -234,16 +234,16 @@
       <line x1="22" y1="0" x2="18" y2="0"/>
     </g>
 
-    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="14" font-weight="800" fill="#86EFAC" text-anchor="middle" letter-spacing="3">SYNTHESIS</text>
+    <text x="120" y="120" font-family="ui-monospace,monospace" font-size="18" font-weight="800" fill="#86EFAC" text-anchor="middle" letter-spacing="3">SYNTHESIS</text>
     <line x1="100" y1="130" x2="140" y2="130" stroke="#22C55E" stroke-width="2"/>
 
-    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">Graduating · open to work</text>
-    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="10" fill="#94A3B8" text-anchor="middle">production AI · agents · RAG</text>
+    <text x="120" y="160" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#E2E8F0" text-anchor="middle">Graduating · open to work</text>
+    <text x="120" y="178" font-family="ui-monospace,monospace" font-size="13" fill="#94A3B8" text-anchor="middle">production AI · agents · RAG</text>
 
     <line x1="60" y1="200" x2="180" y2="200" stroke="#1E293B" stroke-width="0.6"/>
 
-    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="9" fill="#22C55E" text-anchor="middle" letter-spacing="2" font-weight="700">JUNE 2026</text>
-    <g font-family="ui-monospace,monospace" font-size="9" fill="#94A3B8" text-anchor="middle">
+    <text x="120" y="222" font-family="ui-monospace,monospace" font-size="12" fill="#22C55E" text-anchor="middle" letter-spacing="2" font-weight="700">JUNE 2026</text>
+    <g font-family="ui-monospace,monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
       <text x="120" y="240">AtlasBrief · Triage Cockpit</text>
       <text x="120" y="254">looking for the right team</text>
     </g>
@@ -251,6 +251,6 @@
 
   <!-- ============ FOOTER STRIP ============ -->
   <line x1="60" y1="555" x2="1220" y2="555" stroke="#1E293B" stroke-width="0.6"/>
-  <text x="60"   y="570" font-family="ui-monospace,monospace" font-size="9" fill="#475569" letter-spacing="3">→ THE NEXT CHAPTER WRITES ITSELF WITH THE TEAM I JOIN</text>
-  <text x="1220" y="570" font-family="ui-monospace,monospace" font-size="9" fill="#22C55E" text-anchor="end" letter-spacing="3" opacity="0.85">⬤  AVAILABLE  ·  JUNE 2026</text>
+  <text x="60"   y="570" font-family="ui-monospace,monospace" font-size="12" fill="#475569" letter-spacing="3">→ THE NEXT CHAPTER WRITES ITSELF WITH THE TEAM I JOIN</text>
+  <text x="1220" y="570" font-family="ui-monospace,monospace" font-size="12" fill="#22C55E" text-anchor="end" letter-spacing="3" opacity="0.85">⬤  AVAILABLE  ·  JUNE 2026</text>
 </svg>

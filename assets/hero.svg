@@ -145,11 +145,11 @@
 
   <!-- ============ HEADER STRIP ============ -->
   <g class="meta">
-    <text x="640" y="60" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle" letter-spacing="14">N O W   S H O W I N G   ·   2 0 2 6</text>
-    <line x1="380" y1="80" x2="540" y2="80" stroke="#475569" stroke-width="0.6"/>
-    <line x1="740" y1="80" x2="900" y2="80" stroke="#475569" stroke-width="0.6"/>
-    <circle cx="540" cy="80" r="2" fill="#FBBF24" class="live"/>
-    <circle cx="740" cy="80" r="2" fill="#22D3EE" class="live"/>
+    <text x="640" y="62" font-family="ui-monospace, monospace" font-size="14" fill="#CBD5E1" text-anchor="middle" letter-spacing="10" font-weight="600">NOW  SHOWING   ·   2026</text>
+    <line x1="370" y1="82" x2="510" y2="82" stroke="#475569" stroke-width="0.6"/>
+    <line x1="770" y1="82" x2="910" y2="82" stroke="#475569" stroke-width="0.6"/>
+    <circle cx="510" cy="82" r="2.5" fill="#FBBF24" class="live"/>
+    <circle cx="770" cy="82" r="2.5" fill="#22D3EE" class="live"/>
   </g>
 
   <!-- ============ NAME (big cinematic) ============ -->
@@ -165,90 +165,90 @@
 
   <!-- ============ TAGLINE (the new hook) ============ -->
   <g class="tag">
-    <text x="640" y="305" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="16" fill="url(#tag)" text-anchor="middle" letter-spacing="3" font-weight="600">Engineering practical AI  ·  for businesses that ship</text>
+    <text x="640" y="307" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" fill="url(#tag)" text-anchor="middle" letter-spacing="3" font-weight="700">Engineering practical AI  ·  for businesses that ship</text>
   </g>
 
   <!-- Tech subtitle -->
   <g class="meta">
-    <text x="640" y="332" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" fill="#94A3B8" text-anchor="middle" letter-spacing="6">PYTHON  ·  ODOO ERP  ·  FASTAPI  ·  LANGGRAPH  ·  PYTORCH</text>
+    <text x="640" y="338" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#CBD5E1" text-anchor="middle" letter-spacing="5" font-weight="600">PYTHON  ·  ODOO ERP  ·  FASTAPI  ·  LANGGRAPH  ·  PYTORCH</text>
   </g>
 
   <!-- ============ STATS STRIP ============ -->
-  <g class="stats" transform="translate(640, 380)">
-    <line x1="-340" y1="0" x2="-260" y2="0" stroke="#334155" stroke-width="0.6"/>
-    <line x1="260" y1="0" x2="340" y2="0" stroke="#334155" stroke-width="0.6"/>
+  <g class="stats" transform="translate(640, 388)">
+    <line x1="-360" y1="0" x2="-270" y2="0" stroke="#334155" stroke-width="0.6"/>
+    <line x1="270" y1="0" x2="360" y2="0" stroke="#334155" stroke-width="0.6"/>
 
-    <g transform="translate(-220, 0)" text-anchor="middle">
-      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#FBBF24" letter-spacing="1">3</text>
-      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#FBBF24" letter-spacing="3">YEARS</text>
+    <g transform="translate(-225, 0)" text-anchor="middle">
+      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#FBBF24" letter-spacing="1">3</text>
+      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#FBBF24" letter-spacing="3" font-weight="700">YEARS</text>
     </g>
-    <line x1="-160" y1="-12" x2="-160" y2="14" stroke="#334155" stroke-width="0.5"/>
+    <line x1="-160" y1="-16" x2="-160" y2="22" stroke="#334155" stroke-width="0.5"/>
 
-    <g transform="translate(-100, 0)" text-anchor="middle">
-      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#22D3EE" letter-spacing="1">6</text>
-      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#22D3EE" letter-spacing="3">PROJECTS</text>
+    <g transform="translate(-95, 0)" text-anchor="middle">
+      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#22D3EE" letter-spacing="1">6</text>
+      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#22D3EE" letter-spacing="3" font-weight="700">PROJECTS</text>
     </g>
-    <line x1="-40" y1="-12" x2="-40" y2="14" stroke="#334155" stroke-width="0.5"/>
+    <line x1="-30" y1="-16" x2="-30" y2="22" stroke="#334155" stroke-width="0.5"/>
 
-    <g transform="translate(20, 0)" text-anchor="middle">
-      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#A78BFA" letter-spacing="1">2</text>
-      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#A78BFA" letter-spacing="3">INTERNSHIPS</text>
+    <g transform="translate(35, 0)" text-anchor="middle">
+      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#A78BFA" letter-spacing="1">2</text>
+      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#A78BFA" letter-spacing="3" font-weight="700">INTERNSHIPS</text>
     </g>
-    <line x1="80" y1="-12" x2="80" y2="14" stroke="#334155" stroke-width="0.5"/>
+    <line x1="100" y1="-16" x2="100" y2="22" stroke="#334155" stroke-width="0.5"/>
 
-    <g transform="translate(170, 0)" text-anchor="middle">
-      <text y="-2" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="#F472B6" letter-spacing="1">1</text>
-      <text y="14" font-family="ui-monospace, monospace" font-size="9" fill="#F472B6" letter-spacing="3">ODOO IN PROD</text>
+    <g transform="translate(190, 0)" text-anchor="middle">
+      <text y="-4" font-family="ui-monospace, monospace" font-size="28" font-weight="800" fill="#F472B6" letter-spacing="1">1</text>
+      <text y="20" font-family="ui-monospace, monospace" font-size="12" fill="#F472B6" letter-spacing="3" font-weight="700">ODOO IN PROD</text>
     </g>
   </g>
 
   <!-- Education line -->
   <g class="meta">
-    <text x="640" y="430" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#64748B" text-anchor="middle" letter-spacing="4">DATA SCIENCE  @  USAL   ·   BEIRUT, LEBANON   ·   GRADUATING JUNE 2026</text>
+    <text x="640" y="438" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="13" fill="#94A3B8" text-anchor="middle" letter-spacing="4" font-weight="600">DATA SCIENCE  @  USAL   ·   BEIRUT, LEBANON   ·   GRADUATING JUNE 2026</text>
   </g>
 
   <!-- ============ TECH CHIPS — LEFT SIDE ============ -->
   <g class="chip-1" filter="url(#softGlow)">
-    <rect x="60" y="170" width="92" height="28" rx="14" fill="#0B1024" stroke="#22D3EE" stroke-width="1"/>
-    <circle cx="78" cy="184" r="2.5" fill="#22D3EE" class="live"/>
-    <text x="105" y="188" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="2">PYTHON</text>
+    <rect x="50" y="168" width="106" height="32" rx="16" fill="#0B1024" stroke="#22D3EE" stroke-width="1.2"/>
+    <circle cx="70" cy="184" r="3" fill="#22D3EE" class="live"/>
+    <text x="103" y="189" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#67E8F9" letter-spacing="1.5">PYTHON</text>
   </g>
   <g class="chip-2" filter="url(#softGlow)">
-    <rect x="40" y="220" width="106" height="28" rx="14" fill="#0B1024" stroke="#10B981" stroke-width="1"/>
-    <circle cx="58" cy="234" r="2.5" fill="#10B981" class="live"/>
-    <text x="84" y="238" font-family="ui-monospace, monospace" font-size="10" fill="#6EE7B7" letter-spacing="2">LANGGRAPH</text>
+    <rect x="34" y="218" width="138" height="32" rx="16" fill="#0B1024" stroke="#10B981" stroke-width="1.2"/>
+    <circle cx="54" cy="234" r="3" fill="#10B981" class="live"/>
+    <text x="87" y="239" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#6EE7B7" letter-spacing="1.5">LANGGRAPH</text>
   </g>
   <g class="chip-3" filter="url(#softGlow)">
-    <rect x="80" y="270" width="92" height="28" rx="14" fill="#0B1024" stroke="#FB923C" stroke-width="1"/>
-    <circle cx="98" cy="284" r="2.5" fill="#FB923C" class="live"/>
-    <text x="124" y="288" font-family="ui-monospace, monospace" font-size="10" fill="#FDBA74" letter-spacing="2">PYTORCH</text>
+    <rect x="60" y="268" width="118" height="32" rx="16" fill="#0B1024" stroke="#FB923C" stroke-width="1.2"/>
+    <circle cx="80" cy="284" r="3" fill="#FB923C" class="live"/>
+    <text x="113" y="289" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#FDBA74" letter-spacing="1.5">PYTORCH</text>
   </g>
   <g class="chip-4" filter="url(#softGlow)">
-    <rect x="40" y="320" width="92" height="28" rx="14" fill="#0B1024" stroke="#FBBF24" stroke-width="1"/>
-    <circle cx="58" cy="334" r="2.5" fill="#FBBF24" class="live"/>
-    <text x="84" y="338" font-family="ui-monospace, monospace" font-size="10" fill="#FDE68A" letter-spacing="2">PLOTLY</text>
+    <rect x="34" y="318" width="106" height="32" rx="16" fill="#0B1024" stroke="#FBBF24" stroke-width="1.2"/>
+    <circle cx="54" cy="334" r="3" fill="#FBBF24" class="live"/>
+    <text x="87" y="339" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#FDE68A" letter-spacing="1.5">PLOTLY</text>
   </g>
 
   <!-- ============ TECH CHIPS — RIGHT SIDE ============ -->
   <g class="chip-5" filter="url(#softGlow)">
-    <rect x="1128" y="170" width="92" height="28" rx="14" fill="#0B1024" stroke="#A78BFA" stroke-width="1"/>
-    <circle cx="1146" cy="184" r="2.5" fill="#A78BFA" class="live"/>
-    <text x="1172" y="188" font-family="ui-monospace, monospace" font-size="10" fill="#C4B5FD" letter-spacing="2">ODOO</text>
+    <rect x="1140" y="168" width="90" height="32" rx="16" fill="#0B1024" stroke="#A78BFA" stroke-width="1.2"/>
+    <circle cx="1160" cy="184" r="3" fill="#A78BFA" class="live"/>
+    <text x="1192" y="189" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#C4B5FD" letter-spacing="1.5">ODOO</text>
   </g>
   <g class="chip-6" filter="url(#softGlow)">
-    <rect x="1108" y="220" width="112" height="28" rx="14" fill="#0B1024" stroke="#F472B6" stroke-width="1"/>
-    <circle cx="1126" cy="234" r="2.5" fill="#F472B6" class="live"/>
-    <text x="1156" y="238" font-family="ui-monospace, monospace" font-size="10" fill="#F9A8D4" letter-spacing="2">FASTAPI</text>
+    <rect x="1112" y="218" width="118" height="32" rx="16" fill="#0B1024" stroke="#F472B6" stroke-width="1.2"/>
+    <circle cx="1132" cy="234" r="3" fill="#F472B6" class="live"/>
+    <text x="1165" y="239" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#F9A8D4" letter-spacing="1.5">FASTAPI</text>
   </g>
   <g class="chip-7" filter="url(#softGlow)">
-    <rect x="1140" y="270" width="80" height="28" rx="14" fill="#0B1024" stroke="#38BDF8" stroke-width="1"/>
-    <circle cx="1158" cy="284" r="2.5" fill="#38BDF8" class="live"/>
-    <text x="1182" y="288" font-family="ui-monospace, monospace" font-size="10" fill="#7DD3FC" letter-spacing="2">REACT</text>
+    <rect x="1132" y="268" width="98" height="32" rx="16" fill="#0B1024" stroke="#38BDF8" stroke-width="1.2"/>
+    <circle cx="1152" cy="284" r="3" fill="#38BDF8" class="live"/>
+    <text x="1185" y="289" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#7DD3FC" letter-spacing="1.5">REACT</text>
   </g>
   <g class="chip-8" filter="url(#softGlow)">
-    <rect x="1116" y="320" width="104" height="28" rx="14" fill="#0B1024" stroke="#22D3EE" stroke-width="1"/>
-    <circle cx="1134" cy="334" r="2.5" fill="#22D3EE" class="live"/>
-    <text x="1166" y="338" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="2">POSTGRES</text>
+    <rect x="1102" y="318" width="128" height="32" rx="16" fill="#0B1024" stroke="#22D3EE" stroke-width="1.2"/>
+    <circle cx="1122" cy="334" r="3" fill="#22D3EE" class="live"/>
+    <text x="1155" y="339" font-family="ui-monospace, monospace" font-size="13" font-weight="700" fill="#67E8F9" letter-spacing="1.5">POSTGRES</text>
   </g>
 
   <!-- ============ STATUS PILL ============ -->
@@ -256,6 +256,6 @@
     <rect x="-160" y="-18" width="320" height="36" rx="18" fill="#022C22" stroke="#10B981" stroke-width="1" opacity="0.85"/>
     <circle cx="-130" cy="0" r="5" fill="#22C55E" class="live"/>
     <circle cx="-130" cy="0" r="11" fill="none" stroke="#22C55E" stroke-width="0.6" opacity="0.5" class="live"/>
-    <text x="20" y="4" font-family="ui-monospace, monospace" font-size="11" fill="#86EFAC" text-anchor="middle" font-weight="700" letter-spacing="3">OPEN TO WORK  ·  STARTING JUNE 2026</text>
+    <text x="20" y="5" font-family="ui-monospace, monospace" font-size="14" fill="#86EFAC" text-anchor="middle" font-weight="700" letter-spacing="3">OPEN TO WORK  ·  STARTING JUNE 2026</text>
   </g>
 </svg>

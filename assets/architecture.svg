@@ -101,14 +101,14 @@
   </g>
 
   <!-- ============ HEADER ============ -->
-  <text x="60" y="60" font-family="ui-monospace, monospace" font-size="11" fill="#475569" letter-spacing="6">ATLASBRIEF  /  REQUEST FLOW</text>
+  <text x="60" y="60" font-family="ui-monospace, monospace" font-size="13" fill="#475569" letter-spacing="6">ATLASBRIEF  /  REQUEST FLOW</text>
   <line x1="60" y1="78" x2="380" y2="78" stroke="#1E293B" stroke-width="0.7"/>
   <text x="60" y="108" font-family="ui-monospace, monospace" font-size="22" font-weight="800" fill="url(#archTitle)" letter-spacing="1.5" filter="url(#titleGlow)">How a vague trip idea becomes a defended itinerary</text>
-  <text x="60" y="132" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" letter-spacing="3">— two-model routing, three live tools, one traceable agent —</text>
+  <text x="60" y="132" font-family="ui-monospace, monospace" font-size="13" fill="#94A3B8" letter-spacing="3">— two-model routing, three live tools, one traceable agent —</text>
 
-  <text x="1220" y="60" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="end" letter-spacing="3">AGENT  ·  RAG  ·  TWO-MODEL ROUTING</text>
+  <text x="1220" y="60" font-family="ui-monospace, monospace" font-size="12" fill="#475569" text-anchor="end" letter-spacing="3">AGENT  ·  RAG  ·  TWO-MODEL ROUTING</text>
   <line x1="1000" y1="78" x2="1220" y2="78" stroke="#1E293B" stroke-width="0.7"/>
-  <text x="1220" y="108" font-family="ui-monospace, monospace" font-size="11" fill="#67E8F9" text-anchor="end" letter-spacing="3" font-weight="700" class="shimmer">~60% TOKEN SAVINGS</text>
+  <text x="1220" y="108" font-family="ui-monospace, monospace" font-size="13" fill="#67E8F9" text-anchor="end" letter-spacing="3" font-weight="700" class="shimmer">~60% TOKEN SAVINGS</text>
 
   <!-- ============ NODES (re-tuned for 540 height) ============ -->
 
@@ -116,9 +116,9 @@
   <g class="label l1">
     <rect x="60" y="240" width="180" height="84" rx="12" fill="url(#userGrad)" stroke="#60A5FA" stroke-width="1.2"/>
     <rect x="60" y="240" width="180" height="3" rx="1.5" fill="#60A5FA"/>
-    <text x="150" y="270" font-family="ui-monospace, monospace" font-size="11" fill="#7DD3FC" text-anchor="middle" letter-spacing="3" font-weight="700">USER QUERY</text>
-    <text x="150" y="295" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle">"weekend in budget</text>
-    <text x="150" y="310" font-family="ui-monospace, monospace" font-size="10" fill="#94A3B8" text-anchor="middle">paris, foodie"</text>
+    <text x="150" y="270" font-family="ui-monospace, monospace" font-size="13" fill="#7DD3FC" text-anchor="middle" letter-spacing="3" font-weight="700">USER QUERY</text>
+    <text x="150" y="295" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8" text-anchor="middle">"weekend in budget</text>
+    <text x="150" y="310" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8" text-anchor="middle">paris, foodie"</text>
   </g>
 
   <line x1="240" y1="282" x2="318" y2="282" stroke="#A78BFA" stroke-width="1.2" marker-end="url(#arrowU)" class="flow-line"/>
@@ -127,11 +127,11 @@
   <g class="label l2">
     <rect x="320" y="225" width="180" height="114" rx="12" fill="url(#extGrad)" stroke="#A78BFA" stroke-width="1.2"/>
     <rect x="320" y="225" width="180" height="3" rx="1.5" fill="#A78BFA"/>
-    <text x="410" y="252" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 1</text>
-    <text x="410" y="276" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">EXTRACTOR LLM</text>
+    <text x="410" y="252" font-family="ui-monospace, monospace" font-size="12" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 1</text>
+    <text x="410" y="276" font-family="ui-monospace, monospace" font-size="14" font-weight="800" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">EXTRACTOR LLM</text>
     <line x1="370" y1="286" x2="450" y2="286" stroke="#A78BFA" stroke-width="0.6" opacity="0.5"/>
-    <text x="410" y="304" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">cheap · fast · structured</text>
-    <text x="410" y="322" font-family="ui-monospace, monospace" font-size="9" fill="#A78BFA" text-anchor="middle" letter-spacing="2">→ Pydantic JSON</text>
+    <text x="410" y="304" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">cheap · fast · structured</text>
+    <text x="410" y="322" font-family="ui-monospace, monospace" font-size="11" fill="#A78BFA" text-anchor="middle" letter-spacing="2">→ Pydantic JSON</text>
   </g>
 
   <line x1="500" y1="282" x2="578" y2="282" stroke="#A78BFA" stroke-width="1.2" marker-end="url(#arrowU)" class="flow-line"/>
@@ -140,13 +140,13 @@
   <g class="label l3">
     <rect x="580" y="200" width="200" height="164" rx="12" fill="url(#agentGrad)" stroke="#22D3EE" stroke-width="1.6"/>
     <rect x="580" y="200" width="200" height="4" rx="2" fill="#22D3EE"/>
-    <text x="680" y="232" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 2  ·  ORCHESTRATOR</text>
-    <text x="680" y="262" font-family="ui-monospace, monospace" font-size="13" font-weight="800" fill="#CFFAFE" text-anchor="middle" letter-spacing="2">LANGGRAPH AGENT</text>
+    <text x="680" y="232" font-family="ui-monospace, monospace" font-size="12" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 2  ·  ORCHESTRATOR</text>
+    <text x="680" y="262" font-family="ui-monospace, monospace" font-size="15" font-weight="800" fill="#CFFAFE" text-anchor="middle" letter-spacing="2">LANGGRAPH AGENT</text>
     <line x1="610" y1="276" x2="750" y2="276" stroke="#22D3EE" stroke-width="0.7" opacity="0.5"/>
-    <text x="680" y="298" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">picks tools, drives state</text>
-    <text x="680" y="316" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">handles retries, logs cost</text>
+    <text x="680" y="298" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">picks tools, drives state</text>
+    <text x="680" y="316" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">handles retries, logs cost</text>
     <circle cx="610" cy="338" r="3" fill="#22D3EE" class="node"/>
-    <text x="680" y="342" font-family="ui-monospace, monospace" font-size="9" fill="#67E8F9" text-anchor="middle" letter-spacing="2">⬤ stateful</text>
+    <text x="680" y="342" font-family="ui-monospace, monospace" font-size="11" fill="#67E8F9" text-anchor="middle" letter-spacing="2">⬤ stateful</text>
   </g>
 
   <!-- Connectors to tools (more colorful) -->
@@ -158,27 +158,27 @@
   <g class="label l4">
     <rect x="850" y="160" width="160" height="76" rx="12" fill="url(#ragGrad)" stroke="#22C55E" stroke-width="1.2"/>
     <rect x="850" y="160" width="160" height="3" rx="1.5" fill="#22C55E"/>
-    <text x="930" y="188" font-family="ui-monospace, monospace" font-size="10" font-weight="800" fill="#A7F3D0" text-anchor="middle" letter-spacing="2">RAG RETRIEVER</text>
-    <text x="930" y="207" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">Postgres + pgvector</text>
-    <text x="930" y="222" font-family="ui-monospace, monospace" font-size="9" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">city · area · venue</text>
+    <text x="930" y="188" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#A7F3D0" text-anchor="middle" letter-spacing="2">RAG RETRIEVER</text>
+    <text x="930" y="207" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">Postgres + pgvector</text>
+    <text x="930" y="222" font-family="ui-monospace, monospace" font-size="11" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">city · area · venue</text>
   </g>
 
   <!-- TOOL 2: STYLE CLASSIFIER -->
   <g class="label l5">
     <rect x="850" y="244" width="160" height="76" rx="12" fill="url(#styleGrad)" stroke="#FB923C" stroke-width="1.2"/>
     <rect x="850" y="244" width="160" height="3" rx="1.5" fill="#FB923C"/>
-    <text x="930" y="272" font-family="ui-monospace, monospace" font-size="10" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="2">STYLE CLASSIFIER</text>
-    <text x="930" y="291" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">scikit-learn pipeline</text>
-    <text x="930" y="306" font-family="ui-monospace, monospace" font-size="9" fill="#FDBA74" text-anchor="middle" letter-spacing="1">GridSearchCV-tuned</text>
+    <text x="930" y="272" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#FED7AA" text-anchor="middle" letter-spacing="2">STYLE CLASSIFIER</text>
+    <text x="930" y="291" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">scikit-learn pipeline</text>
+    <text x="930" y="306" font-family="ui-monospace, monospace" font-size="11" fill="#FDBA74" text-anchor="middle" letter-spacing="1">GridSearchCV-tuned</text>
   </g>
 
   <!-- TOOL 3: LIVE CONDITIONS -->
   <g class="label l6">
     <rect x="850" y="328" width="160" height="76" rx="12" fill="url(#liveGrad)" stroke="#F472B6" stroke-width="1.2"/>
     <rect x="850" y="328" width="160" height="3" rx="1.5" fill="#F472B6"/>
-    <text x="930" y="356" font-family="ui-monospace, monospace" font-size="10" font-weight="800" fill="#FCE7F3" text-anchor="middle" letter-spacing="2">LIVE CONDITIONS</text>
-    <text x="930" y="375" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">weather · pricing · seats</text>
-    <text x="930" y="390" font-family="ui-monospace, monospace" font-size="9" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">async + retry/backoff</text>
+    <text x="930" y="356" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#FCE7F3" text-anchor="middle" letter-spacing="2">LIVE CONDITIONS</text>
+    <text x="930" y="375" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">weather · pricing · seats</text>
+    <text x="930" y="390" font-family="ui-monospace, monospace" font-size="11" fill="#F9A8D4" text-anchor="middle" letter-spacing="1">async + retry/backoff</text>
   </g>
 
   <!-- Tools → Synthesizer (purple connectors) -->
@@ -190,11 +190,11 @@
   <g class="label l6">
     <rect x="1100" y="225" width="160" height="114" rx="12" fill="url(#synGrad)" stroke="#A78BFA" stroke-width="1.4"/>
     <rect x="1100" y="225" width="160" height="3" rx="1.5" fill="#A78BFA"/>
-    <text x="1180" y="252" font-family="ui-monospace, monospace" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 3</text>
-    <text x="1180" y="276" font-family="ui-monospace, monospace" font-size="12" font-weight="800" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">SYNTHESIZER</text>
+    <text x="1180" y="252" font-family="ui-monospace, monospace" font-size="12" fill="#475569" text-anchor="middle" letter-spacing="3">STAGE 3</text>
+    <text x="1180" y="276" font-family="ui-monospace, monospace" font-size="14" font-weight="800" fill="#DDD6FE" text-anchor="middle" letter-spacing="2">SYNTHESIZER</text>
     <line x1="1130" y1="286" x2="1230" y2="286" stroke="#A78BFA" stroke-width="0.6" opacity="0.5"/>
-    <text x="1180" y="304" font-family="ui-monospace, monospace" font-size="9" fill="#94A3B8" text-anchor="middle">strong model · slow ok</text>
-    <text x="1180" y="322" font-family="ui-monospace, monospace" font-size="9" fill="#C4B5FD" text-anchor="middle" letter-spacing="2">→ writes the brief</text>
+    <text x="1180" y="304" font-family="ui-monospace, monospace" font-size="11" fill="#94A3B8" text-anchor="middle">strong model · slow ok</text>
+    <text x="1180" y="322" font-family="ui-monospace, monospace" font-size="11" fill="#C4B5FD" text-anchor="middle" letter-spacing="2">→ writes the brief</text>
   </g>
 
   <!-- DECISION TENSION (output) -->
@@ -202,14 +202,14 @@
     <line x1="1180" y1="350" x2="1180" y2="368" stroke="#22C55E" stroke-width="1.5" marker-end="url(#arrowG)" class="flow-line"/>
     <rect x="1095" y="375" width="170" height="60" rx="12" fill="url(#decGrad)" stroke="#22C55E" stroke-width="1.4"/>
     <rect x="1095" y="375" width="170" height="3" rx="1.5" fill="#22C55E"/>
-    <text x="1180" y="402" font-family="ui-monospace, monospace" font-size="11" font-weight="800" fill="#BBF7D0" text-anchor="middle" letter-spacing="2">DECISION TENSION</text>
-    <text x="1180" y="420" font-family="ui-monospace, monospace" font-size="9" fill="#86EFAC" text-anchor="middle" letter-spacing="2">→ rendered to React UI</text>
+    <text x="1180" y="402" font-family="ui-monospace, monospace" font-size="13" font-weight="800" fill="#BBF7D0" text-anchor="middle" letter-spacing="2">DECISION TENSION</text>
+    <text x="1180" y="420" font-family="ui-monospace, monospace" font-size="11" fill="#86EFAC" text-anchor="middle" letter-spacing="2">→ rendered to React UI</text>
   </g>
 
   <!-- ============ FOOTNOTES ============ -->
   <line x1="60" y1="475" x2="1220" y2="475" stroke="#1E293B" stroke-width="0.6"/>
-  <text x="60" y="495" font-family="ui-monospace, monospace" font-size="10" fill="#67E8F9" letter-spacing="3" font-weight="700">▸ TWO-MODEL ROUTING SAVES ~60% TOKENS PER REQUEST</text>
-  <text x="60" y="514" font-family="ui-monospace, monospace" font-size="9" fill="#475569" letter-spacing="2">Pydantic at every boundary · per-request token cost logged · agent decisions traceable</text>
-  <text x="1220" y="495" font-family="ui-monospace, monospace" font-size="10" fill="#86EFAC" text-anchor="end" letter-spacing="3" font-weight="700">▸ 100% TRACEABLE</text>
-  <text x="1220" y="514" font-family="ui-monospace, monospace" font-size="9" fill="#475569" text-anchor="end" letter-spacing="2">every tool call · every retry · every dollar</text>
+  <text x="60" y="495" font-family="ui-monospace, monospace" font-size="12" fill="#67E8F9" letter-spacing="3" font-weight="700">▸ TWO-MODEL ROUTING SAVES ~60% TOKENS PER REQUEST</text>
+  <text x="60" y="514" font-family="ui-monospace, monospace" font-size="11" fill="#475569" letter-spacing="2">Pydantic at every boundary · per-request token cost logged · agent decisions traceable</text>
+  <text x="1220" y="495" font-family="ui-monospace, monospace" font-size="12" fill="#86EFAC" text-anchor="end" letter-spacing="3" font-weight="700">▸ 100% TRACEABLE</text>
+  <text x="1220" y="514" font-family="ui-monospace, monospace" font-size="11" fill="#475569" text-anchor="end" letter-spacing="2">every tool call · every retry · every dollar</text>
 </svg>
