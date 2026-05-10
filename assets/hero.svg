@@ -110,8 +110,8 @@
 
   <!-- ============ MARGINAL NOTE (rotated, hand-set voice) ============ -->
   <g transform="translate(70, 432) rotate(-1.6)">
-    <text class="mono" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">— subject available from June 2026.  open to ERP / Python / AI</text>
-    <text class="mono" y="17" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">  engagements.  graduating BSc Data Science (USAL) the same month.</text>
+    <text class="mono" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">— Mobile Arts: one production Odoo 18 module, sole developer.</text>
+    <text class="mono" y="17" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">  XpertBot: ten Plotly dashboards on renewable-energy data.  graduating June 2026.</text>
   </g>
 
   <!-- ============ BOTTOM STRIP: index + title block ============ -->

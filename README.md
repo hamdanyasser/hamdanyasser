@@ -26,9 +26,46 @@
 
 ![Plate 03 — Featured Work](./assets/divider-03-work.svg)
 
-[![Featured Work — system diagram](./assets/showcase.svg)](https://github.com/hamdanyasser?tab=repositories)
+<table>
+<tr>
+<td width="50%">
+<a href="https://github.com/hamdanyasser/atlasbrief-travel-agent">
+<img src="./assets/module-01-atlasbrief.svg" alt="MOD.01 — AtlasBrief"/>
+</a>
+</td>
+<td width="50%">
+<a href="https://github.com/hamdanyasser/atelier-real-estate-estimator">
+<img src="./assets/module-02-atelier.svg" alt="MOD.02 — Atelier"/>
+</a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://github.com/hamdanyasser/support-triage-cockpit">
+<img src="./assets/module-03-triage.svg" alt="MOD.03 — Triage Cockpit"/>
+</a>
+</td>
+<td width="50%">
+<a href="https://github.com/hamdanyasser/NLP-NER-Project">
+<img src="./assets/module-04-ner.svg" alt="MOD.04 — Biomedical NER"/>
+</a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://github.com/hamdanyasser/auction-system-odoo">
+<img src="./assets/module-05-odoo.svg" alt="MOD.05 — Odoo Auction"/>
+</a>
+</td>
+<td width="50%">
+<a href="https://github.com/hamdanyasser/debugmaster-android">
+<img src="./assets/module-06-debugmaster.svg" alt="MOD.06 — DebugMaster"/>
+</a>
+</td>
+</tr>
+</table>
 
-<sub>↑ &nbsp; click any module label to open the underlying repository  ⋅  full index at <a href="https://github.com/hamdanyasser?tab=repositories">github.com/hamdanyasser</a></sub>
+<sub>↑ &nbsp; each module links to its repository.  full index at <a href="https://github.com/hamdanyasser?tab=repositories">github.com/hamdanyasser</a></sub>
 
 <br/>
 
@@ -51,13 +88,7 @@ A lightweight model handles structured extraction from the user query — cheap,
 
 ![Plate 05 — Operating Metrics](./assets/divider-05-stats.svg)
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=hamdanyasser&show_icons=true&hide_border=true&title_color=0B1F33&icon_color=E25E1E&text_color=5C6A78&bg_color=EDE6D6&include_all_commits=true&count_private=false&rank_icon=github&card_width=440" alt="GitHub statistics readout"/>
-&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamdanyasser&layout=compact&hide_border=true&title_color=0B1F33&text_color=5C6A78&bg_color=EDE6D6&langs_count=6&hide=html,css,jupyter%20notebook&card_width=400" alt="Language mix readout"/>
-
-</div>
+![Operating metrics readout](./assets/metrics.svg)
 
 <br/>
 
@@ -93,3 +124,13 @@ A lightweight model handles structured extraction from the user query — cheap,
 ![Plate 07 — Contact](./assets/divider-07-reach.svg)
 
 ![Contact — drawing title block](./assets/footer.svg)
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0B1F33?style=for-the-badge&logo=linkedin&logoColor=EDE6D6&labelColor=0B1F33)](https://www.linkedin.com/in/yasser-hamdan063/)
+&nbsp;
+[![Email](https://img.shields.io/badge/EMAIL-0B1F33?style=for-the-badge&logo=gmail&logoColor=EDE6D6&labelColor=0B1F33)](mailto:hamdanyasser2005@gmail.com)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GITHUB-E25E1E?style=for-the-badge&logo=github&logoColor=EDE6D6&labelColor=E25E1E)](https://github.com/hamdanyasser)
+
+</div>
