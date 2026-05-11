@@ -126,6 +126,6 @@
   <!-- ============ BOTTOM STRIP ============ -->
   <line x1="48" y1="538" x2="1232" y2="538" stroke="#0B1F33" stroke-width="0.5"/>
   <text class="mono" x="56"  y="562" font-size="11" font-weight="700" letter-spacing="2.8" fill="#0B1F33">Y-H  ⋅  BRT  ⋅  2026</text>
-  <text class="mono" x="640" y="562" font-size="11" font-weight="500" letter-spacing="2" fill="#5C6A78" text-anchor="middle">7  ITEMS  ⋅  CHRONOLOGICAL  ⋅  CONFIDENCE: HIGH</text>
+  <text class="mono" x="640" y="562" font-size="11" font-weight="500" letter-spacing="2" fill="#5C6A78" text-anchor="middle">seven items  ⋅  six shipped  ⋅  one in production  ⋅  zero half-finished</text>
   <text class="mono" x="1224" y="562" font-size="11" font-weight="700" letter-spacing="2.8" fill="#0B1F33" text-anchor="end">BOM.001  /  PLATE 1.A</text>
 </svg>

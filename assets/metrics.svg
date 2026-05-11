@@ -109,41 +109,42 @@
   <g transform="translate(56, 354)">
     <text class="mono" font-size="14" font-weight="700" letter-spacing="2.8" fill="#0B1F33">LANGUAGE MIX  /  PRIMARY 5</text>
     <line x1="0" y1="10" x2="280" y2="10" stroke="#0B1F33" stroke-width="0.7"/>
-    <text class="mono" y="32" font-size="11" font-weight="500" letter-spacing="1.2" fill="#5C6A78">estimated from source files across 67 public repositories</text>
+    <text class="mono" y="32" font-size="11" font-weight="500" letter-spacing="1.2" fill="#5C6A78">queried from GitHub API across all public repositories  ⋅  byte count</text>
   </g>
 
-  <!-- bar rows (5 languages, scale: 1% = 11px, max bar = 682px) -->
+  <!-- bar rows (5 languages, scale: 1% = 14px) -->
   <g class="mono" font-size="13" font-weight="500" fill="#0B1F33">
-    <!-- Python 62% -->
-    <text x="56"  y="430" font-weight="700" letter-spacing="2">PYTHON</text>
-    <rect x="190" y="416" width="682" height="20" fill="#0B1F33"/>
-    <text x="884" y="430" font-weight="700" letter-spacing="1.5">62%</text>
+    <!-- Java 29% -->
+    <text x="56"  y="430" font-weight="700" letter-spacing="2">JAVA</text>
+    <rect x="190" y="416" width="406" height="20" fill="#0B1F33"/>
+    <text x="608" y="430" font-weight="700" letter-spacing="1.5">29%</text>
 
-    <!-- Java 15% -->
-    <text x="56"  y="464" font-weight="700" letter-spacing="2">JAVA</text>
-    <rect x="190" y="450" width="165" height="20" fill="#0B1F33"/>
-    <text x="367" y="464" font-weight="700" letter-spacing="1.5">15%</text>
+    <!-- Python 18% -->
+    <text x="56"  y="464" font-weight="700" letter-spacing="2">PYTHON</text>
+    <rect x="190" y="450" width="252" height="20" fill="#0B1F33"/>
+    <text x="454" y="464" font-weight="700" letter-spacing="1.5">18%</text>
 
-    <!-- TypeScript 9% -->
-    <text x="56"  y="498" font-weight="700" letter-spacing="2">TYPESCRIPT</text>
-    <rect x="190" y="484" width="99" height="20" fill="#0B1F33"/>
-    <text x="301" y="498" font-weight="700" letter-spacing="1.5">9%</text>
+    <!-- JavaScript 11% -->
+    <text x="56"  y="498" font-weight="700" letter-spacing="2">JAVASCRIPT</text>
+    <rect x="190" y="484" width="154" height="20" fill="#0B1F33"/>
+    <text x="356" y="498" font-weight="700" letter-spacing="1.5">11%</text>
 
-    <!-- HTML / CSS 8% -->
-    <text x="56"  y="532" font-weight="700" letter-spacing="2">HTML  /  CSS</text>
-    <rect x="190" y="518" width="88" height="20" fill="#0B1F33"/>
-    <text x="290" y="532" font-weight="700" letter-spacing="1.5">8%</text>
+    <!-- EJS 10% -->
+    <text x="56"  y="532" font-weight="700" letter-spacing="2">EJS</text>
+    <rect x="190" y="518" width="140" height="20" fill="#0B1F33"/>
+    <text x="342" y="532" font-weight="700" letter-spacing="1.5">10%</text>
 
-    <!-- Other 6% -->
-    <text x="56"  y="566" font-weight="700" letter-spacing="2">OTHER</text>
-    <rect x="190" y="552" width="66" height="20" fill="#0B1F33"/>
-    <text x="268" y="566" font-weight="700" letter-spacing="1.5">6%</text>
+    <!-- TypeScript 8% -->
+    <text x="56"  y="566" font-weight="700" letter-spacing="2">TYPESCRIPT</text>
+    <rect x="190" y="552" width="112" height="20" fill="#0B1F33"/>
+    <text x="314" y="566" font-weight="700" letter-spacing="1.5">8%</text>
   </g>
 
   <!-- ============ MARGINAL NOTE ============ -->
-  <g transform="translate(960, 466) rotate(-1.4)">
-    <text class="mono" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">— surface area, not depth.</text>
-    <text class="mono" y="17" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">  see PLATE 03 for depth.</text>
+  <g transform="translate(640, 444) rotate(-1.4)">
+    <text class="mono" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">— Java leads on bytes because the archive includes four years</text>
+    <text class="mono" y="17" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">  of coursework.  current work is Python first.  remaining 24%</text>
+    <text class="mono" y="34" font-size="12" font-weight="500" letter-spacing="0.4" fill="#5C6A78" font-style="italic">  is HTML / CSS, Jupyter, C#, TeX, and small files.</text>
   </g>
 
   <!-- ============ BOTTOM STRIP ============ -->
