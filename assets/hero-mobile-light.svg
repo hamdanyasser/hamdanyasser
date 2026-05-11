@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — Python and Odoo ERP developer">
+  <defs>
+    <linearGradient id="accentM" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E25E1E"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="nameM" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1A2238"/>
+      <stop offset="100%" stop-color="#2D3B5C"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="25%" r="60%">
+      <stop offset="0%"   stop-color="#FFF4E0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFF4E0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace; }
+    @keyframes breathe { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+    @keyframes float-a { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes float-b { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+    @keyframes pulse-rule { 0%,100% { opacity: 0.85; } 50% { opacity: 1; } }
+    .live { animation: breathe 2.4s ease-in-out infinite; }
+    .float-a { animation: float-a 5s ease-in-out infinite; transform-origin: center; }
+    .float-b { animation: float-b 6s ease-in-out infinite; transform-origin: center; }
+    .pulse-rule { animation: pulse-rule 3s ease-in-out infinite; }
+  </style>
+
+  <rect width="600" height="760" fill="#FAF7F0"/>
+  <rect width="600" height="760" fill="url(#bgGlow)"/>
+
+  <!-- Decorative floating shapes -->
+  <circle class="float-a" cx="510" cy="100"  r="6"  fill="#E25E1E" opacity="0.35"/>
+  <circle class="float-b" cx="80"  cy="240"  r="4"  fill="#E25E1E" opacity="0.45"/>
+  <circle class="float-a" cx="540" cy="510"  r="8"  fill="#1A2238" opacity="0.10"/>
+  <rect   class="float-b" x="40"  y="640"  width="10" height="10" fill="#E25E1E" opacity="0.35" transform="rotate(45 45 645)"/>
+  <circle class="float-a" cx="560" cy="700" r="5"  fill="#1A2238" opacity="0.15"/>
+
+  <!-- Top status pill -->
+  <g transform="translate(40, 50)">
+    <rect width="240" height="40" rx="20" fill="#E25E1E"/>
+    <circle cx="22" cy="20" r="6" fill="#FAF7F0" class="live"/>
+    <text class="sans" x="40" y="26" font-size="14" font-weight="700" fill="#FAF7F0" letter-spacing="1">OPEN TO WORK · JUNE 2026</text>
+  </g>
+
+  <!-- Top meta -->
+  <text class="mono" x="40" y="120" font-size="13" font-weight="600" fill="#6B7280" letter-spacing="1.5">BEIRUT, LEBANON  ·  DATA SCIENCE @ USAL</text>
+
+  <!-- Big name — two lines for phone -->
+  <text class="sans" x="40" y="220" font-size="84" font-weight="800" fill="url(#nameM)" letter-spacing="-3">Yasser</text>
+  <text class="sans" x="40" y="296" font-size="84" font-weight="800" fill="url(#nameM)" letter-spacing="-3">Hamdan.</text>
+
+  <!-- Accent rule -->
+  <rect x="40" y="318" width="140" height="6" rx="3" fill="url(#accentM)" class="pulse-rule"/>
+
+  <!-- Tagline -->
+  <text class="sans" x="40" y="368" font-size="22" font-weight="600" fill="#1A2238">Python  ·  Odoo ERP</text>
+  <text class="sans" x="40" y="396" font-size="22" font-weight="600" fill="#1A2238">AI Automation Engineer</text>
+
+  <!-- Pull quote -->
+  <line x1="40" y1="436" x2="40" y2="556" stroke="url(#accentM)" stroke-width="4"/>
+  <text class="sans" x="62" y="464" font-size="17" font-weight="600" fill="#1A2238">Shipped 1 production Odoo</text>
+  <text class="sans" x="62" y="486" font-size="17" font-weight="600" fill="#1A2238">module solo at Mobile Arts.</text>
+  <text class="sans" x="62" y="514" font-size="17" font-weight="500" fill="#6B7280">10 Plotly dashboards</text>
+  <text class="sans" x="62" y="536" font-size="17" font-weight="500" fill="#6B7280">at XpertBot. Six builds.</text>
+
+  <!-- Stats row -->
+  <line x1="40" y1="588" x2="560" y2="588" stroke="#1A2238" stroke-width="1.2"/>
+  <g class="sans" font-weight="800" fill="#1A2238" text-anchor="middle">
+    <text x="100" y="638" font-size="38">3</text>
+    <text x="220" y="638" font-size="38">6</text>
+    <text x="340" y="638" font-size="38">2</text>
+    <text x="480" y="638" font-size="38" fill="#E25E1E">1</text>
+  </g>
+  <g class="mono" font-size="11" font-weight="700" fill="#6B7280" text-anchor="middle" letter-spacing="1.5">
+    <text x="100" y="664">YEARS</text>
+    <text x="220" y="664">SHIPS</text>
+    <text x="340" y="664">INTERNS</text>
+    <text x="480" y="664" fill="#E25E1E">IN PROD</text>
+  </g>
+  <line x1="40" y1="700" x2="560" y2="700" stroke="#1A2238" stroke-width="1.2"/>
+
+  <!-- Bottom tagline -->
+  <text class="mono" x="300" y="734" font-size="12" font-weight="600" fill="#6B7280" letter-spacing="2" text-anchor="middle">GRADUATING JUNE 2026  ·  AVAILABLE</text>
+</svg>
