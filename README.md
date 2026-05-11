@@ -28,7 +28,7 @@ Third-year Data Science student at **USAL** in Beirut, graduating **June 2026**.
 - **XpertBot internship** — built ten Plotly dashboards on renewable-energy data
 - **Six personal projects** across agents, NLP, ML pipelines, deep learning, and Android
 
-I'm available for ERP / Odoo, Python, and AI/ML engineer roles starting June 2026.
+I'm **available now** for ERP / Odoo, Python, and AI / ML engineer roles — remote, hybrid, or Beirut-based. Internship-friendly and full-time-ready.
 
 ---
 
@@ -167,7 +167,7 @@ Gamified Android debugging tutor. Learning paths, AI mentor support, XP/streaks,
 
 ## Let's build something
 
-Open to **ERP / Odoo · Python · AI/ML engineer** roles &nbsp;·&nbsp; starting June 2026
+Open to **ERP / Odoo · Python · AI / ML engineer** roles &nbsp;·&nbsp; **available now**
 
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasser-hamdan063/)
 &nbsp;

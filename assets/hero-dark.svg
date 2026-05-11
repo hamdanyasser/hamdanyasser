@@ -1,22 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" width="1280" height="520" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — Python and Odoo ERP developer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 540" width="1280" height="540" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — Python and Odoo ERP developer">
   <defs>
-    <linearGradient id="accentD" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="accentDk" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#FF6B35"/>
       <stop offset="100%" stop-color="#FBBF24"/>
     </linearGradient>
-    <linearGradient id="nameD" x1="0%" y1="0%" x2="100%" y2="20%">
+    <linearGradient id="nameDk" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%"   stop-color="#F5F1E8"/>
-      <stop offset="55%"  stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#C7CCDB"/>
+      <stop offset="55%"  stop-color="#E2EAF2"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
     </linearGradient>
-    <radialGradient id="glowD" cx="35%" cy="20%" r="60%">
+    <radialGradient id="glowDk" cx="35%" cy="20%" r="60%">
       <stop offset="0%"   stop-color="#1A2238" stop-opacity="0.85"/>
       <stop offset="60%"  stop-color="#0D1117" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="sweepD" x1="0%" y1="0%" x2="100%" y2="0%">
+    <radialGradient id="tealGlowDk" cx="80%" cy="75%" r="35%">
+      <stop offset="0%"   stop-color="#14B8A6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweepDk" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#FF6B35" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#FBBF24" stop-opacity="0.55"/>
+      <stop offset="50%"  stop-color="#FBBF24" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
     </linearGradient>
   </defs>
@@ -24,86 +28,108 @@
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif; }
     .mono { font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace; }
     @keyframes breathe { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-    @keyframes float-a { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-    @keyframes float-b { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
-    @keyframes float-c { 0%,100% { transform: translate(0,0); } 50% { transform: translate(6px,-4px); } }
-    @keyframes pulse-rule { 0%,100% { opacity: 0.85; transform: scaleX(1); } 50% { opacity: 1; transform: scaleX(1.06); } }
-    @keyframes sweep { 0% { transform: translateX(-400px); } 100% { transform: translateX(1680px); } }
+    @keyframes blink    { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+    @keyframes float-a  { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes float-b  { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+    @keyframes float-c  { 0%,100% { transform: translate(0,0); } 50% { transform: translate(6px,-4px); } }
+    @keyframes pulse-rule { 0%,100% { opacity: 0.85; transform: scaleX(1); } 50% { opacity: 1; transform: scaleX(1.08); } }
+    @keyframes sweep    { 0% { transform: translateX(-400px); } 100% { transform: translateX(1680px); } }
     @keyframes rotate-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .live { animation: breathe 2.4s ease-in-out infinite; }
+    @keyframes rotate-rev  { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    .live  { animation: breathe 2.2s ease-in-out infinite; }
+    .blink { animation: blink 1.1s steps(2) infinite; }
     .float-a { animation: float-a 5s ease-in-out infinite; transform-origin: center; }
     .float-b { animation: float-b 6s ease-in-out infinite; transform-origin: center; }
     .float-c { animation: float-c 7s ease-in-out infinite; transform-origin: center; }
     .pulse-rule { animation: pulse-rule 3s ease-in-out infinite; transform-origin: left center; }
     .sweep { animation: sweep 6s ease-in-out infinite; }
-    .rotate-slow { animation: rotate-slow 80s linear infinite; transform-origin: center; transform-box: fill-box; }
+    .rotate-slow { animation: rotate-slow 80s linear infinite; transform-origin: 1080px 140px; }
+    .rotate-rev  { animation: rotate-rev 50s linear infinite; transform-origin: 158px 318px; }
   </style>
 
-  <rect width="1280" height="520" fill="#0D1117"/>
-  <rect width="1280" height="520" fill="url(#glowD)"/>
+  <rect width="1280" height="540" fill="#0D1117"/>
+  <rect width="1280" height="540" fill="url(#glowDk)"/>
+  <rect width="1280" height="540" fill="url(#tealGlowDk)"/>
 
-  <!-- Decorative geometric shapes -->
-  <g opacity="0.9">
-    <g class="rotate-slow" transform-origin="1080 140">
-      <circle cx="1080" cy="140" r="80" fill="none" stroke="#F5F1E8" stroke-width="1.2" stroke-dasharray="3 8" opacity="0.2"/>
-      <circle cx="1080" cy="60" r="3" fill="#FF6B35"/>
-    </g>
-    <circle class="float-a" cx="240" cy="80"  r="5" fill="#FF6B35" opacity="0.6"/>
-    <circle class="float-b" cx="60"  cy="220" r="4" fill="#F5F1E8" opacity="0.35"/>
-    <circle class="float-c" cx="1200" cy="380" r="6" fill="#FF6B35" opacity="0.45"/>
-    <circle class="float-a" cx="780" cy="60"  r="3" fill="#F5F1E8" opacity="0.35"/>
-    <circle class="float-b" cx="1140" cy="280" r="4" fill="#F5F1E8" opacity="0.3"/>
-    <circle class="float-c" cx="60"  cy="460" r="7" fill="#F5F1E8" opacity="0.12"/>
-    <rect class="float-b" x="918" y="56" width="10" height="10" fill="#FF6B35" opacity="0.6" transform="rotate(45 923 61)"/>
-    <rect class="float-c" x="40" y="380" width="8" height="8" fill="#FF6B35" opacity="0.45" transform="rotate(45 44 384)"/>
+  <!-- Big decorative ring upper right -->
+  <g class="rotate-slow">
+    <circle cx="1080" cy="140" r="80" fill="none" stroke="#F5F1E8" stroke-width="1.2" stroke-dasharray="3 8" opacity="0.22"/>
+    <circle cx="1080" cy="60" r="4" fill="#FF6B35"/>
   </g>
 
-  <!-- Top meta row -->
-  <text class="mono" x="80" y="68" font-size="16" font-weight="600" fill="#94A3B8" letter-spacing="2">BEIRUT, LEBANON  ·  DATA SCIENCE @ USAL  ·  GRADUATING JUNE 2026</text>
-  <line x1="80" y1="86" x2="220" y2="86" stroke="#F5F1E8" stroke-width="1.4"/>
-
-  <!-- Big name with sweep -->
+  <!-- Floating decorative dots -->
   <g>
-    <text class="sans" x="80" y="228" font-size="112" font-weight="800" fill="url(#nameD)" letter-spacing="-3.5">Yasser Hamdan</text>
-    <g clip-path="inset(110px 0px 90px 0px)" opacity="0.55">
-      <rect class="sweep" x="0" y="0" width="320" height="520" fill="url(#sweepD)"/>
-    </g>
+    <circle class="float-a" cx="240" cy="80"  r="5" fill="#FF6B35" opacity="0.65"/>
+    <circle class="float-b" cx="60"  cy="200" r="4" fill="#14B8A6" opacity="0.65"/>
+    <circle class="float-c" cx="1200" cy="380" r="6" fill="#FF6B35" opacity="0.55"/>
+    <circle class="float-a" cx="780" cy="60"  r="3" fill="#F5F1E8" opacity="0.4"/>
+    <circle class="float-b" cx="1140" cy="280" r="4" fill="#14B8A6" opacity="0.55"/>
+    <circle class="float-c" cx="60"  cy="480" r="7" fill="#F5F1E8" opacity="0.15"/>
+    <rect class="float-b" x="918" y="56" width="10" height="10" fill="#FF6B35" opacity="0.65" transform="rotate(45 923 61)"/>
+    <rect class="float-c" x="40" y="400" width="8" height="8" fill="#14B8A6" opacity="0.55" transform="rotate(45 44 404)"/>
   </g>
 
-  <!-- Animated accent rule -->
-  <rect x="80" y="252" width="180" height="7" rx="3.5" fill="url(#accentD)" class="pulse-rule"/>
+  <!-- Status pill (TOP) -->
+  <g transform="translate(80, 50)">
+    <rect width="320" height="42" rx="21" fill="#FF6B35"/>
+    <circle cx="26" cy="21" r="7" fill="#0D1117" class="live"/>
+    <text class="sans" x="48" y="28" font-size="16" font-weight="800" fill="#0D1117" letter-spacing="1.5">OPEN TO WORK · AVAILABLE NOW</text>
+  </g>
+
+  <!-- Meta strip right -->
+  <text class="mono" x="1200" y="76" text-anchor="end" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="2">BEIRUT, LB · USAL '26 · 3 LANGUAGES</text>
+
+  <!-- Y monogram with reverse rotating ring -->
+  <g>
+    <g class="rotate-rev">
+      <circle cx="158" cy="318" r="76" fill="none" stroke="#F5F1E8" stroke-width="1" stroke-dasharray="2 6" opacity="0.35"/>
+      <circle cx="158" cy="242" r="3" fill="#14B8A6"/>
+    </g>
+    <circle cx="158" cy="318" r="56" fill="#F5F1E8"/>
+    <circle cx="158" cy="318" r="56" fill="none" stroke="#FF6B35" stroke-width="3.5"/>
+    <text class="sans" x="158" y="340" font-size="56" font-weight="800" fill="#0D1117" text-anchor="middle" letter-spacing="-2">Y</text>
+  </g>
+
+  <!-- Big name + cursor -->
+  <g>
+    <text class="sans" x="250" y="252" font-size="116" font-weight="800" fill="url(#nameDk)" letter-spacing="-3.5">Yasser Hamdan</text>
+    <g clip-path="inset(150px 0px 230px 0px)" opacity="0.6">
+      <rect class="sweep" x="0" y="0" width="320" height="540" fill="url(#sweepDk)"/>
+    </g>
+    <rect x="1098" y="178" width="16" height="80" fill="#FF6B35" class="blink"/>
+  </g>
+
+  <!-- Accent rule -->
+  <rect x="250" y="276" width="200" height="7" rx="3.5" fill="url(#accentDk)" class="pulse-rule"/>
 
   <!-- Tagline -->
-  <text class="sans" x="80" y="298" font-size="28" font-weight="600" fill="#F5F1E8">Python  ·  Odoo ERP  ·  AI Automation Engineer</text>
+  <text class="sans" x="250" y="322" font-size="28" font-weight="700" fill="#F5F1E8">Python  ·  Odoo ERP  ·</text>
+  <text class="sans" x="556" y="322" font-size="28" font-weight="500" fill="#14B8A6" font-style="italic">AI Automation Engineer.</text>
 
-  <!-- Pull-quote claim -->
-  <line x1="80" y1="332" x2="80" y2="404" stroke="url(#accentD)" stroke-width="5"/>
-  <text class="sans" x="106" y="360" font-size="20" font-weight="600" fill="#F5F1E8">Shipped one production Odoo 18 module solo at Mobile Arts.</text>
-  <text class="sans" x="106" y="390" font-size="20" font-weight="500" fill="#94A3B8">Ten Plotly dashboards at XpertBot. Six personal builds.</text>
-
-  <!-- Status pill (live) -->
-  <g transform="translate(80, 444)">
-    <rect width="300" height="42" rx="21" fill="#FF6B35"/>
-    <circle cx="26" cy="21" r="7" fill="#0D1117" class="live"/>
-    <text class="sans" x="46" y="28" font-size="16" font-weight="700" fill="#0D1117" letter-spacing="1">OPEN TO WORK · JUNE 2026</text>
+  <!-- Pull-quote -->
+  <g transform="translate(250, 356)">
+    <line x1="0" y1="0" x2="0" y2="100" stroke="url(#accentDk)" stroke-width="5"/>
+    <text class="sans" x="26" y="32" font-size="20" font-weight="700" fill="#F5F1E8">Shipped one production Odoo 18 module solo at Mobile Arts.</text>
+    <text class="sans" x="26" y="64" font-size="20" font-weight="500" fill="#94A3B8">Ten Plotly dashboards at XpertBot. Six personal builds.</text>
+    <text class="mono" x="26" y="92" font-size="13" font-weight="600" fill="#14B8A6" letter-spacing="1.5">▸ AVAILABLE FOR HIRE  ⋅  ERP / PYTHON / AI / ML</text>
   </g>
 
   <!-- Right column: core stack -->
   <g class="mono" font-size="16" font-weight="600" fill="#F5F1E8">
-    <text x="1200" y="68" text-anchor="end" letter-spacing="2" fill="#94A3B8" font-size="14">CORE STACK</text>
-    <line x1="1100" y1="86" x2="1200" y2="86" stroke="#F5F1E8" stroke-width="1.4"/>
+    <text x="1200" y="148" text-anchor="end" letter-spacing="2.5" fill="#94A3B8" font-size="13">CORE STACK</text>
+    <line x1="1100" y1="166" x2="1200" y2="166" stroke="#F5F1E8" stroke-width="1.4"/>
 
-    <g transform="translate(1200, 130)" text-anchor="end">
+    <g transform="translate(1200, 200)" text-anchor="end">
       <text>Python</text>
-      <text y="32">Odoo 18  /  QWeb</text>
-      <text y="64">FastAPI</text>
-      <text y="96">LangGraph</text>
-      <text y="128">PyTorch</text>
-      <text y="160">PostgreSQL  /  pgvector</text>
-      <text y="192">React  /  TypeScript</text>
+      <text y="30">Odoo 18  /  QWeb</text>
+      <text y="60">FastAPI</text>
+      <text y="90">LangGraph</text>
+      <text y="120">PyTorch</text>
+      <text y="150">PostgreSQL  /  pgvector</text>
+      <text y="180">React  /  TypeScript</text>
     </g>
   </g>
 
   <!-- Bottom edge rule -->
-  <line x1="0" y1="518" x2="1280" y2="518" stroke="#F5F1E8" stroke-width="2"/>
+  <line x1="0" y1="538" x2="1280" y2="538" stroke="#F5F1E8" stroke-width="2"/>
 </svg>
