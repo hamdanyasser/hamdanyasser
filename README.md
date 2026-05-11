@@ -1,136 +1,176 @@
-![Plate 01 — Subject: Yasser Hamdan](./assets/hero.svg)
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <img src="./assets/hero-light.svg" alt="Yasser Hamdan — Python & Odoo ERP Developer" width="100%">
+</picture>
 
 <br/>
-
-> *Subject is a Python and Odoo ERP developer with practical AI delivery experience.* <br/>
-> *Currently a third-year Data Science student at the University of Sciences and Arts in Lebanon (USAL), graduating June 2026.* <br/>
-> *Working at the seam where business systems meet AI agents — Odoo modules in production, LangGraph agents in development.*
-
 <br/>
 
-![Bill of Materials — career arc](./assets/journey.svg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-yasser--hamdan063-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasser-hamdan063/)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-hamdanyasser2005-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hamdanyasser2005@gmail.com)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-hamdanyasser-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hamdanyasser)
 
-<br/>
+</div>
 
-![Plate 02 — Operating State](./assets/divider-02-now.svg)
+---
 
-<br/>
+## About
 
-| &nbsp; | &nbsp; |
+Third-year Data Science student at **USAL** in Beirut, graduating **June 2026**. I work where business systems meet AI agents — building Odoo modules in production and LangGraph agents in development.
+
+- **Mobile Arts internship** — shipped one production Odoo 18 auction module as sole developer
+- **XpertBot internship** — built ten Plotly dashboards on renewable-energy data
+- **Six personal projects** across agents, NLP, ML pipelines, deep learning, and Android
+
+I'm available for ERP / Odoo, Python, and AI/ML engineer roles starting June 2026.
+
+---
+
+## What I'm doing right now
+
+|  |  |
 |:---|:---|
-| **`IN BUILD`** &nbsp; | Polishing **AtlasBrief** for a public demo. Refactoring the LangGraph state machine so every agent decision is observable from the UI. |
-| **`IN REVIEW`** &nbsp; | *Designing Data-Intensive Applications* (Kleppmann). Plus the LangGraph release notes — they ship fast. |
-| **`IN STUDY`** &nbsp; | Production patterns for multi-agent systems. Cost optimisation for two-model LLM routing at scale. |
+| 🟢 &nbsp; **Building** &nbsp; | **AtlasBrief** — refactoring the LangGraph state machine so agent decisions are observable from the UI |
+| 🔵 &nbsp; **Reading** &nbsp; | **Designing Data-Intensive Applications** (Kleppmann) · LangGraph release notes |
+| 🟠 &nbsp; **Studying** &nbsp; | Production patterns for multi-agent systems · cost optimization for two-model LLM routing |
 
-<br/>
+---
 
-![Plate 03 — Featured Work](./assets/divider-03-work.svg)
-
-<table>
-<tr>
-<td width="50%">
-<a href="https://github.com/hamdanyasser/atlasbrief-travel-agent">
-<img src="./assets/module-01-atlasbrief.svg" alt="MOD.01 — AtlasBrief" width="100%"/>
-</a>
-</td>
-<td width="50%">
-<a href="https://github.com/hamdanyasser/atelier-real-estate-estimator">
-<img src="./assets/module-02-atelier.svg" alt="MOD.02 — Atelier" width="100%"/>
-</a>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<a href="https://github.com/hamdanyasser/support-triage-cockpit">
-<img src="./assets/module-03-triage.svg" alt="MOD.03 — Triage Cockpit" width="100%"/>
-</a>
-</td>
-<td width="50%">
-<a href="https://github.com/hamdanyasser/NLP-NER-Project">
-<img src="./assets/module-04-ner.svg" alt="MOD.04 — Biomedical NER" width="100%"/>
-</a>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<a href="https://github.com/hamdanyasser/auction-system-odoo">
-<img src="./assets/module-05-odoo.svg" alt="MOD.05 — Odoo Auction" width="100%"/>
-</a>
-</td>
-<td width="50%">
-<a href="https://github.com/hamdanyasser/debugmaster-android">
-<img src="./assets/module-06-debugmaster.svg" alt="MOD.06 — DebugMaster" width="100%"/>
-</a>
-</td>
-</tr>
-</table>
-
-<sub>↑ &nbsp; each module links to its repository.  full index at <a href="https://github.com/hamdanyasser?tab=repositories">github.com/hamdanyasser</a></sub>
-
-<br/>
-
-![Plate 04 — Subsystem Detail](./assets/divider-04-system.svg)
-
-> *Code shows what was built. Architecture shows how it was reasoned.*
-
-![AtlasBrief — request flow](./assets/architecture.svg)
-
-<details>
-<summary><sub>↳ &nbsp; <code>NOTE.A1</code> &nbsp;—&nbsp; <i>why two-model routing</i></sub></summary>
-
-<br/>
-
-A lightweight model handles structured extraction from the user query — cheap, fast, deterministic, Pydantic-validated at the boundary. A stronger model handles synthesis, where reasoning quality matters and latency is acceptable. Per-request token logging shows the routing genuinely saves cost without measurable quality loss on extraction. The agent's tool decisions are stateful and traceable end-to-end.
-
-</details>
-
-<br/>
-
-![Plate 05 — Operating Metrics](./assets/divider-05-stats.svg)
-
-![Operating metrics readout](./assets/metrics.svg)
-
-<br/>
-
-![Plate 06 — Certifications](./assets/divider-06-certifications.svg)
+## Featured projects
 
 <table>
+
 <tr>
-<td valign="top" width="50%">
+<td width="50%" valign="top">
 
-**`CERT.001`** &nbsp;—&nbsp; **IBM — RAG and Agentic AI**
-*<sub>Professional Certificate · 9 courses</sub>*
+### 🤖 &nbsp; [AtlasBrief](https://github.com/hamdanyasser/atlasbrief-travel-agent)
 
-> RAG pipelines, vector databases, LangChain, LangGraph, CrewAI, AutoGen, BeeAI, MCP, multi-agent systems.
+LangGraph travel-planning agent. RAG over Postgres + pgvector. Three Pydantic-validated tools. Two-model LLM routing with per-request cost logging.
 
-<sub>Issued Mar 2026  ⋅  external sign-off</sub>
+`Python` `LangGraph` `RAG` `FastAPI` `React`
+
+**Status** — in service
 
 </td>
-<td valign="top" width="50%">
+<td width="50%" valign="top">
 
-**`CERT.002`** &nbsp;—&nbsp; **Anthropic — Claude Code in Action**
-*<sub>Official Anthropic certification</sub>*
+### 📊 &nbsp; [Atelier](https://github.com/hamdanyasser/atelier-real-estate-estimator)
 
-> AI-assisted development, tool chaining, context management, MCP integration.
+Plain-English property descriptions → grounded prices. LLM extracts features, scikit-learn Random Forest predicts (R² 0.90), second LLM grounds against training stats.
 
-<sub>Issued Nov 2025  ⋅  external sign-off</sub>
+`Python` `scikit-learn` `OpenAI` `FastAPI`
+
+**Status** — shipped · R² 0.90 on Ames Housing
 
 </td>
 </tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🎫 &nbsp; [Triage Cockpit](https://github.com/hamdanyasser/support-triage-cockpit)
+
+RAG-grounded vs. plain LLM. Local logistic regression vs. zero-shot. 20K tickets benchmarked. Recommends what to ship at 10K tickets/hour.
+
+`Python` `Chroma` `scikit-learn` `FastAPI`
+
+**Status** — benchmark complete · 20K tickets
+
+</td>
+<td width="50%" valign="top">
+
+### 🧬 &nbsp; [Biomedical NER](https://github.com/hamdanyasser/NLP-NER-Project)
+
+From-scratch NER on BC5CDR. BiLSTM-CRF + Viterbi decoding, character-CNN embeddings, attention, GloVe vectors. Ablation studies. Live Gradio demo.
+
+`PyTorch` `NLP` `CRF` `Gradio`
+
+**Status** — shipped · 87% F1
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🏷️ &nbsp; [Odoo Auction Module](https://github.com/hamdanyasser/auction-system-odoo)
+
+Sole developer at Mobile Arts. Bid validation, proxy bidding, anti-sniping, Buy Now, payment tracking, security rules, QWeb templates.
+
+`Odoo 18` `Python` `PostgreSQL` `QWeb`
+
+**Status** — deployed · internship deliverable
+
+</td>
+<td width="50%" valign="top">
+
+### 🐛 &nbsp; [DebugMaster](https://github.com/hamdanyasser/debugmaster-android)
+
+Gamified Android debugging tutor. Learning paths, AI mentor support, XP/streaks, leaderboards, live multiplayer debug battles. MVVM + Hilt + Room.
+
+`Java` `Android` `Firebase` `Room`
+
+**Status** — shipped · educational
+
+</td>
+</tr>
+
 </table>
 
-<br/>
+---
 
-![Plate 07 — Contact](./assets/divider-07-reach.svg)
+## Stack
 
-![Contact — drawing title block](./assets/footer.svg)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Odoo](https://img.shields.io/badge/Odoo_18-714B67?style=flat-square&logo=odoo&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=oracle&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+
+---
+
+## Certifications
+
+| | |
+|:---|:---|
+| 🎓 &nbsp; **IBM — RAG and Agentic AI** &nbsp; *(Mar 2026)* | Professional Certificate · 9 courses. RAG pipelines, vector databases, LangChain, LangGraph, CrewAI, AutoGen, BeeAI, MCP, multi-agent systems. |
+| 🤖 &nbsp; **Anthropic — Claude Code in Action** &nbsp; *(Nov 2025)* | Official Anthropic certification. AI-assisted development, tool chaining, context management, MCP integration. |
+
+---
+
+## GitHub stats
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0B1F33?style=for-the-badge&logo=linkedin&logoColor=EDE6D6&labelColor=0B1F33)](https://www.linkedin.com/in/yasser-hamdan063/)
+![Yasser's GitHub stats](https://github-readme-stats.vercel.app/api?username=hamdanyasser&show_icons=true&hide_border=true&include_all_commits=true&count_private=false&title_color=E25E1E&icon_color=E25E1E&text_color=808080&bg_color=00000000)
 &nbsp;
-[![Email](https://img.shields.io/badge/EMAIL-0B1F33?style=for-the-badge&logo=gmail&logoColor=EDE6D6&labelColor=0B1F33)](mailto:hamdanyasser2005@gmail.com)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=hamdanyasser&layout=compact&hide_border=true&langs_count=6&title_color=E25E1E&text_color=808080&bg_color=00000000)
+
+</div>
+
+---
+
+<div align="center">
+
+## Let's build something
+
+Open to **ERP / Odoo · Python · AI/ML engineer** roles &nbsp;·&nbsp; starting June 2026
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasser-hamdan063/)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GITHUB-E25E1E?style=for-the-badge&logo=github&logoColor=EDE6D6&labelColor=E25E1E)](https://github.com/hamdanyasser)
+[![Email](https://img.shields.io/badge/Send_me_an_email-E25E1E?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hamdanyasser2005@gmail.com)
+
+<sub>Beirut, Lebanon &nbsp;·&nbsp; Arabic, English, French</sub>
 
 </div>

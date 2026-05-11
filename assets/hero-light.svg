@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Yasser Hamdan — Python and Odoo ERP developer">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E25E1E"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace; }
+    @keyframes breathe { 0%,100% { opacity: 1; } 50% { opacity: 0.45; } }
+    .live { animation: breathe 2.4s ease-in-out infinite; }
+  </style>
+
+  <rect width="1280" height="480" fill="#FAF7F0"/>
+
+  <!-- Top meta row -->
+  <text class="mono" x="80"  y="68" font-size="16" font-weight="500" fill="#6B7280" letter-spacing="2">Beirut, Lebanon  ·  Data Science @ USAL  ·  Graduating June 2026</text>
+  <line x1="80" y1="86" x2="200" y2="86" stroke="#1A2238" stroke-width="1.2"/>
+
+  <!-- Big name -->
+  <text class="sans" x="80" y="216" font-size="104" font-weight="800" fill="#1A2238" letter-spacing="-3">Yasser Hamdan</text>
+
+  <!-- Tagline -->
+  <text class="sans" x="80" y="270" font-size="28" font-weight="500" fill="#1A2238">Python  ·  Odoo ERP  ·  AI Automation Engineer</text>
+
+  <!-- Pull-quote claim -->
+  <line x1="80" y1="310" x2="80" y2="380" stroke="url(#accent)" stroke-width="4"/>
+  <text class="sans" x="108" y="338" font-size="20" font-weight="500" fill="#1A2238">Shipped one production Odoo 18 module solo at Mobile Arts.</text>
+  <text class="sans" x="108" y="368" font-size="20" font-weight="500" fill="#6B7280">Ten Plotly dashboards at XpertBot. Six personal builds.</text>
+
+  <!-- Status pill (live) -->
+  <g transform="translate(80, 422)">
+    <rect width="280" height="38" rx="19" fill="#E25E1E"/>
+    <circle cx="24" cy="19" r="6" fill="#FAF7F0" class="live"/>
+    <text class="sans" x="44" y="25" font-size="15" font-weight="700" fill="#FAF7F0" letter-spacing="1">OPEN TO WORK · JUNE 2026</text>
+  </g>
+
+  <!-- Right column: tech chips -->
+  <g class="mono" font-size="15" font-weight="600" fill="#1A2238">
+    <text x="1200" y="68" text-anchor="end" letter-spacing="1.5" fill="#6B7280">core stack</text>
+    <line x1="1100" y1="86" x2="1200" y2="86" stroke="#1A2238" stroke-width="1.2"/>
+
+    <g transform="translate(1200, 124)" text-anchor="end">
+      <text>Python</text>
+      <text y="32">Odoo 18 / QWeb</text>
+      <text y="64">FastAPI</text>
+      <text y="96">LangGraph</text>
+      <text y="128">PyTorch</text>
+      <text y="160">PostgreSQL / pgvector</text>
+      <text y="192">React / TypeScript</text>
+    </g>
+  </g>
+
+  <!-- Bottom edge accent rule -->
+  <line x1="0" y1="478" x2="1280" y2="478" stroke="#1A2238" stroke-width="2"/>
+</svg>
